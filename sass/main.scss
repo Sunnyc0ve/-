@@ -1,8 +1,14 @@
+@use "sass:color";
+@use "variables" as vars;
+@use "mixins";
+@use "header";
+@use "footer";
+
 @font-face {
   font-family: "Tilda Sans VF";
-  src: url("#{$font-path}/TildaSans-VF.ttf") format("ttf"),
-    url("#{$font-path}/TildaSans-VF.woff2") format("woff2"),
-    url("#{$font-path}/TildaSans-VF.woff") format("woff");
+  src: url("#{vars.$font-path}/TildaSans-VF.ttf") format("ttf"),
+    url("#{vars.$font-path}/TildaSans-VF.woff2") format("woff2"),
+    url("#{vars.$font-path}/TildaSans-VF.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -17,11 +23,11 @@
 
 // Устанавливаем базовые стили для body
 body {
-  font-family: $base-font-family;
-  font-size: $base-font-size;
-  line-height: $base-line-height;
-  color: $primary-color;
-  background-color: $background-color;
+  font-family: vars.$base-font-family;
+  font-size: vars.$base-font-size;
+  line-height: vars.$base-line-height;
+  color: vars.$primary-color;
+  background-color: vars.$background-color;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -90,7 +96,7 @@ input:focus,
 select:focus,
 textarea:focus {
   outline: none;
-  border-color: $primary-color;
+  border-color: vars.$primary-color;
 }
 
 // Стили для блока с фиксированным позиционированием
@@ -109,15 +115,15 @@ textarea:focus {
 
 // Стили для кнопок
 button {
-  background-color: $primary-color;
+  background-color: vars.$primary-color;
   color: #fff;
-  font-size: $base-font-size;
+  font-size: vars.$base-font-size;
   padding: 10px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   &:hover {
-    background-color: darken($primary-color, 10%);
+    background-color: color.adjust(vars.$primary-color, $lightness: -10%);
   }
 }
 
