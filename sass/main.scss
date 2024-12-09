@@ -1,0 +1,156 @@
+@font-face {
+  font-family: "Tilda Sans VF";
+  src: url("#{$font-path}/TildaSans-VF.ttf") format("ttf"),
+    url("#{$font-path}/TildaSans-VF.woff2") format("woff2"),
+    url("#{$font-path}/TildaSans-VF.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; // Устанавливает модель коробки для всех элементов
+}
+
+// Устанавливаем базовые стили для body
+body {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  color: $primary-color;
+  background-color: $background-color;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Основные теги
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: normal;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+// Стили для ссылок
+a {
+  text-decoration: none;
+  color: inherit; // Сохраняем цвет родительского элемента
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+// Заголовки секций
+section {
+  position: relative; // Позволяет использовать абсолютное позиционирование внутри
+  padding: 0;
+  margin-bottom: 60px;
+}
+
+// Стили для контейнеров
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+// Сброс для изображений
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+// Типичные стили для формы
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: $primary-color;
+}
+
+// Стили для блока с фиксированным позиционированием
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+// Стили для основных контейнеров и секций
+.wrapper {
+  display: block;
+}
+
+// Стили для кнопок
+button {
+  background-color: $primary-color;
+  color: #fff;
+  font-size: $base-font-size;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}
+
+// Стили для таблиц
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  th,
+  td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  th {
+    background-color: #f4f4f4;
+  }
+}
+
+// Стили для модальных окон
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal.active {
+  display: flex;
+}
