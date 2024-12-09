@@ -1,4 +1,4 @@
-# Node.js (папка с зависимостями, если ты используешь npm)
+# Node.js (папка с зависимостями)
 node_modules/
 
 # Скомпилированный CSS (он генерируется из SASS)
@@ -10,6 +10,14 @@ css/style.css
 # Локальные настройки редактора
 .vscode/
 
-# WordPress кеш и загрузки
-/wp-content/uploads/
-/wp-content/cache/
+# Временные файлы системы
+.DS_Store       # macOS
+Thumbs.db       # Windows
+
+# Лог-файлы
+*.log
+
+# Бэкап-файлы редакторов
+*.bak
+*.swp
+*.tmp
