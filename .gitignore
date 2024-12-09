@@ -1,0 +1,15 @@
+# Node.js (папка с зависимостями, если ты используешь npm)
+node_modules/
+
+# Скомпилированный CSS (он генерируется из SASS)
+css/style.css
+
+# SASS-кэш (временные файлы SASS)
+.sass-cache/
+
+# Локальные настройки редактора
+.vscode/
+
+# WordPress кеш и загрузки
+/wp-content/uploads/
+/wp-content/cache/
