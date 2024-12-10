@@ -89,6 +89,10 @@
         &-column {
             width: 300px;
             flex: 1;
+
+            &:last-child {
+                margin-left: 40px;
+            }
         }
 
         &-list {
@@ -118,6 +122,19 @@
         &--services {
             display: flex;
             padding: 30px 60px;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 30px;
+                bottom: 30px;
+                left: 50%; /* Линия находится посередине между колонками */
+                width: 1px;
+                background-color: color.adjust(
+                    vars.$primary-color,
+                    $lightness: -30%
+                ); /* Цвет линии */
+            }
         }
 
         &--contacts {
