@@ -164,17 +164,13 @@ table {
 // СТИЛИ ГЛАВНОГО ЭКРАНА
 
 .full-width-bg {
-    background-color: #3498db; /* Цвет фона */
-    background-image: url('../images/main_bg.jpg'); /* Если нужен фон-картинка */
-    background-size: cover; /* Картинка будет покрывать весь блок */
-    background-repeat: no-repeat; /* Убираем повтор */
-    background-position: center; /* Центрируем фон */
-    width: 100%; /* Полная ширина */
-    height: 100%; /* Высота на весь экран */
-}
-
-.main_container {
-    height: 100vh;
+    background-color: vars.$primary-color;
+    background-image: url('../images/main_bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
 }
 
 .btn {
@@ -188,5 +184,123 @@ table {
     transition: 0.2s;
     &:hover {
         background-color: color.adjust(vars.$primary-color, $lightness: -20%);
+    }
+}
+
+.main_container {
+    display: grid;
+    text-align: center;
+    grid-template-areas:
+        'features video'
+        'stats    video'
+        'button   video';
+    grid-template-columns: 19fr 23fr;
+    grid-template-rows: auto auto auto;
+    gap: 25px;
+    padding: 180px 0 80px 0;
+
+    &-title {
+        color: vars.$primary-color;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 107.112%; /* 38.655px */
+        margin-bottom: 25px;
+    }
+
+    // Блок с заголовком и особенностями
+    &-features {
+        grid-area: features;
+        padding: 40px 15px 40px 15px;
+        border-radius: 10px;
+        background-color: vars.$secondary-color;
+        margin-bottom: -18px;
+
+        .main_features {
+            p {
+                color: vars.$primary-color;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+
+                &:nth-child(1) {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+
+    // Блок статистики
+    &-stats {
+        grid-area: stats;
+        display: grid;
+        grid-template-areas:
+            'main_stat1 main_stat2'
+            'main_stat3 main_stat3';
+        grid-template-columns: 1fr 1fr;
+        gap: 7px;
+
+        .main_stat1 {
+            grid-area: main_stat1;
+        }
+
+        .main_stat2 {
+            grid-area: main_stat2;
+        }
+
+        .main_stat3 {
+            grid-area: main_stat3;
+        }
+
+        .main_stat {
+            text-align: center;
+            padding: 5px 0;
+            border-radius: 10px;
+            background-color: vars.$secondary-color;
+
+            .main_title-h3 {
+                color: vars.$primary-color;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 17.489px;
+
+                .main_title-num {
+                    color: vars.$third-color;
+                    font-size: 44px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: normal;
+                    letter-spacing: -2.588px;
+                }
+            }
+        }
+    }
+
+    // Кнопка
+    .main_btn {
+        grid-area: button;
+        width: 100%;
+        height: 64px;
+    }
+
+    // Видео
+    .main_video-container {
+        grid-area: video;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 10px;
+        background: #000;
+    }
+
+    .main_video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 55% center;
     }
 }
