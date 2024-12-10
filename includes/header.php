@@ -30,8 +30,8 @@
                     <li class="header__menu-item"><a href="/team" class="header__menu-link" <?php if ($_SERVER['REQUEST_URI'] == '/team') echo 'aria-current="page"'; ?>>Команда</a></li>
                     <li class="header__menu-item"><a href="#sale" class="header__menu-link" role="button" aria-haspopup="dialog" aria-controls="popup-sale">Акция</a></li>
                     <li class="header__menu-item header__menu-item--dropdown">
-                        <span class="header__menu-link">Услуги</span>
-                        <div class="header__dropdown">
+                        <span class="header__menu-link">Услуги<span class="header__menu-arrow"></span></span>
+                        <div class="header__dropdown header__dropdown--services">
                             <div class="header__dropdown-column">
                                 <ul class="header__dropdown-list">
                                     <li class="header__dropdown-item"><a href="#" class="header__dropdown-link">Ремонт квартир под ключ</a></li>
@@ -54,11 +54,26 @@
                     </li>
                 </ul>
                 <div class="header__contacts">
-                    <p class="header_phone">+7 (911) 929-77-13</p>
+                    <div class="header__menu-item header__menu-item--dropdown">
+                        <span class="header_phone header__menu-link ">+7 (911) 929-77-13<span class="header__menu-arrow"></span></span>
+                        <div class="header__dropdown header__dropdown--contacts">
+                            <ul class="header__dropdown-list">
+                                <li class="header__dropdown-item"><a href="tel:+79119297713" class="header__dropdown-link">+7 (911) 929-77-13</a></li>
+                                <li class="header__dropdown-item"><a href="#" class="header__dropdown-link"><b>Санкт-Петербург</b>, Проспект Большевиков 2, 10 парадная</a></li>
+                                <li class="header__dropdown-item"><span><b>Без выходных</b> с 10:00 до 20:00</span></li>
+                            </ul>
+                            <div class="header__dropdown-social">
+                                <a href="#" class="header__dropdown-icon"><img src="images/vk.svg" alt="VK"></a>
+                                <a href="#" class="header__dropdown-icon"><img src="images/youtube.svg" alt="YouTube"></a>
+                                <a href="#" class="header__dropdown-icon"><img src="images/instagram.svg" alt="Instagram"></a>
+                                <a href="#" class="header__dropdown-icon"><img src="images/telegram.svg" alt="Telegram"></a>
+                            </div>
+                        </div>
+                    </div>
                     <button class="btn header__btn" aria-label="Оставить заявку">Оставить заявку</button>
-
                 </div>
-            </nav>
+        </div>
+        </nav>
         </div>
         </div>
     </header>
