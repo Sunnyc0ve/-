@@ -13,7 +13,7 @@ ini_set('display_errors', 1);
     <section class="main_section full-width-bg">
         <div class="container">
             <div class="main_container">
-                <div class="main_container-features">
+                <div class="main_container-features black-bg">
                     <h1 class="main_container-title">
                         Безупречный по&nbsp;стилю<br>дизайн интерьера и&nbsp;реализация проекта под ключ.
                     </h1>
@@ -23,13 +23,13 @@ ini_set('display_errors', 1);
                     </div>
                 </div>
                 <div class="main_container-stats">
-                    <div class="main_stat main_stat1">
+                    <div class="main_stat main_stat1 black-bg">
                         <h3 class="main_title-h3"><span class="main_title-num">5</span><br> Лет нашей компании</h3>
                     </div>
-                    <div class="main_stat main_stat2">
+                    <div class="main_stat main_stat2 black-bg">
                         <h3 class="main_title-h3"><span class="main_title-num">400+</span><br> Проектов реализовано</h3>
                     </div>
-                    <div class="main_stat main_stat3">
+                    <div class="main_stat main_stat3 black-bg">
                         <h3 class="main_title-h3"><span class="main_title-num">200+</span><br> Отзывов на&nbsp;Яндекс картах и&nbsp;2ГИС</h3>
                     </div>
                 </div>
@@ -239,18 +239,18 @@ ini_set('display_errors', 1);
 
     <!-- Форма -->
 
-    <section class="form_section">
+    <section class="tarif_section">
         <div class="container">
-            <div class="form_container">
-                <p class="form_title">Готовы обсудить проект?</p>
-                <p class="form_desk">Оставьте заявку, и&nbsp;мы&nbsp;обсудим Ваш бюджет и&nbsp;пожелания, сориентируем по&nbsp;срокам и&nbsp;стоимости дизайн проекта и&nbsp;ремонта Вашей квартиры.</p>
-                <div class="form_container-form">
-                    <form action="#" class="form_form">
-                        <input type="text" class="form_form-input" name="name" placeholder="Как вас зовут?" autocomplete="name" required pattern="[A-Za-zА-Яа-яЁё\s]+">
-                        <input type="tel" class="form_form-input" name="phone" placeholder="Номер телефона" autocomplete="tel" required pattern="[0-9]{10}">
-                        <button type="submit" class="form_form-button">Обсудить проект</button>
+            <div class="tarif_container">
+                <p class="tarif_title">Готовы обсудить проект?</p>
+                <p class="tarif_desk">Оставьте заявку, и&nbsp;мы&nbsp;обсудим Ваш бюджет и&nbsp;пожелания, сориентируем по&nbsp;срокам и&nbsp;стоимости дизайн проекта и&nbsp;ремонта Вашей квартиры.</p>
+                <div class="tarif_container-form">
+                    <form action="#" class="tarif_form">
+                        <input type="text" class="tarif_form-input" name="name" placeholder="Как вас зовут?" autocomplete="name" required pattern="[A-Za-zА-Яа-яЁё\s]+">
+                        <input type="tel" class="tarif_form-input" name="phone" placeholder="Номер телефона" autocomplete="tel" required pattern="[0-9]{10}">
+                        <button type="submit" class="tarif_form-button">Обсудить проект</button>
                     </form>
-                    <p class="form_disclaimer">Нажимая кнопку &laquo;Обсудить проект&raquo; вы&nbsp;автоматически соглашаетесь с&nbsp;политикой обработки персональных данных</p>
+                    <p class="tarif_disclaimer">Нажимая кнопку &laquo;Обсудить проект&raquo; вы&nbsp;автоматически соглашаетесь с&nbsp;политикой обработки персональных данных</p>
                 </div>
             </div>
         </div>
@@ -390,6 +390,295 @@ ini_set('display_errors', 1);
             </div>
         </div>
     </section>
+
+    <!-- Боли -->
+
+    <section class="pain_section">
+        <div class="container">
+            <div class="pain_container-content">
+                <h2 class="pain_content-title">8&nbsp;проблем ремонта без дизайн-проекта</h2>
+                <p class="pain_content-desk">о&nbsp;которых рассказали больше 100 наших клиентов</p>
+                <ol class="pain_content-list">
+                    <li class="pain_list-item">
+                        <div class="pain_container-item">
+                            <p class="pain_item-num">01</p>
+                            <p class="pain__item-desk">Постоянная потеря времени на&nbsp;согласования и&nbsp;форс-мажоры</p>
+                        </div>
+                    </li>
+                    <li class="pain_list-item">
+                        <div class="pain_container-item">
+                            <p class="pain_item-num">02</p>
+                            <p class="pain__item-desk">Непредвиденные траты на&nbsp;то, чего не&nbsp;хватило или по&nbsp;другой стоимости</p>
+                        </div>
+                    </li>
+                    <li class="pain_list-item">
+                        <div class="pain_container-item">
+                            <p class="pain_item-num">03</p>
+                            <p class="pain__item-desk">Ошибки монтажа: то&nbsp;душ короткий, то&nbsp;двери шкафов не&nbsp;открываются</p>
+                        </div>
+                    </li>
+                    <li class="pain_list-item">
+                        <div class="pain_container-item">
+                            <p class="pain_item-num">04</p>
+                            <p class="pain__item-desk">Внезапный рост стоимости работ из-за того, что никто не&nbsp;уточнил деталей</p>
+                        </div>
+                    </li>
+                    <li class="pain_list-item">
+                        <div class="pain_container-item">
+                            <p class="pain_item-num">05</p>
+                            <p class="pain__item-desk">Понравились обои в&nbsp;магазине, а&nbsp;дома на&nbsp;стене пестрят. Нет единого стиля</p>
+                        </div>
+                    </li>
+                    <li class="pain_list-item">
+                        <div class="pain_container-item">
+                            <p class="pain_item-num">06</p>
+                            <p class="pain__item-desk">Большая площадь, а&nbsp;места совсем нет из-за наставленной повсюду мебели</p>
+                        </div>
+                    </li>
+                    <li class="pain_list-item">
+                        <div class="pain_container-item">
+                            <p class="pain_item-num">07</p>
+                            <p class="pain__item-desk">Куча лампочек, а&nbsp;в&nbsp;помещении темно. Выбивает счётчик от&nbsp;чайника или СВЧ</p>
+                        </div>
+                    </li>
+                    <li class="pain_list-item">
+                        <div class="pain_container-item">
+                            <p class="pain_item-num">08</p>
+                            <p class="pain__item-desk">Купили материалы сильно дороже, чем увидели позже в&nbsp;другом магазине</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+            <div class="pain_container-form">
+                <h2 class="pain_form-title">Узнайте как дизайн-проект решает эти 8&nbsp;проблем</h2>
+                <p class="pain_form-desk">И&nbsp;сохраняет до&nbsp;15% вашего бюджета</p>
+                <img src="" alt="" class="pain_form-img">
+                <div class="pain_form-content">
+                    <form action="" class="pain_form">
+                        <input type="text" class="pain_input" name="name" placeholder="Как вас зовут?" autocomplete="name" required pattern="[A-Za-zА-Яа-яЁё\s]+">
+                        <input type="tel" class="pain_input" name="phone" placeholder="Номер телефона" autocomplete="tel" required pattern="[0-9]{10}">
+                        <button type="submit" class="pain_form-btn">Получить материал</button>
+                    </form>
+                </div>
+                </img>
+            </div>
+        </div>
+    </section>
+
+    <!-- Тарифы с формой -->
+
+    <section class="tarif_section">
+        <div class="container">
+            <div class="tarif_container">
+                <div class="tarif_container-item">
+                    <div class="tarif_item">
+                        <h2 class="tarif_title">Полный проект<br>+&nbsp;бюджетирование</h2>
+                        <ol class="tarif_list">
+                            <li class="tarif_list-desk">
+                                <div class="tarif_container-desk">
+                                    <p class="tarif_desk">Планировочное решение</p>
+                                    <icon class="tarif_list-icon"></icon>
+                                </div>
+                            </li>
+                            <li class="tarif_list-desk">
+                                <div class="tarif_container-desk">
+                                    <p class="tarif_desk">Визуализация</p>
+                                    <icon class="tarif_list-icon"></icon>
+                                </div>
+                            </li>
+                            <li class="tarif_list-desk">
+                                <div class="tarif_container-desk">
+                                    <p class="tarif_desk">Рабочие чертежи</p>
+                                    <icon class="tarif_list-icon"></icon>
+                                </div>
+                            </li>
+                            <li class="tarif_list-desk">
+                                <div class="tarif_container-desk">
+                                    <p class="tarif_desk">Подбор мебели и&nbsp;материалов</p>
+                                    <icon class="tarif_list-icon"></icon>
+                                </div>
+                            </li>
+                            <li class="tarif_list-desk">
+                                <div class="tarif_container-desk">
+                                    <p class="tarif_desk">Таблица бюджетирования +&nbsp;подбор аналогов</p>
+                                    <icon class="tarif_list-icon"></icon>
+                                </div>
+                            </li>
+                            <li class="tarif_list-desk">
+                                <div class="tarif_container-desk">
+                                    <p class="tarif_desk">Оформление заказов, контроль и&nbsp;координация доставки</p>
+                                    <icon class="tarif_list-icon"></icon>
+                                </div>
+                            </li>
+                            <li class="tarif_list-desk">
+                                <div class="tarif_container-desk">
+                                    <p class="tarif_desk">3D Тур</p>
+                                    <icon class="tarif_list-icon"></icon>
+                                </div>
+                            </li>
+                            <p class="tarif_item-price">3 900₽ / М2/p>
+                                <a href="" class="tarif_item-case">Пример дизайн-проекта</a><button class="btn tarif_list-btn">Выбрать тариф</button>
+                        </ol>
+                    </div>
+                    <div class="tarif_item">
+                        <h2 class="tarif_title">Полный проект<br>+&nbsp;комплектация</h2>
+                        <ol class="tarif_list">
+                            <li class="tarif_list-desk">
+                                <div class="tarif_container-desk">
+                                    <p class="tarif_desk">Планировочное решение</p>
+                                    <icon class="tarif_list-icon"></icon>
+                                </div>
+                            </li>
+                            <li class="tarif_list-desk">
+                                <div class="tarif_container-desk">
+                                    <p class="tarif_desk">Визуализация</p>
+                                    <icon class="tarif_list-icon"></icon>
+                                </div>
+                            </li>
+                            <li class="tarif_list-desk">
+                                <div class="tarif_container-desk">
+                                    <p class="tarif_desk">Рабочие чертежи</p>
+                                    <icon class="tarif_list-icon"></icon>
+                                </div>
+                            </li>
+                            <li class="tarif_list-desk">
+                                <div class="tarif_container-desk">
+                                    <p class="tarif_desk">Подбор мебели и&nbsp;материалов</p>
+                                    <icon class="tarif_list-icon"></icon>
+                                </div>
+                            </li>
+                            <li class="tarif_list-desk">
+                                <div class="tarif_container-desk">
+                                    <p class="tarif_desk">Таблица бюджетирования +&nbsp;подбор аналогов</p>
+                                    <icon class="tarif_list-icon"></icon>
+                                </div>
+                            </li>
+                            <li class="tarif_list-desk">
+                                <div class="tarif_container-desk">
+                                    <p class="tarif_desk">Оформление заказов, контроль и&nbsp;координация доставки</p>
+                                    <icon class="tarif_list-icon"></icon>
+                                </div>
+                            </li>
+                            <li class="tarif_list-desk">
+                                <div class="tarif_container-desk">
+                                    <p class="tarif_desk">3D Тур</p>
+                                    <icon class="tarif_list-icon"></icon>
+                                </div>
+                            </li>
+                            <p class="tarif_item-price">4 900₽ / М2</p>
+                            <a href="" class="tarif_item-case">Пример дизайн-проекта</a><button class="btn tarif_list-btn">Выбрать тариф</button>
+                        </ol>
+                    </div>
+                    <div class="tarif_item">
+                        <h2 class="tarif_title">Полный проект<br>+&nbsp;комплектация +&nbsp;3D тур</h2>
+                        <ol class="tarif_list">
+                            <li class="tarif_list-desk">
+                                <div class="tarif_container-desk">
+                                    <p class="tarif_desk">Планировочное решение</p>
+                                    <icon class="tarif_list-icon"></icon>
+                                </div>
+                            </li>
+                            <li class="tarif_list-desk">
+                                <div class="tarif_container-desk">
+                                    <p class="tarif_desk">Визуализация</p>
+                                    <icon class="tarif_list-icon"></icon>
+                                </div>
+                            </li>
+                            <li class="tarif_list-desk">
+                                <div class="tarif_container-desk">
+                                    <p class="tarif_desk">Рабочие чертежи</p>
+                                    <icon class="tarif_list-icon"></icon>
+                                </div>
+                            </li>
+                            <li class="tarif_list-desk">
+                                <div class="tarif_container-desk">
+                                    <p class="tarif_desk">Подбор мебели и&nbsp;материалов</p>
+                                    <icon class="tarif_list-icon"></icon>
+                                </div>
+                            </li>
+                            <li class="tarif_list-desk">
+                                <div class="tarif_container-desk">
+                                    <p class="tarif_desk">Таблица бюджетирования +&nbsp;подбор аналогов</p>
+                                    <icon class="tarif_list-icon"></icon>
+                                </div>
+                            </li>
+                            <li class="tarif_list-desk">
+                                <div class="tarif_container-desk">
+                                    <p class="tarif_desk">Оформление заказов, контроль и&nbsp;координация доставки</p>
+                                    <icon class="tarif_list-icon"></icon>
+                                </div>
+                            </li>
+                            <li class="tarif_list-desk">
+                                <div class="tarif_container-desk">
+                                    <p class="tarif_desk">3D Тур</p>
+                                    <icon class="tarif_list-icon"></icon>
+                                </div>
+                            </li>
+                            <p class="tarif_item-price">5 900₽ / М2</p>
+                            <a href="" class="tarif_item-case">Пример дизайн-проекта</a><button class="btn tarif_list-btn">Выбрать тариф</button>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="tarif_form-content">
+                <p class="tarif_form-title">Запишитесь на&nbsp;экскурсию по&nbsp;текущим объктам</p>
+                <p class="tarif_form-desk">Заполните форму. Мы&nbsp;свяжемся с&nbsp;вами и&nbsp;согласуем экскурсию</p>
+                <div class="tarif_container-form">
+                    <form action="#" class="tarif_form">
+                        <input type="text" class="tarif_form-input" name="name" placeholder="Как вас зовут?" autocomplete="name" required pattern="[A-Za-zА-Яа-яЁё\s]+">
+                        <input type="tel" class="tarif_form-input" name="phone" placeholder="Номер телефона" autocomplete="tel" required pattern="[0-9]{10}">
+                        <button type="submit" class="tarif_form-button">Записаться на&nbsp;экскурсию!</button>
+                    </form>
+                    <p class="tarif_disclaimer">Нажимая кнопку &laquo;Записаться на&nbsp;экскурсию!&raquo; вы&nbsp;автоматически соглашаетесь с&nbsp;политикой обработки персональных данных</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Карта -->
+
+    <section class="map_section">
+        <div class="container">
+            <div class="map_container">
+                <iframe src="" frameborder="0">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+
+    <section class="cont_section">
+        <div class="container">
+            <div class="cont_container">
+                <div class="cont_container-item">
+                    <p class="cont_title">Контакты</p>
+                    <div class="cont_content">
+                        <p class="cont_desk">+7 (911) 929-77-13</p>
+                        <button class="btn cont_btn">Получить консультацию</button>
+                    </div>
+                </div>
+                <div class="cont_container-item">
+                    <p class="cont_title">Социальные сети</p>
+                    <div class="cont_content">
+                        <div class="cont_container-icon">
+                            <img src="" alt="" class="cont_icon">
+                            <img src="" alt="" class="cont_icon">
+                            <img src="" alt="" class="cont_icon">
+                            <img src="" alt="" class="cont_icon">
+                        </div>
+                    </div>
+                </div>
+                <div class="cont_container-item">
+                    <p class="cont_title">Наш адрес</p>
+                    <div class="cont_content">
+                        <p class="cont_desk">Санкт-Петербург, Проспект Большевиков&nbsp;2, 10&nbsp;парадная</p>
+                        <p class="cont_desk">Будем рады видеть вас в&nbsp;нашем офисе или встретиться на&nbsp;вашем объекте.</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
 
 </main>
 <?php include 'includes/footer.php'; ?>

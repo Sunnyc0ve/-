@@ -161,6 +161,15 @@ table {
     display: flex;
 }
 
+.black-bg {
+    background-image: url(../images/black-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 1px solid #2b2b2b;
+    border-radius: 10px;
+}
+
 // СТИЛИ ГЛАВНОГО ЭКРАНА
 
 .full-width-bg {
@@ -207,14 +216,13 @@ table {
         font-size: clamp(26px, 4vw, 36px);
         font-style: normal;
         font-weight: 500;
-        line-height: 107.112%; /* 38.655px */
+        line-height: 107%;
         margin-bottom: 25px;
     }
 
     &-features {
         grid-area: features;
         padding: 40px 15px 40px 15px;
-        border-radius: 10px;
         background-color: vars.$secondary-color;
         margin-bottom: -18px;
 
@@ -256,8 +264,6 @@ table {
         .main_stat {
             text-align: center;
             padding: 5px 0;
-            border-radius: 10px;
-            background-color: vars.$secondary-color;
 
             .main_title-h3 {
                 color: vars.$primary-color;
