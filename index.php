@@ -10,7 +10,7 @@ ini_set('display_errors', 1);
 
     <!-- Главный блок -->
 
-    <section class="main_section full-width-bg">
+    <section class="main_section dark-grey-bg">
         <div class="container">
             <div class="main_container">
                 <div class="main_container-features black-bg">
@@ -44,14 +44,14 @@ ini_set('display_errors', 1);
     <!-- Акция -->
 
     <section class="sale_section">
-        <div class="container">
+        <div class="container light-grey-bg">
             <div class="sale_container">
                 <div class="sale_container-title">
-                    <h2 class="sale_title">Акция</h2>
+                    <h2 class="title sale_title">Акция</h2>
                 </div>
                 <div class="sale_container-content">
                     <div class="sale_container-desk">
-                        <h3 class="sale_subtitle">Технический дизайн-проект в&nbsp;подарок</h3>
+                        <h3 class="sale_subtitle">Технический дизайн-проект <span class="span-bold">в&nbsp;подарок</span></h3>
                         <p class="sale_desk">Планировочное решение, электрика и&nbsp;сантехника для старта работ</p>
                     </div>
                     <form class="sale_form" action="#" method="post">
@@ -65,61 +65,96 @@ ini_set('display_errors', 1);
     </section>
 
     <!-- Преимущества -->
-
     <section class="features_section">
         <div class="container">
             <div class="features_container">
                 <div class="features_container-desk">
-                    <h3 class="features_title">Комплексный подход</h3>
-                    <p class="features_desk">Мы&nbsp;берем на&nbsp;себя все этапы, начиная с&nbsp;тщательного дизайн-проекта
-                        и&nbsp;заканчивая полной сдачей готового объекта. Высокое качество и&nbsp;полное сопровождение на&nbsp;каждом этапе&nbsp;&mdash; для вашего комфорта и&nbsp;спокойствия.</p>
+                    <h2 class="title title features_title">Комплексный подход</h2>
+                    <p class="features_desk">
+                        Мы&nbsp;берем на&nbsp;себя все этапы, начиная с&nbsp;тщательного дизайн-проекта
+                        и&nbsp;заканчивая полной сдачей готового объекта. Высокое качество и&nbsp;полное сопровождение
+                        на&nbsp;каждом этапе&nbsp;&mdash; для вашего комфорта и&nbsp;спокойствия.
+                    </p>
                 </div>
-                <div class="features_container-accordion">
-                    <details class="features_accordion-item">
-                        <summary class="features_accordion-header" aria-expanded="false" aria-controls="accordion-1">Дизайн интерьера</summary>
-                        <div id="accordion-1" class="features_accordion-content">
-                            <p class="features_accordion-desk">
-                                Дизайн-проект является важной частью процесса ремонта, которая помогает
-                                правильно распланировать пространство, точно рассчитать расположение коммуникаций
-                                и&nbsp;электрических выводов, а&nbsp;также помогает сэкономить деньги в&nbsp;процессе его реализации.<br>
-                                Проект с&nbsp;3D-визуализацией включает в&nbsp;себя разработку концепции и&nbsp;стиля,
-                                создание планов и&nbsp;чертежей, выбор материалов и&nbsp;мебели.
+                <div class="features_container-main">
+                    <div class="features_container-accordion">
+                        <div class="features_accordion-item" data-target="description1">
+                            <p class="features_accordion-header">
+                                <span class="features_header">Дизайн интерьера</span>
+                                <span class="features_accordion-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="10" viewBox="0 0 19 10" fill="none">
+                                        <path d="M2.375 2.30664L9.68698 8.15622L16.999 2.30664" stroke="#232323" stroke-width="2.99269" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
                             </p>
                         </div>
-                    </details>
-                    <details id="accordion-2" class="features_accordion-item">
-                        <summary class="features_accordion-header" aria-expanded="false" aria-controls="accordion-2">Ремонт высокого качества</summary>
-                        <div class="features_accordion-content">
-                            <p class="features_accordion-desk">Ремонт высокого качества является залогом счастливой жизни в&nbsp;будущем.<br>
-                                Главной задачей нашей команды является сделать процесс ремонта комфортным для наших Заказчиков.<br>
-                                У&nbsp;нас честный Договор, чёткое соблюдение сроков и&nbsp;технические надзор на&nbsp;всех этапах работ.</p>
+                        <div class="features_accordion-item" data-target="description2">
+                            <p class="features_accordion-header">
+                                <span class="features_header">Ремонт высокого качества</span>
+                                <span class="features_accordion-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="10" viewBox="0 0 19 10" fill="none">
+                                        <path d="M2.375 2.30664L9.68698 8.15622L16.999 2.30664" stroke="#232323" stroke-width="2.99269" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                            </p>
                         </div>
-                    </details>
-                    <details id="accordion-3" class="features_accordion-item">
-                        <summary class="features_accordion-header" aria-expanded="false" aria-controls="accordion-3">Комплектация объекта</summary>
-                        <div class="features_accordion-content">
-                            <p class="features_accordion-desk">Подбор чистовых отделочных материалов&nbsp;&mdash; это очень трудоёмкий процесс. Наши специалисты помогут определиться с&nbsp;выбором любых чистовых материалов, подобрать каждому индивидуально дизайнерское световое решение, подробно сделать просчёт выбранных позиции у&nbsp;различных поставщиков, а&nbsp;также организовать доставку на&nbsp;объект и&nbsp;проверят качество товара. Именно услуга Комплектации объекта позволяет сэкономить Вам деньги и&nbsp;Ваше время.</p>
+                        <div class="features_accordion-item" data-target="description3">
+                            <p class="features_accordion-header">
+                                <span class="features_header">Комплектация объекта</span>
+                                <span class="features_accordion-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="10" viewBox="0 0 19 10" fill="none">
+                                        <path d="M2.375 2.30664L9.68698 8.15622L16.999 2.30664" stroke="#232323" stroke-width="2.99269" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                            </p>
                         </div>
-                    </details>
-                    <details id="accordion-4" class="features_accordion-item">
-                        <summary class="features_accordion-header" aria-expanded="false" aria-controls="accordion-4">Меблирование объекта</summary>
-                        <div class="features_accordion-content">
-                            <p class="features_accordion-desk">На&nbsp;этапе разработки дизайн-проекта дизайнеры тщательно продумывают наличие мебели под особенности, потребности и&nbsp;требования каждого Заказчика. Уже много лет мы&nbsp;реализовываем различные решения по&nbsp;изготовлению мебели на&nbsp;заказ, что позволяет правильно использовать пространство и&nbsp;сделать необходимое наполнение для каждого Заказчика индивидуально.<br>
-                                Это неотъемлемая часть сдачи объекта, которая обеспечивает окончательное визуальное восприятие реализованного дизайн-проекта.</p>
+                        <div class="features_accordion-item" data-target="description4">
+                            <p class="features_accordion-header">
+                                <span class="features_header">Меблирование объекта</span>
+                                <span class="features_accordion-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="10" viewBox="0 0 19 10" fill="none">
+                                        <path d="M2.375 2.30664L9.68698 8.15622L16.999 2.30664" stroke="#232323" stroke-width="2.99269" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                            </p>
                         </div>
-                    </details>
-
+                    </div>
+                    <div class="features_container-description">
+                        <div class="features_description" id="description1">
+                            Дизайн-проект является важной частью процесса ремонта, которая помогает
+                            правильно распланировать пространство, точно рассчитать расположение коммуникаций
+                            и&nbsp;электрических выводов, а&nbsp;также помогает сэкономить деньги в&nbsp;процессе его реализации.<br>
+                            Проект с&nbsp;3D-визуализацией включает в&nbsp;себя разработку концепции и&nbsp;стиля,
+                            создание планов и&nbsp;чертежей, выбор материалов и&nbsp;мебели.
+                        </div>
+                        <div class="features_description" id="description2" hidden>
+                            Ремонт высокого качества является залогом счастливой жизни в&nbsp;будущем.
+                            Главной задачей нашей команды является сделать процесс ремонта комфортным для наших Заказчиков.<br>
+                            У&nbsp;нас честный Договор, чёткое соблюдение сроков и&nbsp;технические надзор на&nbsp;всех этапах работ.
+                        </div>
+                        <div class="features_description" id="description3" hidden>
+                            Подбор чистовых отделочных материалов&nbsp;&mdash; это очень трудоёмкий процесс. Наши специалисты помогут определиться с&nbsp;выбором любых чистовых материалов, подобрать каждому индивидуально дизайнерское световое решение, подробно сделать просчёт выбранных позиции у&nbsp;различных поставщиков, а&nbsp;также организовать доставку на&nbsp;объект и&nbsp;проверят качество товара. Именно услуга Комплектации объекта позволяет сэкономить Вам деньги и&nbsp;Ваше время.
+                        </div>
+                        <div class="features_description" id="description4" hidden>
+                            На&nbsp;этапе разработки дизайн-проекта дизайнеры тщательно продумывают наличие мебели под особенности, потребности и&nbsp;требования каждого Заказчика.
+                            Уже много лет мы&nbsp;реализовываем различные решения по&nbsp;изготовлению мебели на&nbsp;заказ, что позволяет правильно использовать пространство и&nbsp;сделать необходимое наполнение для каждого Заказчика индивидуально.<br>
+                            Это неотъемлемая часть сдачи объекта, которая обеспечивает окончательное визуальное восприятие реализованного дизайн-проекта.
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+
+
 
     <!-- Работы -->
 
     <section class="case_section">
         <div class="container">
             <div class="case_container">
-                <h2 class="case_title">Наши работы</h2>
+                <h2 class="title case_title">Наши работы</h2>
                 <div class="case_container-grid">
                     <div class="case_grid-item">
                         <div class="case_item-video">
@@ -179,9 +214,9 @@ ini_set('display_errors', 1);
     <!-- Процесс работы -->
 
     <section class="process_section">
-        <div class="container">
+        <div class="container light-grey-bg">
             <div class="process_container">
-                <h2 class="process_title">Процесс работы</h2>
+                <h2 class="title process_title">Процесс работы</h2>
                 <ol class="process_container-stages">
                     <li class="process_stages-item">
                         <p class="process_item-num">01</p>
@@ -239,18 +274,18 @@ ini_set('display_errors', 1);
 
     <!-- Форма -->
 
-    <section class="tarif_section">
-        <div class="container">
-            <div class="tarif_container">
-                <p class="tarif_title">Готовы обсудить проект?</p>
-                <p class="tarif_desk">Оставьте заявку, и&nbsp;мы&nbsp;обсудим Ваш бюджет и&nbsp;пожелания, сориентируем по&nbsp;срокам и&nbsp;стоимости дизайн проекта и&nbsp;ремонта Вашей квартиры.</p>
-                <div class="tarif_container-form">
-                    <form action="#" class="tarif_form">
-                        <input type="text" class="tarif_form-input" name="name" placeholder="Как вас зовут?" autocomplete="name" required pattern="[A-Za-zА-Яа-яЁё\s]+">
-                        <input type="tel" class="tarif_form-input" name="phone" placeholder="Номер телефона" autocomplete="tel" required pattern="[0-9]{10}">
-                        <button type="submit" class="tarif_form-button">Обсудить проект</button>
+    <section class="form_section">
+        <div class="container black-bg">
+            <div class="form_container">
+                <p class="title form_title">Готовы обсудить проект?</p>
+                <p class="form_desk">Оставьте заявку, и&nbsp;мы&nbsp;обсудим Ваш бюджет и&nbsp;пожелания, сориентируем по&nbsp;срокам и&nbsp;стоимости дизайн проекта и&nbsp;ремонта Вашей квартиры.</p>
+                <div class="form_container-form">
+                    <form action="#" class="form_form">
+                        <input type="text" class="form_form-input" name="name" placeholder="Как вас зовут?" autocomplete="name" required pattern="[A-Za-zА-Яа-яЁё\s]+">
+                        <input type="tel" class="form_form-input" name="phone" placeholder="Номер телефона" autocomplete="tel" required pattern="[0-9]{10}">
+                        <button type="submit" class="form_form-button">Обсудить проект</button>
                     </form>
-                    <p class="tarif_disclaimer">Нажимая кнопку &laquo;Обсудить проект&raquo; вы&nbsp;автоматически соглашаетесь с&nbsp;политикой обработки персональных данных</p>
+                    <p class="form_disclaimer">Нажимая кнопку &laquo;Обсудить проект&raquo; вы&nbsp;автоматически соглашаетесь с&nbsp;политикой обработки персональных данных</p>
                 </div>
             </div>
         </div>
@@ -261,12 +296,12 @@ ini_set('display_errors', 1);
     <section class="social_section">
         <div class="container">
             <div class="social_container">
-                <h2 class="social_title">Следите за&nbsp;нами в&nbsp;соцсетях</h2>
+                <h2 class="title social_title">Следите за&nbsp;нами в&nbsp;соцсетях</h2>
                 <div class="social_container-content">
                     <div class="social_content-img">
-                        <img src="images/social_img-1.png" alt="" class="social_img">
-                        <img src="images/social_img-2.png" alt="" class="social_img">
-                        <img src="images/social_img-3.png" alt="" class="social_img">
+                        <img src="images/social_img-1.png" alt="" class="social_img social_img1">
+                        <img src="images/social_img-2.png" alt="" class="social_img social_img2">
+                        <img src="images/social_img-3.png" alt="" class="social_img social_img3">
                     </div>
                     <div class="social_content-content">
                         <div class="social_container-desk">
@@ -279,7 +314,7 @@ ini_set('display_errors', 1);
                             <button class="social_button" aria-label="Выбрать YouTube">YouTube</button>
                             <button class="social_button" aria-label="Выбрать Vk">Vk</button>
                         </div>
-                        <a href="#" class="social_content-button" aria-label="Перейти на страницу социальных сетей">Перейти</a>
+                        <a href="#" class="btn social_content-button" aria-label="Перейти на страницу социальных сетей">Перейти</a>
                     </div>
                 </div>
             </div>
@@ -290,7 +325,7 @@ ini_set('display_errors', 1);
 
     <section class="comparison_section">
         <div class="container">
-            <h2 class="comparison_title">Визуализация проектов до/после<br>как наши проекты воплощаются в&nbsp;жизнь</h2>
+            <h2 class="title comparison_title">Визуализация проектов до/после<br>как наши проекты воплощаются в&nbsp;жизнь</h2>
             <div class="comparison_container">
                 <!-- Первый слайдер -->
                 <div class="comparison_slider">
@@ -302,7 +337,11 @@ ini_set('display_errors', 1);
                             <img src="images/comparison_image2.jpg" alt="Реализация 1">
                         </div>
                     </div>
-                    <div class="comparison_handle"></div>
+                    <div class="comparison_handle">
+                        <div class="comparison_control">
+                            <span>(⠀)</span>
+                        </div>
+                    </div>
                     <div class="comparison_labels">
                         <span class="comparison_label comparison_label--before">3D визуализация</span>
                         <span class="comparison_label comparison_label--after">Реализация</span>
@@ -319,7 +358,11 @@ ini_set('display_errors', 1);
                             <img src="images/comparison_image4.jpg" alt="Реализация 2">
                         </div>
                     </div>
-                    <div class="comparison_handle"></div>
+                    <div class="comparison_handle">
+                        <div class="comparison_control">
+                            <span>(⠀)</span>
+                        </div>
+                    </div>
                     <div class="comparison_labels">
                         <span class="comparison_label comparison_label--before">3D визуализация</span>
                         <span class="comparison_label comparison_label--after">Реализация</span>
@@ -334,56 +377,219 @@ ini_set('display_errors', 1);
     <section class="vidr_section">
         <div class="container">
             <div class="vidr_container">
-                <h2 class="vidr_title">Наша команда выполнила более 400-х дизайнерских ремонтов квартир за&nbsp;5&nbsp;лет работы с&nbsp;отзывами на&nbsp;5&nbsp;баллов:</h2>
+                <h2 class="title vidr_title">
+                    Наша команда выполнила более 400-х дизайнерских ремонтов квартир за&nbsp;5&nbsp;лет работы с&nbsp;отзывами на&nbsp;5&nbsp;баллов:
+                </h2>
                 <div class="vidr_slider">
                     <div class="vidr_track">
                         <div class="vidr_slide">
-                            <video src="videos/vidr1.mp4" class="vidr_video" aria-label="Описание видео" muted loop playsinline poster="path/to/poster.jpg">
-                                <source src="path/to/video.mp4" type="video/mp4">
-                                Ваш браузер не поддерживает видео.
-                            </video>
+                            <div class="vidr_video_wrapper">
+                                <video class="vidr_video" playsinline poster="">
+                                    <source src="videos/vidr_1.mp4" type="video/mp4">
+                                    Ваш браузер не поддерживает видео.
+                                </video>
+                                <div class="vidr_overlay">
+                                    <button class="play_button"></button>
+                                </div>
+                            </div>
                         </div>
                         <div class="vidr_slide">
-                            <video src="videos/vidr2.mp4" class="vidr_video" aria-label="Описание видео" muted loop playsinline poster="path/to/poster.jpg">
-                                <source src="path/to/video.mp4" type="video/mp4">
-                                Ваш браузер не поддерживает видео.
-                            </video>
+                            <div class="vidr_video_wrapper">
+                                <video class="vidr_video" playsinline poster="">
+                                    <source src="videos/vidr_2.mp4" type="video/mp4">
+                                    Ваш браузер не поддерживает видео.
+                                </video>
+                                <div class="vidr_overlay">
+                                    <button class="play_button"></button>
+                                </div>
+                            </div>
                         </div>
                         <div class="vidr_slide">
-                            <video src="videos/vidr3.mp4" class="vidr_video" aria-label="Описание видео" muted loop playsinline poster="path/to/poster.jpg">
-                                <source src="path/to/video.mp4" type="video/mp4">
-                                Ваш браузер не поддерживает видео.
-                            </video>
+                            <div class="vidr_video_wrapper">
+                                <video class="vidr_video" playsinline poster="">
+                                    <source src="videos/vidr_3.mp4" type="video/mp4">
+                                    Ваш браузер не поддерживает видео.
+                                </video>
+                                <div class="vidr_overlay">
+                                    <button class="play_button"></button>
+                                </div>
+                            </div>
                         </div>
                         <div class="vidr_slide">
-                            <video src="videos/vidr4.mp4" class="vidr_video" aria-label="Описание видео" muted loop playsinline poster="path/to/poster.jpg">
-                                <source src="path/to/video.mp4" type="video/mp4">
-                                Ваш браузер не поддерживает видео.
-                            </video>
+                            <div class="vidr_video_wrapper">
+                                <video class="vidr_video" playsinline poster="">
+                                    <source src="videos/vidr_4.mp4" type="video/mp4">
+                                    Ваш браузер не поддерживает видео.
+                                </video>
+                                <div class="vidr_overlay">
+                                    <button class="play_button"></button>
+                                </div>
+                            </div>
                         </div>
                         <div class="vidr_slide">
-                            <video src="videos/vidr5.mp4" class="vidr_video" aria-label="Описание видео" muted loop playsinline poster="path/to/poster.jpg">
-                                <source src="path/to/video.mp4" type="video/mp4">
-                                Ваш браузер не поддерживает видео.
-                            </video>
+                            <div class="vidr_video_wrapper">
+                                <video class="vidr_video" playsinline poster="">
+                                    <source src="videos/vidr_5.mp4" type="video/mp4">
+                                    Ваш браузер не поддерживает видео.
+                                </video>
+                                <div class="vidr_overlay">
+                                    <button class="play_button"></button>
+                                </div>
+                            </div>
                         </div>
                         <div class="vidr_slide">
-                            <video src="videos/vidr6.mp4" class="vidr_video" aria-label="Описание видео" muted loop playsinline poster="path/to/poster.jpg">
-                                <source src="path/to/video.mp4" type="video/mp4">
-                                Ваш браузер не поддерживает видео.
-                            </video>
+                            <div class="vidr_video_wrapper">
+                                <video class="vidr_video" playsinline poster="">
+                                    <source src="videos/vidr_6.mp4" type="video/mp4">
+                                    Ваш браузер не поддерживает видео.
+                                </video>
+                                <div class="vidr_overlay">
+                                    <button class="play_button"></button>
+                                </div>
+                            </div>
                         </div>
                         <div class="vidr_slide">
-                            <video src="videos/vidr7.mp4" class="vidr_video" aria-label="Описание видео" muted loop playsinline poster="path/to/poster.jpg">
-                                <source src="path/to/video.mp4" type="video/mp4">
-                                Ваш браузер не поддерживает видео.
-                            </video>
+                            <div class="vidr_video_wrapper">
+                                <video class="vidr_video" playsinline poster="">
+                                    <source src="videos/vidr_7.mp4" type="video/mp4">
+                                    Ваш браузер не поддерживает видео.
+                                </video>
+                                <div class="vidr_overlay">
+                                    <button class="play_button"></button>
+                                </div>
+                            </div>
                         </div>
                         <div class="vidr_slide">
-                            <video src="videos/vidr8.mp4" class="vidr_video" aria-label="Описание видео" muted loop playsinline poster="path/to/poster.jpg">
-                                <source src="path/to/video.mp4" type="video/mp4">
-                                Ваш браузер не поддерживает видео.
-                            </video>
+                            <div class="vidr_video_wrapper">
+                                <video class="vidr_video" playsinline poster="">
+                                    <source src="videos/vidr_8.mp4" type="video/mp4">
+                                    Ваш браузер не поддерживает видео.
+                                </video>
+                                <div class="vidr_overlay">
+                                    <button class="play_button"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vidr_slide">
+                            <div class="vidr_video_wrapper">
+                                <video class="vidr_video" playsinline poster="">
+                                    <source src="videos/vidr_9.mp4" type="video/mp4">
+                                    Ваш браузер не поддерживает видео.
+                                </video>
+                                <div class="vidr_overlay">
+                                    <button class="play_button"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vidr_slide">
+                            <div class="vidr_video_wrapper">
+                                <video class="vidr_video" playsinline poster="">
+                                    <source src="videos/vidr_10.mp4" type="video/mp4">
+                                    Ваш браузер не поддерживает видео.
+                                </video>
+                                <div class="vidr_overlay">
+                                    <button class="play_button"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vidr_slide">
+                            <div class="vidr_video_wrapper">
+                                <video class="vidr_video" playsinline poster="">
+                                    <source src="videos/vidr_11.mp4" type="video/mp4">
+                                    Ваш браузер не поддерживает видео.
+                                </video>
+                                <div class="vidr_overlay">
+                                    <button class="play_button"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vidr_slide">
+                            <div class="vidr_video_wrapper">
+                                <video class="vidr_video" playsinline poster="">
+                                    <source src="videos/vidr_12.mp4" type="video/mp4">
+                                    Ваш браузер не поддерживает видео.
+                                </video>
+                                <div class="vidr_overlay">
+                                    <button class="play_button"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vidr_slide">
+                            <div class="vidr_video_wrapper">
+                                <video class="vidr_video" playsinline poster="">
+                                    <source src="videos/vidr_13.mp4" type="video/mp4">
+                                    Ваш браузер не поддерживает видео.
+                                </video>
+                                <div class="vidr_overlay">
+                                    <button class="play_button"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vidr_slide">
+                            <div class="vidr_video_wrapper">
+                                <video class="vidr_video" playsinline poster="">
+                                    <source src="videos/vidr_14.mp4" type="video/mp4">
+                                    Ваш браузер не поддерживает видео.
+                                </video>
+                                <div class="vidr_overlay">
+                                    <button class="play_button"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vidr_slide">
+                            <div class="vidr_video_wrapper">
+                                <video class="vidr_video" playsinline poster="">
+                                    <source src="videos/vidr_15.mp4" type="video/mp4">
+                                    Ваш браузер не поддерживает видео.
+                                </video>
+                                <div class="vidr_overlay">
+                                    <button class="play_button"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vidr_slide">
+                            <div class="vidr_video_wrapper">
+                                <video class="vidr_video" playsinline poster="">
+                                    <source src="videos/vidr_16.mp4" type="video/mp4">
+                                    Ваш браузер не поддерживает видео.
+                                </video>
+                                <div class="vidr_overlay">
+                                    <button class="play_button"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vidr_slide">
+                            <div class="vidr_video_wrapper">
+                                <video class="vidr_video" playsinline poster="">
+                                    <source src="videos/vidr_17.mp4" type="video/mp4">
+                                    Ваш браузер не поддерживает видео.
+                                </video>
+                                <div class="vidr_overlay">
+                                    <button class="play_button"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vidr_slide">
+                            <div class="vidr_video_wrapper">
+                                <video class="vidr_video" playsinline poster="">
+                                    <source src="videos/vidr_18.mp4" type="video/mp4">
+                                    Ваш браузер не поддерживает видео.
+                                </video>
+                                <div class="vidr_overlay">
+                                    <button class="play_button"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vidr_slide">
+                            <div class="vidr_video_wrapper">
+                                <video class="vidr_video" playsinline poster="">
+                                    <source src="videos/vidr_19.mp4" type="video/mp4">
+                                    Ваш браузер не поддерживает видео.
+                                </video>
+                                <div class="vidr_overlay">
+                                    <button class="play_button"></button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -391,72 +597,73 @@ ini_set('display_errors', 1);
         </div>
     </section>
 
+
     <!-- Боли -->
 
     <section class="pain_section">
         <div class="container">
-            <div class="pain_container-content">
-                <h2 class="pain_content-title">8&nbsp;проблем ремонта без дизайн-проекта</h2>
+            <div class="pain_container-content light-grey-bg">
+                <h2 class="title-sm pain_content-title"><span class="span-bold">8&nbsp;проблем ремонта</span> без дизайн-проекта</h2>
                 <p class="pain_content-desk">о&nbsp;которых рассказали больше 100 наших клиентов</p>
                 <ol class="pain_content-list">
                     <li class="pain_list-item">
                         <div class="pain_container-item">
                             <p class="pain_item-num">01</p>
-                            <p class="pain__item-desk">Постоянная потеря времени на&nbsp;согласования и&nbsp;форс-мажоры</p>
+                            <p class="pain_item-desk">Постоянная <span class="span-bold">потеря времени</span> на&nbsp;согласования и&nbsp;форс-мажоры</p>
                         </div>
                     </li>
                     <li class="pain_list-item">
                         <div class="pain_container-item">
                             <p class="pain_item-num">02</p>
-                            <p class="pain__item-desk">Непредвиденные траты на&nbsp;то, чего не&nbsp;хватило или по&nbsp;другой стоимости</p>
+                            <p class="pain_item-desk"><span class="span-bold">Непредвиденные траты</span> на&nbsp;то, чего не&nbsp;хватило или по&nbsp;другой стоимости</p>
                         </div>
                     </li>
                     <li class="pain_list-item">
                         <div class="pain_container-item">
                             <p class="pain_item-num">03</p>
-                            <p class="pain__item-desk">Ошибки монтажа: то&nbsp;душ короткий, то&nbsp;двери шкафов не&nbsp;открываются</p>
+                            <p class="pain_item-desk"><span class="span-bold">Ошибки монтажа:</span> то&nbsp;душ короткий, то&nbsp;двери шкафов не&nbsp;открываются</p>
                         </div>
                     </li>
                     <li class="pain_list-item">
                         <div class="pain_container-item">
                             <p class="pain_item-num">04</p>
-                            <p class="pain__item-desk">Внезапный рост стоимости работ из-за того, что никто не&nbsp;уточнил деталей</p>
+                            <p class="pain_item-desk"><span class="span-bold">Внезапный рост стоимости</span> работ из-за того, что никто не&nbsp;уточнил деталей</p>
                         </div>
                     </li>
                     <li class="pain_list-item">
                         <div class="pain_container-item">
                             <p class="pain_item-num">05</p>
-                            <p class="pain__item-desk">Понравились обои в&nbsp;магазине, а&nbsp;дома на&nbsp;стене пестрят. Нет единого стиля</p>
+                            <p class="pain_item-desk">Понравились обои в&nbsp;магазине, а&nbsp;дома на&nbsp;стене пестрят. <span class="span-bold">Нет единого стиля</span></p>
                         </div>
                     </li>
                     <li class="pain_list-item">
                         <div class="pain_container-item">
                             <p class="pain_item-num">06</p>
-                            <p class="pain__item-desk">Большая площадь, а&nbsp;места совсем нет из-за наставленной повсюду мебели</p>
+                            <p class="pain_item-desk">Большая площадь, а&nbsp;<span class="span-bold">места совсем нет</span> из-за наставленной повсюду мебели</p>
                         </div>
                     </li>
                     <li class="pain_list-item">
                         <div class="pain_container-item">
                             <p class="pain_item-num">07</p>
-                            <p class="pain__item-desk">Куча лампочек, а&nbsp;в&nbsp;помещении темно. Выбивает счётчик от&nbsp;чайника или СВЧ</p>
+                            <p class="pain_item-desk">Куча лампочек, а&nbsp;в&nbsp;помещении <span class="span-bold">темно. Выбивает счётчик</span> от&nbsp;чайника или СВЧ</p>
                         </div>
                     </li>
                     <li class="pain_list-item">
                         <div class="pain_container-item">
                             <p class="pain_item-num">08</p>
-                            <p class="pain__item-desk">Купили материалы сильно дороже, чем увидели позже в&nbsp;другом магазине</p>
+                            <p class="pain_item-desk">Купили материалы <span class="span-bold">сильно дороже</span>, чем увидели позже в&nbsp;другом магазине</p>
                         </div>
                     </li>
                 </ol>
             </div>
-            <div class="pain_container-form">
-                <h2 class="pain_form-title">Узнайте как дизайн-проект решает эти 8&nbsp;проблем</h2>
+            <div class="pain_container-form dark-grey-bg">
+                <h2 class="title-sm pain_form-title">Узнайте как дизайн-проект решает эти 8&nbsp;проблем</h2>
                 <p class="pain_form-desk">И&nbsp;сохраняет до&nbsp;15% вашего бюджета</p>
-                <img src="" alt="" class="pain_form-img">
+                <img src="images/pain_form-img.png" alt="" class="pain_form-img">
                 <div class="pain_form-content">
                     <form action="" class="pain_form">
-                        <input type="text" class="pain_input" name="name" placeholder="Как вас зовут?" autocomplete="name" required pattern="[A-Za-zА-Яа-яЁё\s]+">
-                        <input type="tel" class="pain_input" name="phone" placeholder="Номер телефона" autocomplete="tel" required pattern="[0-9]{10}">
+                        <input type="text" class="pain_form-input" name="name" placeholder="Как вас зовут?" autocomplete="name" required pattern="[A-Za-zА-Яа-яЁё\s]+">
+                        <input type="tel" class="pain_form-input" name="phone" placeholder="Номер телефона" autocomplete="tel" required pattern="[0-9]{10}">
                         <button type="submit" class="pain_form-btn">Получить материал</button>
                     </form>
                 </div>
@@ -621,7 +828,7 @@ ini_set('display_errors', 1);
                 </div>
             </div>
             <div class="tarif_form-content">
-                <p class="tarif_form-title">Запишитесь на&nbsp;экскурсию по&nbsp;текущим объктам</p>
+                <p class="title-sm tarif_form-title">Запишитесь на&nbsp;экскурсию по&nbsp;текущим объктам</p>
                 <p class="tarif_form-desk">Заполните форму. Мы&nbsp;свяжемся с&nbsp;вами и&nbsp;согласуем экскурсию</p>
                 <div class="tarif_container-form">
                     <form action="#" class="tarif_form">
