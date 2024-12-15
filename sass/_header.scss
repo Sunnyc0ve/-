@@ -15,11 +15,11 @@
     margin: 0;
     z-index: 10;
     width: 100%;
+    transition: 0.2s linear;
 
     &__container {
         @include mxn.container-flex;
         height: 100%;
-        transform: translateY(5px);
         border-bottom: 1px solid
             color.adjust(vars.$primary-color, $lightness: -50%);
     }

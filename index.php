@@ -13,7 +13,7 @@ ini_set('display_errors', 1);
     <section class="main_section dark-grey-bg">
         <div class="container">
             <div class="main_container">
-                <div class="main_container-features black-bg">
+                <div class="main_container-features dark-grey-bg">
                     <h1 class="main_container-title">
                         Безупречный по&nbsp;стилю<br>дизайн интерьера и&nbsp;реализация проекта под ключ.
                     </h1>
@@ -23,13 +23,13 @@ ini_set('display_errors', 1);
                     </div>
                 </div>
                 <div class="main_container-stats">
-                    <div class="main_stat main_stat1 black-bg">
+                    <div class="main_stat main_stat1 dark-grey-bg">
                         <h3 class="main_title-h3"><span class="main_title-num">5</span><br> Лет нашей компании</h3>
                     </div>
-                    <div class="main_stat main_stat2 black-bg">
+                    <div class="main_stat main_stat2 dark-grey-bg">
                         <h3 class="main_title-h3"><span class="main_title-num">400+</span><br> Проектов реализовано</h3>
                     </div>
-                    <div class="main_stat main_stat3 black-bg">
+                    <div class="main_stat main_stat3 dark-grey-bg">
                         <h3 class="main_title-h3"><span class="main_title-num">200+</span><br> Отзывов на&nbsp;Яндекс картах и&nbsp;2ГИС</h3>
                     </div>
                 </div>
@@ -155,11 +155,11 @@ ini_set('display_errors', 1);
         <div class="container">
             <div class="case_container">
                 <h2 class="title case_title">Наши работы</h2>
-                <div class="case_container-grid">
+                <div class="case_container-grid case_grid-first-row">
                     <div class="case_grid-item">
                         <div class="case_item-video">
-                            <video class="case_video" aria-label="Видео ЖК 'Черная речка' 70 кв.м" muted loop playsinline poster="path/to/poster.jpg">
-                                <source src="path/to/video.mp4" type="video/mp4">
+                            <video class="case_video" aria-label="Видео ЖК 'Черная речка' 70 кв.м" muted loop playsinline poster="">
+                                <source src="videos/Zk-Black-River-70.mp4" type="video/mp4">
                                 Ваш браузер не поддерживает видео.
                             </video>
                             <p class="case_item-desk">ЖК «Черная речка» 70кв.м</p>
@@ -168,8 +168,8 @@ ini_set('display_errors', 1);
                     </div>
                     <div class="case_grid-item">
                         <div class="case_item-video">
-                            <video class="case_video" aria-label="ЖК «Черная речка» 38кв.м" muted loop playsinline poster="path/to/poster.jpg">
-                                <source src="path/to/video.mp4" type="video/mp4">
+                            <video class="case_video" aria-label="ЖК «Черная речка» 38кв.м" muted loop playsinline poster="">
+                                <source src="videos/Zk-Black-River-38.mp4" type="video/mp4">
                                 Ваш браузер не поддерживает видео.
                             </video>
                             <p class="case_item-desk">ЖК «Черная речка» 38кв.м</p>
@@ -178,18 +178,20 @@ ini_set('display_errors', 1);
                     </div>
                     <div class="case_grid-item">
                         <div class="case_item-video">
-                            <video class="case_video" aria-label="ЖК «Панарама парк» 70кв.м" muted loop playsinline poster="path/to/poster.jpg">
-                                <source src="path/to/video.mp4" type="video/mp4">
+                            <video class="case_video" aria-label="ЖК «Панарама парк» 70кв.м" muted loop playsinline poster="">
+                                <source src="videos/Zk-Panorama-Park-70.mp4" type="video/mp4">
                                 Ваш браузер не поддерживает видео.
                             </video>
                             <p class="case_item-desk">ЖК «Панарама парк» 70кв.м</p>
                         </div>
                         <a href="#" class="btn case_item-btn" aria-label="Подробнее о ЖК «Панарама парк» 70кв.м">Подробнее</a>
                     </div>
+                </div>
+                <div class="case_container-grid case_grid-second-row">
                     <div class="case_grid-item">
                         <div class="case_item-video">
-                            <video class="case_video" aria-label="ЖК «Домино» 62кв.м" muted loop playsinline poster="path/to/poster.jpg">
-                                <source src="path/to/video.mp4" type="video/mp4">
+                            <video class="case_video" aria-label="ЖК «Домино» 62кв.м" muted loop playsinline poster="">
+                                <source src="videos/Zk-Domino-62.mp4" type="video/mp4">
                                 Ваш браузер не поддерживает видео.
                             </video>
                             <p class="case_item-desk">ЖК «Домино» 62кв.м</p>
@@ -198,8 +200,8 @@ ini_set('display_errors', 1);
                     </div>
                     <div class="case_grid-item">
                         <div class="case_item-video">
-                            <video class="case_video" aria-label="ЖК «Галактика» 38кв.м" muted loop playsinline poster="path/to/poster.jpg">
-                                <source src="path/to/video.mp4" type="video/mp4">
+                            <video class="case_video" aria-label="ЖК «Галактика» 38кв.м" muted loop playsinline poster="">
+                                <source src="videos/Zk-Galaxy-38.mp4" type="video/mp4">
                                 Ваш браузер не поддерживает видео.
                             </video>
                             <p class="case_item-desk">ЖК «Галактика» 38кв.м</p>
@@ -275,7 +277,7 @@ ini_set('display_errors', 1);
     <!-- Форма -->
 
     <section class="form_section">
-        <div class="container black-bg">
+        <div class="container dark-grey-bg">
             <div class="form_container">
                 <p class="title form_title">Готовы обсудить проект?</p>
                 <p class="form_desk">Оставьте заявку, и&nbsp;мы&nbsp;обсудим Ваш бюджет и&nbsp;пожелания, сориентируем по&nbsp;срокам и&nbsp;стоимости дизайн проекта и&nbsp;ремонта Вашей квартиры.</p>
@@ -675,154 +677,157 @@ ini_set('display_errors', 1);
     <!-- Тарифы с формой -->
 
     <section class="tarif_section">
-        <div class="container">
+        <div class="container dark-grey-bg">
             <div class="tarif_container">
                 <div class="tarif_container-item">
-                    <div class="tarif_item">
+                    <div class="tarif_item dark-grey-bg">
                         <h2 class="tarif_title">Полный проект<br>+&nbsp;бюджетирование</h2>
                         <ol class="tarif_list">
                             <li class="tarif_list-desk">
                                 <div class="tarif_container-desk">
                                     <p class="tarif_desk">Планировочное решение</p>
-                                    <icon class="tarif_list-icon"></icon>
+                                    <img src="images/tarif_plus.svg" alt="Плюс" class="tarif_list-icon"></img>
                                 </div>
                             </li>
                             <li class="tarif_list-desk">
                                 <div class="tarif_container-desk">
                                     <p class="tarif_desk">Визуализация</p>
-                                    <icon class="tarif_list-icon"></icon>
+                                    <img src="images/tarif_plus.svg" alt="Плюс" class="tarif_list-icon"></img>
                                 </div>
                             </li>
                             <li class="tarif_list-desk">
                                 <div class="tarif_container-desk">
                                     <p class="tarif_desk">Рабочие чертежи</p>
-                                    <icon class="tarif_list-icon"></icon>
+                                    <img src="images/tarif_plus.svg" alt="Плюс" class="tarif_list-icon"></img>
                                 </div>
                             </li>
                             <li class="tarif_list-desk">
                                 <div class="tarif_container-desk">
-                                    <p class="tarif_desk">Подбор мебели и&nbsp;материалов</p>
-                                    <icon class="tarif_list-icon"></icon>
+                                    <p class="tarif_desk">Подбор мебели<br> и&nbsp;материалов</p>
+                                    <img src="images/tarif_plus.svg" alt="Плюс" class="tarif_list-icon"></img>
                                 </div>
                             </li>
                             <li class="tarif_list-desk">
                                 <div class="tarif_container-desk">
-                                    <p class="tarif_desk">Таблица бюджетирования +&nbsp;подбор аналогов</p>
-                                    <icon class="tarif_list-icon"></icon>
+                                    <p class="tarif_desk">Таблица бюджетирования<br> +&nbsp;подбор аналогов</p>
+                                    <img src="images/tarif_plus.svg" alt="Плюс" class="tarif_list-icon"></img>
                                 </div>
                             </li>
                             <li class="tarif_list-desk">
                                 <div class="tarif_container-desk">
-                                    <p class="tarif_desk">Оформление заказов, контроль и&nbsp;координация доставки</p>
-                                    <icon class="tarif_list-icon"></icon>
+                                    <p class="tarif_desk">Оформление заказов,<br> контроль и&nbsp;координация доставки</p>
+                                    <img src="images/tarif_minus.svg" alt="Минус" class="tarif_list-icon"></img>
                                 </div>
                             </li>
                             <li class="tarif_list-desk">
                                 <div class="tarif_container-desk">
                                     <p class="tarif_desk">3D Тур</p>
-                                    <icon class="tarif_list-icon"></icon>
+                                    <img src="images/tarif_minus.svg" alt="Минус" class="tarif_list-icon"></img>
                                 </div>
                             </li>
-                            <p class="tarif_item-price">3 900₽ / М2/p>
-                                <a href="" class="tarif_item-case">Пример дизайн-проекта</a><button class="btn tarif_list-btn">Выбрать тариф</button>
+                            <p class="tarif_item-price">3 900₽ / М2</p>
+                            <a href="" class="btn tarif_item-case">Пример дизайн-проекта</a>
+                            <button class="btn tarif_list-btn">Выбрать тариф</button>
                         </ol>
                     </div>
-                    <div class="tarif_item">
+                    <div class="tarif_item grey-bg">
                         <h2 class="tarif_title">Полный проект<br>+&nbsp;комплектация</h2>
                         <ol class="tarif_list">
                             <li class="tarif_list-desk">
                                 <div class="tarif_container-desk">
                                     <p class="tarif_desk">Планировочное решение</p>
-                                    <icon class="tarif_list-icon"></icon>
+                                    <img src="images/tarif_plus.svg" alt="Плюс" class="tarif_list-icon"></img>
                                 </div>
                             </li>
                             <li class="tarif_list-desk">
                                 <div class="tarif_container-desk">
                                     <p class="tarif_desk">Визуализация</p>
-                                    <icon class="tarif_list-icon"></icon>
+                                    <img src="images/tarif_plus.svg" alt="Плюс" class="tarif_list-icon"></img>
                                 </div>
                             </li>
                             <li class="tarif_list-desk">
                                 <div class="tarif_container-desk">
                                     <p class="tarif_desk">Рабочие чертежи</p>
-                                    <icon class="tarif_list-icon"></icon>
+                                    <img src="images/tarif_plus.svg" alt="Плюс" class="tarif_list-icon"></img>
                                 </div>
                             </li>
                             <li class="tarif_list-desk">
                                 <div class="tarif_container-desk">
-                                    <p class="tarif_desk">Подбор мебели и&nbsp;материалов</p>
-                                    <icon class="tarif_list-icon"></icon>
+                                    <p class="tarif_desk">Подбор мебели<br> и&nbsp;материалов</p>
+                                    <img src="images/tarif_plus.svg" alt="Плюс" class="tarif_list-icon"></img>
                                 </div>
                             </li>
                             <li class="tarif_list-desk">
                                 <div class="tarif_container-desk">
-                                    <p class="tarif_desk">Таблица бюджетирования +&nbsp;подбор аналогов</p>
-                                    <icon class="tarif_list-icon"></icon>
+                                    <p class="tarif_desk">Таблица бюджетирования<br> +&nbsp;подбор аналогов</p>
+                                    <img src="images/tarif_plus.svg" alt="Плюс" class="tarif_list-icon"></img>
                                 </div>
                             </li>
                             <li class="tarif_list-desk">
                                 <div class="tarif_container-desk">
-                                    <p class="tarif_desk">Оформление заказов, контроль и&nbsp;координация доставки</p>
-                                    <icon class="tarif_list-icon"></icon>
+                                    <p class="tarif_desk">Оформление заказов,<br> контроль и&nbsp;координация доставки</p>
+                                    <img src="images/tarif_plus.svg" alt="Плюс" class="tarif_list-icon"></img>
                                 </div>
                             </li>
                             <li class="tarif_list-desk">
                                 <div class="tarif_container-desk">
                                     <p class="tarif_desk">3D Тур</p>
-                                    <icon class="tarif_list-icon"></icon>
+                                    <img src="images/tarif_minus.svg" alt="Минус" class="tarif_list-icon"></img>
                                 </div>
                             </li>
                             <p class="tarif_item-price">4 900₽ / М2</p>
-                            <a href="" class="tarif_item-case">Пример дизайн-проекта</a><button class="btn tarif_list-btn">Выбрать тариф</button>
+                            <a href="" class="btn tarif_item-case">Пример дизайн-проекта</a>
+                            <button class="btn tarif_list-btn">Выбрать тариф</button>
                         </ol>
                     </div>
-                    <div class="tarif_item">
+                    <div class="tarif_item light-grey-bg">
                         <h2 class="tarif_title">Полный проект<br>+&nbsp;комплектация +&nbsp;3D тур</h2>
                         <ol class="tarif_list">
                             <li class="tarif_list-desk">
                                 <div class="tarif_container-desk">
                                     <p class="tarif_desk">Планировочное решение</p>
-                                    <icon class="tarif_list-icon"></icon>
+                                    <img src="images/tarif_plus-black.svg" alt="Плюс" class="tarif_list-icon"></img>
                                 </div>
                             </li>
                             <li class="tarif_list-desk">
                                 <div class="tarif_container-desk">
                                     <p class="tarif_desk">Визуализация</p>
-                                    <icon class="tarif_list-icon"></icon>
+                                    <img src="images/tarif_plus-black.svg" alt="Плюс" class="tarif_list-icon"></img>
                                 </div>
                             </li>
                             <li class="tarif_list-desk">
                                 <div class="tarif_container-desk">
                                     <p class="tarif_desk">Рабочие чертежи</p>
-                                    <icon class="tarif_list-icon"></icon>
+                                    <img src="images/tarif_plus-black.svg" alt="Плюс" class="tarif_list-icon"></img>
                                 </div>
                             </li>
                             <li class="tarif_list-desk">
                                 <div class="tarif_container-desk">
-                                    <p class="tarif_desk">Подбор мебели и&nbsp;материалов</p>
-                                    <icon class="tarif_list-icon"></icon>
+                                    <p class="tarif_desk">Подбор мебели<br> и&nbsp;материалов</p>
+                                    <img src="images/tarif_plus-black.svg" alt="Плюс" class="tarif_list-icon"></img>
                                 </div>
                             </li>
                             <li class="tarif_list-desk">
                                 <div class="tarif_container-desk">
-                                    <p class="tarif_desk">Таблица бюджетирования +&nbsp;подбор аналогов</p>
-                                    <icon class="tarif_list-icon"></icon>
+                                    <p class="tarif_desk">Таблица бюджетирования<br> +&nbsp;подбор аналогов</p>
+                                    <img src="images/tarif_plus-black.svg" alt="Плюс" class="tarif_list-icon"></img>
                                 </div>
                             </li>
                             <li class="tarif_list-desk">
                                 <div class="tarif_container-desk">
-                                    <p class="tarif_desk">Оформление заказов, контроль и&nbsp;координация доставки</p>
-                                    <icon class="tarif_list-icon"></icon>
+                                    <p class="tarif_desk">Оформление заказов,<br> контроль и&nbsp;координация доставки</p>
+                                    <img src="images/tarif_plus-black.svg" alt="Плюс" class="tarif_list-icon"></img>
                                 </div>
                             </li>
                             <li class="tarif_list-desk">
                                 <div class="tarif_container-desk">
                                     <p class="tarif_desk">3D Тур</p>
-                                    <icon class="tarif_list-icon"></icon>
+                                    <img src="images/tarif_plus-black.svg" alt="Плюс" class="tarif_list-icon"></img>
                                 </div>
                             </li>
                             <p class="tarif_item-price">5 900₽ / М2</p>
-                            <a href="" class="tarif_item-case">Пример дизайн-проекта</a><button class="btn tarif_list-btn">Выбрать тариф</button>
+                            <a href="" class="btn tarif_item-case">Пример дизайн-проекта</a>
+                            <button class="btn tarif_list-btn">Выбрать тариф</button>
                         </ol>
                     </div>
                 </div>
@@ -847,7 +852,8 @@ ini_set('display_errors', 1);
     <section class="map_section">
         <div class="container">
             <div class="map_container">
-                <iframe src="" frameborder="0">
+                <img src="images/map.jpg" alt="" class="map">
+                <!-- <iframe src="" frameborder="0"> -->
                 </iframe>
             </div>
         </div>
@@ -858,28 +864,28 @@ ini_set('display_errors', 1);
     <section class="cont_section">
         <div class="container">
             <div class="cont_container">
-                <div class="cont_container-item">
+                <div class="cont_container-item grey-bg">
                     <p class="cont_title">Контакты</p>
                     <div class="cont_content">
                         <p class="cont_desk">+7 (911) 929-77-13</p>
                         <button class="btn cont_btn">Получить консультацию</button>
                     </div>
                 </div>
-                <div class="cont_container-item">
+                <div class="cont_container-item ">
                     <p class="cont_title">Социальные сети</p>
                     <div class="cont_content">
                         <div class="cont_container-icon">
-                            <img src="" alt="" class="cont_icon">
-                            <img src="" alt="" class="cont_icon">
-                            <img src="" alt="" class="cont_icon">
-                            <img src="" alt="" class="cont_icon">
+                            <img src="images/vk.svg" alt="VK" class="cont_icon">
+                            <img src="images/youtube.svg" alt="YouTube" class="cont_icon">
+                            <img src="images/instagram.svg" alt="Instagram" class="cont_icon">
+                            <img src="images/telegram.svg" alt="Telegram" class="cont_icon">
                         </div>
                     </div>
                 </div>
                 <div class="cont_container-item">
                     <p class="cont_title">Наш адрес</p>
                     <div class="cont_content">
-                        <p class="cont_desk">Санкт-Петербург, Проспект Большевиков&nbsp;2, 10&nbsp;парадная</p>
+                        <p class="cont_desk"><span class="span-bold"> Санкт-Петербург</span>, Проспект Большевиков&nbsp;2, 10&nbsp;парадная</p>
                         <p class="cont_desk">Будем рады видеть вас в&nbsp;нашем офисе или встретиться на&nbsp;вашем объекте.</p>
                     </div>
                 </div>

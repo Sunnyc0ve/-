@@ -1,0 +1,102 @@
+@use 'sass:color';
+@use 'variables' as vars;
+@use 'mixins' as mxn;
+
+// Основные стили футера
+.footer {
+    margin-top: 60px;
+    background-color: #232323;
+    color: #ffffff;
+    padding: 40px 0;
+    font-size: 14px;
+    line-height: 1.5;
+
+    .container {
+    }
+
+    // Стили для верхней части футера (логотип и навигация)
+    .footer_container-nav {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-bottom: 30px;
+
+        .footer_nav-info {
+            flex: 1;
+
+            .footer_logo {
+                max-width: 214px;
+                margin-bottom: 15px;
+            }
+
+            .footer_info {
+                max-width: 385px;
+                font-size: vars.$base-font-size;
+                color: vars.$primary-color;
+            }
+        }
+
+        .footer_nav-links {
+            flex: 2;
+
+            .footer_links-list {
+                column-count: 2; // Две колонки
+                column-gap: 30px; // Расстояние между колонками
+
+                .footer_link {
+                    color: vars.$primary-color;
+                    font-size: vars.$base-font-size;
+                    list-style: none;
+                    cursor: pointer;
+                    transition: color 0.3s;
+
+                    &:hover {
+                        color: #f1c40f; // Цвет текста при наведении
+                    }
+
+                    // Для предотвращения некорректного разрыва внутри колонок
+                    break-inside: avoid;
+                }
+            }
+        }
+    }
+
+    // Стили для нижней части футера (копирайт и дисклеймер)
+    .footer_container-disclaimer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        border-top: 1px solid #444;
+        padding-top: 15px;
+
+        ._footer_copy {
+            color: vars.$primary-color;
+            font-size: 16px;
+        }
+
+        .footer_disclaimer {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 26px;
+
+            .footer_disclaimer-meta {
+                color: vars.$primary-color;
+                text-align: right;
+                font-size: 10px;
+            }
+
+            .footer_privacy-link {
+                color: #fad141;
+                text-align: right;
+                font-family: 'Tilda Sans VF';
+                font-size: 16px;
+                text-decoration-line: underline;
+                text-decoration-style: solid;
+            }
+        }
+    }
+}

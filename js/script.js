@@ -1,3 +1,19 @@
+// Хедер
+
+// Найти элемент с классом .header
+const header = document.querySelector('.header');
+
+// Добавить обработчик события прокрутки
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 0) {
+        // Если прокрутка началась, добавить цвет фона
+        header.style.backgroundColor = '#232323';
+    } else {
+        // Если вернулись наверх, убрать цвет фона
+        header.style.backgroundColor = 'transparent';
+    }
+});
+
 // Преимущества
 document.addEventListener('DOMContentLoaded', () => {
     const accordionItems = document.querySelectorAll(

@@ -3,7 +3,7 @@
         <div class="footer_container">
             <div class="footer_container-nav">
                 <div class="footer_nav-info">
-                    <img src="" alt="" class="footer_logo">
+                    <img src="images/logo.svg" alt="Логотип компании Периметр Ремонта" class="footer_logo">
                     <h3 class="footer_info">Дизайн и&nbsp;ремонт квартир и&nbsp;домов под ключ в&nbsp;Санкт-Петербурге</h3>
                 </div>
                 <div class="footer_nav-links">
