@@ -18,10 +18,9 @@
 *::after {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; // Устанавливает модель коробки для всех элементов
+    box-sizing: border-box;
 }
 
-// Устанавливаем базовые стили для body
 body {
     font-family: vars.$base-font-family;
     font-size: vars.$base-font-size;
@@ -32,7 +31,6 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-// Основные теги
 h1,
 h2,
 h3,
@@ -48,24 +46,21 @@ ol {
     list-style: none;
 }
 
-// Стили для ссылок
 a {
     text-decoration: none;
-    color: inherit; // Сохраняем цвет родительского элемента
+    color: inherit;
     &:hover,
     &:focus {
         text-decoration: none;
     }
 }
 
-// Заголовки секций
 section {
-    position: relative; // Позволяет использовать абсолютное позиционирование внутри
+    position: relative;
     padding: 0;
     margin-bottom: unset;
 }
 
-// Стили для контейнеров
 .container {
     max-width: 1440px;
     width: 100%;
@@ -79,21 +74,19 @@ section {
     }
 }
 
-// Сброс для изображений
 img {
     max-width: 100%;
     height: auto;
     display: block;
 }
 
-// Типичные стили для формы
 input,
 select,
 textarea {
     font-family: inherit;
     font-size: inherit;
     line-height: inherit;
-    border: 1px solid #ccc;
+    border: 1px solid vars.$third-color;
     padding: 10px;
     border-radius: 4px;
 }
@@ -105,7 +98,6 @@ textarea:focus {
     border-color: vars.$primary-color;
 }
 
-// Стили для блока с фиксированным позиционированием
 .fixed {
     position: fixed;
     top: 0;
@@ -114,12 +106,10 @@ textarea:focus {
     z-index: 1000;
 }
 
-// Стили для основных контейнеров и секций
 .wrapper {
     display: block;
 }
 
-// Стили для кнопок
 button {
     background-color: vars.$primary-color;
     font-family: vars.$base-font-family;
@@ -134,7 +124,6 @@ button {
     }
 }
 
-// Стили для таблиц
 table {
     width: 100%;
     border-collapse: collapse;
@@ -154,7 +143,6 @@ path {
     stroke: unset;
 }
 
-// Стили для модальных окон
 .modal {
     position: fixed;
     top: 0;
@@ -199,6 +187,7 @@ path {
 }
 
 .title {
+    font-weight: 500;
     text-align: center;
     font-size: clamp(27px, 4vw, 43px);
 }
@@ -269,6 +258,7 @@ path {
     }
 
     &-stats {
+        margin-top: -18px;
         grid-area: stats;
         display: grid;
         grid-template-areas:
@@ -304,7 +294,7 @@ path {
 
                 .main_title-num {
                     color: vars.$third-color;
-                    font-size: 50px;
+                    font-size: 43px;
                     font-style: normal;
                     font-weight: 300;
                     line-height: normal;
@@ -337,7 +327,7 @@ path {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        object-position: 55% center;
+        object-position: 60% center;
     }
 }
 
@@ -417,18 +407,18 @@ path {
 
     .sale_form-input,
     .sale_form-button {
-        flex: 1 1 calc(33.33% - 25px); // Кнопки и инпуты занимают 1/3 пространства с учетом отступов
-        max-width: 100%; // Гарантируем, что элементы не выходят за пределы контейнера
-        min-width: 272px; // Устанавливаем минимальную ширину для кнопок и инпутов
+        flex: 1 1 calc(33.33% - 25px);
+        max-width: 100%;
+        min-width: 272px;
         border-radius: 5px;
-        padding: 10px; // Добавляем внутренние отступы
-        font-size: clamp(14px, 1.5vw, 18px); // Адаптивный размер текста
+        padding: 10px;
+        font-size: clamp(14px, 1.5vw, 18px);
         text-align: center;
     }
 
     .sale_form-input {
         background-color: transparent;
-        border: 1px solid vars.$third-color; // Добавляем обводку для визуального акцента
+        border: 1px solid vars.$third-color;
     }
 
     .sale_form-button {
@@ -473,7 +463,7 @@ path {
 
     &-main {
         display: grid;
-        grid-template-columns: 1fr 2fr; // Слева переключатели, справа контент
+        grid-template-columns: 1fr 2fr;
         gap: 68px;
         margin-top: 60px;
     }
@@ -491,7 +481,7 @@ path {
             padding: 30px;
             font-size: 16px;
             font-weight: 500;
-            color: vars.$third-color; // Цвет для текста неактивных элементов
+            color: vars.$secondary-color;
             background-color: transparent;
             border-top: 2px solid #d9d9d9;
             outline: none;
@@ -501,21 +491,19 @@ path {
             }
 
             &[aria-expanded='true'] {
-                color: vars.$secondary-color; // Цвет текста для активных элементов
+                color: vars.$third-color;
 
-                // Активная стрелка
                 .features_accordion-icon > svg {
-                    transform: rotate(90deg); // Поворот вправо
-                    stroke: vars.$secondary-color !important; // Чёрная стрелка для активных
+                    transform: rotate(90deg);
+                    stroke: vars.$third-color !important;
                 }
             }
 
             &:hover {
-                color: vars.$secondary-color; // При наведении меняем цвет текста
+                color: vars.$third-color;
 
-                // При наведении стрелка черная
                 .features_accordion-icon > svg > path {
-                    stroke: vars.$secondary-color;
+                    stroke: vars.$third-color;
                 }
             }
 
@@ -536,15 +524,13 @@ path {
                         transform 0.2s ease,
                         stroke 0.2s ease;
 
-                    // Поворот стрелки по умолчанию (вправо)
                     & > svg {
                         transform: rotate(0deg);
-                        stroke: vars.$third-color; // Серые стрелки для неактивных
+                        stroke: vars.$secondary-color;
                     }
 
-                    // Активная стрелка
                     &[aria-expanded='true'] > svg {
-                        stroke: vars.$secondary-color !important; // Чёрная стрелка для активных
+                        stroke: vars.$third-color !important;
                     }
                 }
             }
@@ -553,9 +539,9 @@ path {
 
     &-description {
         .features_description {
-            color: vars.$secondary-color;
+            color: vars.$third-color;
             display: none;
-            font-size: vars.$base-font-size; // Исправлен размер шрифта
+            font-size: vars.$base-font-size;
             line-height: 24px;
 
             &:not([hidden]) {
@@ -573,7 +559,6 @@ path {
 
 // Работы
 
-/* Секция */
 .case_section {
     padding: 60px 0;
     background-color: #fff;
@@ -582,28 +567,28 @@ path {
 .case_container {
 }
 
-/* Сетка */
 .case_container-grid {
     margin-top: 60px;
     display: grid;
-    gap: 20px; /* Расстояние между элементами */
+    gap: 20px;
 
     &:nth-last-child(1) {
         margin-top: 20px;
     }
 }
 
-/* Сетка для первой строки (3 элемента) */
 .case_grid-first-row {
-    grid-template-columns: repeat(3, 1fr); /* 3 равные колонки */
+    grid-template-columns: repeat(3, 1fr);
+
+    .case_video {
+        object-position: 80% center;
+    }
 }
 
-/* Сетка для второй строки (2 элемента) */
 .case_grid-second-row {
-    grid-template-columns: repeat(2, 1fr); /* 2 равные колонки */
+    grid-template-columns: repeat(2, 1fr);
 }
 
-/* Элементы сетки */
 .case_grid-item {
     display: flex;
     flex-direction: column;
@@ -611,7 +596,6 @@ path {
     gap: 16px;
 }
 
-/* Видео */
 .case_item-video {
     position: relative;
     width: 100%;
@@ -642,7 +626,6 @@ path {
     text-align: center;
 }
 
-/* Кнопка */
 .case_item-btn {
     display: flex;
     justify-content: center;
@@ -682,7 +665,7 @@ path {
     .process_container-stages {
         position: relative;
         display: grid;
-        grid-template-columns: 1fr; // По умолчанию, одна колонка
+        grid-template-columns: 1fr;
         row-gap: clamp(20px, 5vh, 40px);
         list-style: none;
         margin: 0;
@@ -692,7 +675,7 @@ path {
             content: '';
             position: absolute;
             top: 0;
-            left: 109px; // Расположение линии относительно нумерации
+            left: 109px;
             width: 1px;
             height: 120%;
             background: linear-gradient(
@@ -701,7 +684,7 @@ path {
                 #232323 0%,
                 #f8f8f8 100%
             );
-            z-index: 0; // Убедитесь, что линия позади элементов
+            z-index: 0;
         }
 
         .process_stages-item {
@@ -741,7 +724,6 @@ path {
     }
 }
 
-// Адаптив для мобильных устройств
 @media screen and (max-width: 768px) {
     .process_container {
         padding: clamp(20px, 10vh, 40px) clamp(10px, 5vw, 24px);
@@ -842,10 +824,10 @@ path {
 
     .social_content-img {
         position: relative;
-        height: 614px; // Высота контейнера для изображений
+        height: 614px;
         width: 100%;
         display: flex;
-        align-items: flex-end; // Выровнять изображения по низу контейнера
+        align-items: flex-end;
 
         .social_img {
             width: 300px;
@@ -855,31 +837,30 @@ path {
             filter: drop-shadow(57.395px 113.595px 50.221px rgba(0, 0, 0, 0.02))
                 drop-shadow(32.285px 63.374px 43.046px rgba(0, 0, 0, 0.07))
                 drop-shadow(14.349px 28.698px 32.285px rgba(0, 0, 0, 0.11))
-                drop-shadow(3.587px 7.174px 17.936px rgba(0, 0, 0, 0.13)); // Центрировать трансформацию по нижней границе
+                drop-shadow(3.587px 7.174px 17.936px rgba(0, 0, 0, 0.13));
         }
 
         .social_img1 {
             left: 160px;
             z-index: 2;
             transform: scale(1);
-            bottom: 0; // Привязать к нижней границе
+            bottom: 0;
         }
 
         .social_img2 {
             left: 80px;
             z-index: 1;
             transform: scale(0.975);
-            bottom: 0; // Привязать к нижней границе
+            bottom: 0;
         }
 
         .social_img3 {
             left: 0;
             z-index: 0;
             transform: scale(0.95);
-            bottom: 0; // Привязать к нижней границе
+            bottom: 0;
         }
 
-        // Активные классы для смены мест
         .active1 {
             left: 160px;
             z-index: 2;
@@ -909,13 +890,13 @@ path {
             .social_desk {
                 color: vars.$third-color;
                 line-height: 24px;
-                display: none; // Описания скрыты по умолчанию
+                display: none;
                 transition: opacity 0.3s ease;
                 opacity: 0;
             }
 
             .active {
-                display: block; // Только активное описание отображается
+                display: block;
                 opacity: 1;
             }
         }
@@ -947,7 +928,7 @@ path {
                 }
 
                 &.active {
-                    color: vars.$secondary-color; // Цвет активной кнопки
+                    color: vars.$secondary-color;
                 }
             }
         }
@@ -1076,42 +1057,39 @@ path {
             .comparison_handle {
                 position: absolute;
                 top: 0;
-                left: 50%; /* Центрируем по горизонтали */
+                left: 50%;
                 transform: translateX(-50%);
-                width: 2px; /* Линия */
-                height: 100%; /* Высота на весь контейнер */
-                background: #ffffff; /* Белая линия */
-                z-index: 3; /* Ставим поверх изображений */
+                width: 2px;
+                height: 100%;
+                background: #ffffff;
+                z-index: 3;
                 display: flex;
-                justify-content: center; /* Центрируем ручку */
-                align-items: center; /* Центрируем ручку */
+                justify-content: center;
+                align-items: center;
 
                 .comparison_control {
-                    position: absolute; /* Позволяет выйти за границы контейнера */
-                    top: 50%; /* Центрируем по вертикали относительно родителя */
-                    left: 50%; /* Центрируем по горизонтали относительно родителя */
-                    transform: translate(
-                        -50%,
-                        -50%
-                    ); /* Полностью центрируем элемент */
-                    width: 22px; /* Ширина "ручки" */
-                    height: 137px; /* Высота "ручки" */
-                    background: #ffffff; /* Белый фон ручки */
-                    border-radius: 24px; /* Скругляем края */
-                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Лёгкая тень */
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 22px;
+                    height: 137px;
+                    background: #ffffff;
+                    border-radius: 24px;
+                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
                     display: flex;
-                    justify-content: center; /* Центрируем текст по горизонтали */
-                    align-items: center; /* Центрируем текст по вертикали */
-                    cursor: ew-resize; /* Курсор для перетаскивания */
-                    z-index: 4; /* Чтобы текст был поверх линии */
+                    justify-content: center;
+                    align-items: center;
+                    cursor: ew-resize;
+                    z-index: 4;
 
                     span {
                         font-family: vars.$base-font-family;
-                        font-size: 12px; /* Размер текста */
-                        font-weight: bold; /* Жирный текст */
-                        color: #232323; /* Чёрный цвет текста */
-                        user-select: none; /* Отключаем выделение текста */
-                        pointer-events: none; /* Отключаем интерактивность текста */
+                        font-size: 12px;
+                        font-weight: bold;
+                        color: #232323;
+                        user-select: none;
+                        pointer-events: none;
                     }
                 }
             }
@@ -1381,16 +1359,54 @@ path {
         .tarif_list-desk {
             margin-left: 40px;
             margin-bottom: 20px;
+        }
 
-            .tarif_container-desk {
-                display: flex;
-                justify-content: space-between;
-                gap: 20px;
+        .tarif_dropdown-list {
+            color: vars.$third-color;
+            font-size: 14px;
+            max-height: 0; /* Скрываем список по умолчанию */
+            opacity: 0;
+            overflow: hidden; /* Обрезаем скрытый контент */
+            transition:
+                max-height 0.5s ease,
+                opacity 0.5s ease; /* Плавная анимация */
+            margin-top: 0; /* Чтобы не было лишнего пространства */
+            padding-left: 20px;
+            list-style-type: disc;
+            font-size: 14px;
+            color: #aaa;
+            margin-top: 10px;
+        }
+
+        li.has-dropdown:hover .tarif_dropdown-list {
+            max-height: 300px; /* Достаточная высота для содержимого */
+            opacity: 1;
+            margin-top: 10px;
+        }
+
+        .tarif_container-desk {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .has-dropdown {
+            .tarif_desk {
+                cursor: pointer;
+            }
+
+            &:hover .tarif_list-icon > svg {
+                transform: rotate(180deg);
             }
         }
 
         .tarif_desk {
             color: vars.$primary-color;
+
+            .tarif_list-icon > svg {
+                stroke: vars.$primary-color;
+                transition: 0.2s ease-in-out;
+            }
         }
 
         .tarif_item-price {
@@ -1408,7 +1424,7 @@ path {
             border-radius: 12px;
             border: 1px solid #6d6d6d;
             background-color: transparent;
-            color: #fff;
+            color: vars.$third-color;
             font-size: clamp(14px, 2vw, 17px);
             font-weight: 500;
             width: 100%;
@@ -1424,6 +1440,28 @@ path {
             height: 60px;
         }
 
+        &:nth-child(1) {
+            .tarif_list-desk:nth-child(6) .tarif_desk,
+            .tarif_list-desk:nth-child(7) .tarif_desk {
+                color: vars.$third-color;
+            }
+
+            .tarif_list-desk:nth-child(6),
+            .tarif_list-desk:nth-child(7) {
+                color: vars.$third-color;
+            }
+        }
+
+        &:nth-child(2) {
+            .tarif_list-desk:nth-child(7) .tarif_desk {
+                color: vars.$third-color;
+            }
+
+            .tarif_list-desk:nth-child(7) {
+                color: vars.$third-color;
+            }
+        }
+
         &:last-child {
             .tarif_title {
                 color: vars.$secondary-color;
@@ -1431,6 +1469,10 @@ path {
 
             .tarif_desk {
                 color: vars.$secondary-color;
+
+                .tarif_list-icon > svg {
+                    stroke: vars.$secondary-color;
+                }
             }
 
             .tarif_item-price {
@@ -1448,6 +1490,10 @@ path {
             .tarif_list-btn {
                 color: vars.$primary-color;
                 background-color: vars.$secondary-color;
+            }
+
+            .tarif_dropdown-list {
+                color: vars.$third-color;
             }
         }
     }

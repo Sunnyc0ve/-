@@ -22,6 +22,7 @@
         height: 100%;
         border-bottom: 1px solid
             color.adjust(vars.$primary-color, $lightness: -50%);
+        transition: 0.2s;
     }
 
     &__logo-container {

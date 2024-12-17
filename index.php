@@ -695,11 +695,31 @@ ini_set('display_errors', 1);
                                     <img src="images/tarif_plus.svg" alt="Плюс" class="tarif_list-icon"></img>
                                 </div>
                             </li>
-                            <li class="tarif_list-desk">
+                            <li class="tarif_list-desk has-dropdown">
                                 <div class="tarif_container-desk">
-                                    <p class="tarif_desk">Рабочие чертежи</p>
+                                    <p class="tarif_desk">
+                                        <span class="tarif_desk-text">Рабочие чертежи</span>
+                                        <span class="tarif_list-arrow">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="10" viewBox="0 0 19 10" fill="none">
+                                                <path d="M2.375 2.30664L9.68698 8.15622L16.999 2.30664" stroke="#232323" stroke-width="2.99269" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                    </p>
                                     <img src="images/tarif_plus.svg" alt="Плюс" class="tarif_list-icon"></img>
                                 </div>
+                                <ul class="tarif_dropdown-list">
+                                    <li>Обмерный план</li>
+                                    <li>Планировочное решение</li>
+                                    <li>План расстановки мебели</li>
+                                    <li>План демонтажа и&nbsp;монтажа</li>
+                                    <li>План дверных проёмов</li>
+                                    <li>План электрики (освещение, розетки, выключатели)</li>
+                                    <li>План сантехнических приборов</li>
+                                    <li>План потолков</li>
+                                    <li>План тёплых полов</li>
+                                    <li>План пола с&nbsp;указанием типа покрытия и&nbsp;направлением раскладки</li>
+                                    <li>Развёртки санузлов с&nbsp;раскладкой плитки</li>
+                                </ul>
                             </li>
                             <li class="tarif_list-desk">
                                 <div class="tarif_container-desk">
@@ -745,11 +765,31 @@ ini_set('display_errors', 1);
                                     <img src="images/tarif_plus.svg" alt="Плюс" class="tarif_list-icon"></img>
                                 </div>
                             </li>
-                            <li class="tarif_list-desk">
+                            <li class="tarif_list-desk has-dropdown">
                                 <div class="tarif_container-desk">
-                                    <p class="tarif_desk">Рабочие чертежи</p>
+                                    <p class="tarif_desk">
+                                        <span class="tarif_desk-text">Рабочие чертежи</span>
+                                        <span class="tarif_list-arrow">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="10" viewBox="0 0 19 10" fill="none">
+                                                <path d="M2.375 2.30664L9.68698 8.15622L16.999 2.30664" stroke="#232323" stroke-width="2.99269" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                    </p>
                                     <img src="images/tarif_plus.svg" alt="Плюс" class="tarif_list-icon"></img>
                                 </div>
+                                <ul class="tarif_dropdown-list">
+                                    <li>Обмерный план</li>
+                                    <li>Планировочное решение</li>
+                                    <li>План расстановки мебели</li>
+                                    <li>План демонтажа и&nbsp;монтажа</li>
+                                    <li>План дверных проёмов</li>
+                                    <li>План электрики (освещение, розетки, выключатели)</li>
+                                    <li>План сантехнических приборов</li>
+                                    <li>План потолков</li>
+                                    <li>План тёплых полов</li>
+                                    <li>План пола с&nbsp;указанием типа покрытия и&nbsp;направлением раскладки</li>
+                                    <li>Развёртки санузлов с&nbsp;раскладкой плитки</li>
+                                </ul>
                             </li>
                             <li class="tarif_list-desk">
                                 <div class="tarif_container-desk">
@@ -795,11 +835,31 @@ ini_set('display_errors', 1);
                                     <img src="images/tarif_plus-black.svg" alt="Плюс" class="tarif_list-icon"></img>
                                 </div>
                             </li>
-                            <li class="tarif_list-desk">
+                            <li class="tarif_list-desk has-dropdown">
                                 <div class="tarif_container-desk">
-                                    <p class="tarif_desk">Рабочие чертежи</p>
+                                    <p class="tarif_desk">
+                                        <span class="tarif_desk-text">Рабочие чертежи</span>
+                                        <span class="tarif_list-arrow">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="10" viewBox="0 0 19 10" fill="none">
+                                                <path d="M2.375 2.30664L9.68698 8.15622L16.999 2.30664" stroke="#232323" stroke-width="2.99269" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                    </p>
                                     <img src="images/tarif_plus-black.svg" alt="Плюс" class="tarif_list-icon"></img>
                                 </div>
+                                <ul class="tarif_dropdown-list">
+                                    <li>Обмерный план</li>
+                                    <li>Планировочное решение</li>
+                                    <li>План расстановки мебели</li>
+                                    <li>План демонтажа и&nbsp;монтажа</li>
+                                    <li>План дверных проёмов</li>
+                                    <li>План электрики (освещение, розетки, выключатели)</li>
+                                    <li>План сантехнических приборов</li>
+                                    <li>План потолков</li>
+                                    <li>План тёплых полов</li>
+                                    <li>План пола с&nbsp;указанием типа покрытия и&nbsp;направлением раскладки</li>
+                                    <li>Развёртки санузлов с&nbsp;раскладкой плитки</li>
+                                </ul>
                             </li>
                             <li class="tarif_list-desk">
                                 <div class="tarif_container-desk">

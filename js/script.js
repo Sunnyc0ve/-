@@ -1,27 +1,47 @@
 // Хедер
 
-// Найти элемент с классом .header
 const header = document.querySelector('.header');
+const header_border = document.querySelector('.header__container');
 
-// Добавить обработчик события прокрутки
 window.addEventListener('scroll', () => {
     if (window.scrollY > 0) {
-        // Если прокрутка началась, добавить цвет фона
         header.style.backgroundColor = '#232323';
+        header_border.style.border = 'none';
     } else {
-        // Если вернулись наверх, убрать цвет фона
         header.style.backgroundColor = 'transparent';
+        header_border.style.borderBottom = '1px solid #ffffff50';
     }
 });
 
+// Работы
+
+const videoBlocks = document.querySelectorAll('.case_item-video');
+
+videoBlocks.forEach((block) => {
+    const video = block.querySelector('video');
+
+    block.addEventListener('mouseenter', () => {
+        if (video) {
+            video.play();
+        }
+    });
+
+    block.addEventListener('mouseleave', () => {
+        if (video) {
+            video.pause();
+            video.currentTime = 0;
+        }
+    });
+});
+
 // Преимущества
+
 document.addEventListener('DOMContentLoaded', () => {
     const accordionItems = document.querySelectorAll(
         '.features_accordion-item',
     );
     const descriptions = document.querySelectorAll('.features_description');
 
-    // Установим начальное состояние для первого элемента
     if (accordionItems.length > 0) {
         const firstItem = accordionItems[0];
         const firstDescription = document.getElementById(
@@ -43,7 +63,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const icon = item.querySelector('.features_accordion-icon > svg');
 
         item.addEventListener('click', () => {
-            // Сброс всех активных состояний
             descriptions.forEach((desc) => (desc.hidden = true));
             accordionItems.forEach((accItem) => {
                 const accIcon = accItem.querySelector(
@@ -54,7 +73,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 accIcon.style.stroke = 'vars.$third-color';
             });
 
-            // Открытие выбранного элемента
             targetDescription.hidden = false;
             item.setAttribute('aria-expanded', true);
             icon.style.transform = 'rotate(270deg)';
@@ -69,32 +87,26 @@ document.addEventListener('DOMContentLoaded', () => {
     const buttons = document.querySelectorAll('.social_button');
     const descriptions = document.querySelectorAll('.social_desk');
     const images = document.querySelectorAll('.social_img');
-    const actionButton = document.querySelector('.social_content-button'); // Кнопка для перехода
+    const actionButton = document.querySelector('.social_content-button');
 
-    // Ссылки для социальных сетей
     const socialLinks = {
-        instagram: 'https://www.instagram.com/yourpage', // Замените на ваши ссылки
+        instagram: 'https://www.instagram.com/yourpage',
         youtube: 'https://www.youtube.com/yourchannel',
         vk: 'https://vk.com/yourgroup',
     };
 
-    // Переменные для управления текущим состоянием
     let currentActive = 0;
 
-    // Функция для обновления классов активных элементов
     const updateCarousel = () => {
-        // Удаляем текущие классы
         images.forEach((img) => {
             img.classList.remove('active1', 'active2', 'active3');
         });
 
-        // Добавляем новые активные классы в зависимости от текущей позиции
         images[(currentActive + 0) % images.length].classList.add('active1');
         images[(currentActive + 1) % images.length].classList.add('active2');
         images[(currentActive + 2) % images.length].classList.add('active3');
     };
 
-    // Обновление ссылки в кнопке в зависимости от текущего активного элемента
     const updateActionButton = () => {
         if (currentActive === 0) {
             actionButton.href = socialLinks.instagram;
@@ -105,31 +117,23 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    // Обработчик кликов для кнопок
     buttons.forEach((button, index) => {
         button.addEventListener('click', () => {
-            // Убираем активное состояние у всех кнопок
             buttons.forEach((btn) => btn.classList.remove('active'));
 
-            // Убираем активное состояние у всех описаний
             descriptions.forEach((desc) => desc.classList.remove('active'));
 
-            // Устанавливаем активную кнопку и описание
             button.classList.add('active');
             descriptions[index].classList.add('active');
 
-            // Обновляем текущее активное изображение
             currentActive = index;
 
-            // Обновляем карусель
             updateCarousel();
 
-            // Обновляем ссылку в кнопке
             updateActionButton();
         });
     });
 
-    // Устанавливаем первый элемент активным по умолчанию
     buttons[0].click();
 });
 
@@ -156,7 +160,6 @@ document.querySelectorAll('.comparison_slider').forEach((slider) => {
 
         handle.style.left = `${percentage}%`;
 
-        // Управление видимостью лейблов
         labelBefore.style.opacity = percentage < 10 ? 0 : 1;
         labelAfter.style.opacity = percentage > 90 ? 0 : 1;
     };
@@ -243,7 +246,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Touch support
     slider.addEventListener('touchstart', (e) => {
         isDragging = true;
         startX = e.touches[0].pageX;
@@ -270,14 +272,12 @@ document.addEventListener('DOMContentLoaded', () => {
         cancelAnimationFrame(animationID);
     });
 
-    // Видеоотзывы
     slides.forEach((slide) => {
         const video = slide.querySelector('.vidr_video');
         const overlay = slide.querySelector('.vidr_overlay');
         const playButton = slide.querySelector('.play_button');
 
         playButton.addEventListener('click', () => {
-            // Остановить все видео и сбросить активные классы
             slides.forEach((s) => {
                 const v = s.querySelector('.vidr_video');
                 v.pause();
@@ -285,14 +285,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 s.classList.remove('active');
             });
 
-            // Активировать текущее видео
             slide.classList.add('active');
             video.play();
-            video.controls = true; // Показать элементы управления
+            video.controls = true;
         });
 
         video.addEventListener('ended', () => {
-            // Убрать активный класс и скрыть элементы управления после окончания видео
             slide.classList.remove('active');
             video.controls = false;
         });
