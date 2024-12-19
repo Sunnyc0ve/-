@@ -161,3 +161,154 @@
     margin-top: 30px;
     justify-content: space-around;
 }
+
+@media (min-width: 980px) {
+    .header_call-container,
+    .header_burger-container {
+        display: none;
+    }
+}
+
+@media (max-width: 980px) {
+    .header {
+        height: auto;
+    }
+
+    .header__logo-img,
+    .burger-menu__logo > img {
+        width: 106px;
+    }
+
+    .header .header__container {
+        padding: 17px 20px;
+    }
+
+    .header__nav,
+    .header__rating-link {
+        display: none;
+    }
+
+    .header_call-container,
+    .header_burger-container {
+        display: block;
+    }
+
+    .header__logo-container {
+        width: 100%;
+    }
+}
+
+// Бургер
+
+/* Основные стили для бургер-меню */
+.burger-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: none; /* Отображается только на мобильных */
+    z-index: 1000;
+    background-color: #282828; /* Темный фон */
+    color: vars.$primary-color;
+    overflow-y: auto; /* Добавляем прокрутку для контента */
+}
+
+.burger-menu__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.burger-menu__content {
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 17px 20px;
+    height: 100%; /* Контейнер растянут на весь экран */
+    overflow-y: auto; /* Если элементов много, добавляем прокрутку */
+}
+
+/* Верхняя часть меню */
+.burger-menu__top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 17px;
+}
+
+.burger-menu__close {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Список меню */
+.burger-menu__list {
+    list-style: none;
+    padding-bottom: 30px;
+    margin-top: 25px;
+    text-align: center;
+    width: 100%;
+    border-bottom: 0.5px solid #ffffff50;
+}
+
+.burger-menu__item {
+    margin-bottom: 25px;
+}
+
+.burger-menu__item a {
+    color: vars.$primary-color;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px; /* 138.889% */
+}
+
+.burger-menu__item a:hover {
+    color: #f8c200; /* Цвет ссылки при наведении */
+}
+
+/* Контакты */
+.burger-menu__contacts {
+    display: flex;
+    text-align: center;
+    margin-top: 30px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.burger-menu__contacts > a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.burger-menu__contacts > p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.burger-menu__contacts-title {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.burger-menu__social {
+    display: flex;
+    justify-content: center;
+    gap: 68px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+/* Показываем бургер-меню на мобильных */

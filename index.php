@@ -15,7 +15,8 @@ ini_set('display_errors', 1);
             <div class="main_container">
                 <div class="main_container-features dark-grey-bg">
                     <h1 class="main_container-title">
-                        Безупречный по&nbsp;стилю<br>дизайн интерьера и&nbsp;реализация проекта под ключ.
+                        <span class="span_pc">Безупречный по&nbsp;стилю<br>дизайн интерьера и&nbsp;реализация проекта под ключ.</span>
+                        <span class="span_mob">Безупречный по<br>стилю дизайн интерьера и&nbsp;реализация проекта под&nbsp;ключ.</span>
                     </h1>
                     <div class="main_features">
                         <p>Выгода до&nbsp;15% за&nbsp;счет связки: дизайн+строители+подрядчики</p>
@@ -87,6 +88,13 @@ ini_set('display_errors', 1);
                                     </svg>
                                 </span>
                             </p>
+                            <div class="features_description" id="description1">
+                                Дизайн-проект является важной частью процесса ремонта, которая помогает
+                                правильно распланировать пространство, точно рассчитать расположение коммуникаций
+                                и&nbsp;электрических выводов, а&nbsp;также помогает сэкономить деньги в&nbsp;процессе его реализации.<br>
+                                Проект с&nbsp;3D-визуализацией включает в&nbsp;себя разработку концепции и&nbsp;стиля,
+                                создание планов и&nbsp;чертежей, выбор материалов и&nbsp;мебели.
+                            </div>
                         </div>
                         <div class="features_accordion-item" data-target="description2">
                             <p class="features_accordion-header">
@@ -97,6 +105,11 @@ ini_set('display_errors', 1);
                                     </svg>
                                 </span>
                             </p>
+                            <div class="features_description" id="description2" hidden>
+                                Ремонт высокого качества является залогом счастливой жизни в&nbsp;будущем.
+                                Главной задачей нашей команды является сделать процесс ремонта комфортным для наших Заказчиков.<br>
+                                У&nbsp;нас честный Договор, чёткое соблюдение сроков и&nbsp;технические надзор на&nbsp;всех этапах работ.
+                            </div>
                         </div>
                         <div class="features_accordion-item" data-target="description3">
                             <p class="features_accordion-header">
@@ -107,6 +120,9 @@ ini_set('display_errors', 1);
                                     </svg>
                                 </span>
                             </p>
+                            <div class="features_description" id="description3" hidden>
+                                Подбор чистовых отделочных материалов&nbsp;&mdash; это очень трудоёмкий процесс. Наши специалисты помогут определиться с&nbsp;выбором любых чистовых материалов, подобрать каждому индивидуально дизайнерское световое решение, подробно сделать просчёт выбранных позиции у&nbsp;различных поставщиков, а&nbsp;также организовать доставку на&nbsp;объект и&nbsp;проверят качество товара. Именно услуга Комплектации объекта позволяет сэкономить Вам деньги и&nbsp;Ваше время.
+                            </div>
                         </div>
                         <div class="features_accordion-item" data-target="description4">
                             <p class="features_accordion-header">
@@ -117,6 +133,11 @@ ini_set('display_errors', 1);
                                     </svg>
                                 </span>
                             </p>
+                            <div class="features_description" id="description4" hidden>
+                                На&nbsp;этапе разработки дизайн-проекта дизайнеры тщательно продумывают наличие мебели под особенности, потребности и&nbsp;требования каждого Заказчика.
+                                Уже много лет мы&nbsp;реализовываем различные решения по&nbsp;изготовлению мебели на&nbsp;заказ, что позволяет правильно использовать пространство и&nbsp;сделать необходимое наполнение для каждого Заказчика индивидуально.<br>
+                                Это неотъемлемая часть сдачи объекта, которая обеспечивает окончательное визуальное восприятие реализованного дизайн-проекта.
+                            </div>
                         </div>
                     </div>
                     <div class="features_container-description">
@@ -146,7 +167,27 @@ ini_set('display_errors', 1);
         </div>
     </section>
 
+    <!-- Акция попап мобилка -->
 
+    <section class="minisale_section">
+        <div class="container dark-grey-bg">
+            <div class="minisale_container">
+                <div class="minisale_container-title">
+                    <p class="minisale_title">Акция</p>
+                </div>
+                <p class="minisale_subtitle">Технический дизайн-<br>проект в&nbsp;подарок</p>
+                <p class="minisale_desk">Планировочное решение, электрика и&nbsp;сантехника для старта работ</p>
+                <div class="minisale_container-form">
+                    <form action="#" class="minisale_form">
+                        <input type="text" class="minisale_form-input" name="name" placeholder="Как вас зовут?" autocomplete="name" required pattern="[A-Za-zА-Яа-яЁё\s]+">
+                        <input type="tel" class="minisale_form-input" name="phone" placeholder="Номер телефона" autocomplete="tel" required pattern="[0-9]{10}">
+                        <button type="submit" class="minisale_form-button">Получить подарок</button>
+                    </form>
+                    <p class="minisale_disclaimer">Нажимая кнопку &laquo;Получить подарок&raquo; вы&nbsp;автоматически соглашаетесь с&nbsp;политикой обработки персональных данных</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <!-- Работы -->
@@ -327,7 +368,13 @@ ini_set('display_errors', 1);
 
     <section class="comparison_section">
         <div class="container">
-            <h2 class="title comparison_title">Визуализация проектов до/после<br>как наши проекты воплощаются в&nbsp;жизнь</h2>
+            <h2 class="title comparison_title">
+                <span class="title comparison_title-main">Визуализация проектов до/после</span>
+                <span class="comparison_title-sub">
+                    как наши проекты воплощаются в&nbsp;жизнь
+                </span>
+            </h2>
+
             <div class="comparison_container">
                 <!-- Первый слайдер -->
                 <div class="comparison_slider">
@@ -380,7 +427,10 @@ ini_set('display_errors', 1);
         <div class="container">
             <div class="vidr_container">
                 <h2 class="title vidr_title">
-                    Наша команда выполнила более 400-х дизайнерских ремонтов квартир за&nbsp;5&nbsp;лет работы с&nbsp;отзывами на&nbsp;5&nbsp;баллов:
+                    <span class="title vidr_title-main">Наша команда</span>
+                    <span class="vidr_title-sub">
+                        выполнила более 400-х дизайнерских ремонтов квартир за&nbsp;5&nbsp;лет работы с&nbsp;отзывами на&nbsp;5&nbsp;баллов:
+                    </span>
                 </h2>
                 <div class="vidr_slider">
                     <div class="vidr_track">
@@ -679,6 +729,7 @@ ini_set('display_errors', 1);
     <section class="tarif_section">
         <div class="container dark-grey-bg">
             <div class="tarif_container">
+                <h2 class="title tarif_title_mob">Стоимость и&nbsp;состав<br> дизайн-проекта</h2>
                 <div class="tarif_container-item">
                     <div class="tarif_item dark-grey-bg">
                         <h2 class="tarif_title">Полный проект<br>+&nbsp;бюджетирование</h2>

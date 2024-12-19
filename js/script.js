@@ -5,12 +5,62 @@ const header_border = document.querySelector('.header__container');
 
 window.addEventListener('scroll', () => {
     if (window.scrollY > 0) {
-        header.style.backgroundColor = '#232323';
+        header.style.backgroundColor = '#282828';
         header_border.style.border = 'none';
     } else {
         header.style.backgroundColor = 'transparent';
         header_border.style.borderBottom = '1px solid #ffffff50';
     }
+});
+
+// Бургер
+
+document.addEventListener('DOMContentLoaded', () => {
+    const burgerButton = document.querySelector('.header_burger-container');
+    const burgerMenu = document.querySelector('.burger-menu');
+    const burgerClose = document.querySelector('.burger-menu__close');
+
+    // Открыть меню
+    burgerButton.addEventListener('click', () => {
+        burgerMenu.style.display = 'flex';
+    });
+
+    // Закрыть меню
+    burgerClose.addEventListener('click', () => {
+        burgerMenu.style.display = 'none';
+    });
+
+    // Закрыть меню при клике на overlay
+    burgerMenu.addEventListener('click', (e) => {
+        if (e.target.classList.contains('burger-menu__overlay')) {
+            burgerMenu.style.display = 'none';
+        }
+    });
+});
+
+// Акция мобилка попап
+
+document.addEventListener('DOMContentLoaded', () => {
+    const popup = document.querySelector('.minisale_section');
+    const popupLink = document.querySelector('.open-popup-link');
+    const popupContainer = document.querySelector('.minisale_container');
+
+    popupLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        popup.classList.add('is-visible');
+    });
+
+    popup.addEventListener('click', (e) => {
+        if (!popupContainer.contains(e.target)) {
+            popup.classList.remove('is-visible');
+        }
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            popup.classList.remove('is-visible');
+        }
+    });
 });
 
 // Работы
@@ -40,46 +90,170 @@ document.addEventListener('DOMContentLoaded', () => {
     const accordionItems = document.querySelectorAll(
         '.features_accordion-item',
     );
-    const descriptions = document.querySelectorAll('.features_description');
+    const desktopDescriptions = document.querySelectorAll(
+        '.features_container-description .features_description',
+    );
+    const desktopContainer = document.querySelector(
+        '.features_container-description',
+    );
+    const isMobile = () => window.innerWidth < 980;
 
-    if (accordionItems.length > 0) {
+    // Логика для ПК (>=980px)
+    const initDesktop = () => {
+        if (!desktopContainer) return;
+
+        // Скрыть все десктопные описания
+        desktopDescriptions.forEach((desc) => (desc.hidden = true));
+
+        // Раскрыть первое описание
         const firstItem = accordionItems[0];
-        const firstDescription = document.getElementById(
-            firstItem.getAttribute('data-target'),
-        );
-        const firstIcon = firstItem.querySelector(
-            '.features_accordion-icon > svg',
-        );
-
-        firstItem.setAttribute('aria-expanded', true);
-        firstDescription.hidden = false;
-        firstIcon.style.transform = 'rotate(270deg)';
-        firstIcon.style.stroke = 'vars.$secondary-color';
-    }
-
-    accordionItems.forEach((item) => {
-        const targetId = item.getAttribute('data-target');
-        const targetDescription = document.getElementById(targetId);
-        const icon = item.querySelector('.features_accordion-icon > svg');
-
-        item.addEventListener('click', () => {
-            descriptions.forEach((desc) => (desc.hidden = true));
-            accordionItems.forEach((accItem) => {
-                const accIcon = accItem.querySelector(
+        if (firstItem) {
+            const targetId = firstItem.getAttribute('data-target');
+            const firstDescription = document.querySelector(
+                `.features_container-description #${targetId}`,
+            );
+            if (firstDescription) {
+                firstDescription.hidden = false;
+                firstItem.setAttribute('aria-expanded', true);
+                const icon = firstItem.querySelector(
                     '.features_accordion-icon > svg',
                 );
-                accItem.setAttribute('aria-expanded', false);
-                accIcon.style.transform = 'rotate(0deg)';
-                accIcon.style.stroke = 'vars.$third-color';
-            });
+                if (icon) icon.style.transform = 'rotate(270deg)';
+            }
+        }
+    };
 
-            targetDescription.hidden = false;
-            item.setAttribute('aria-expanded', true);
-            icon.style.transform = 'rotate(270deg)';
-            icon.style.stroke = 'vars.$secondary-color';
+    // Логика для Мобилки (<980px)
+    const initMobile = () => {
+        accordionItems.forEach((item) => {
+            const description = item.querySelector('.features_description');
+            if (description) description.style.display = 'none';
+            item.setAttribute('aria-expanded', false);
+            const icon = item.querySelector('.features_accordion-icon > svg');
+            if (icon) icon.style.transform = 'rotate(0deg)';
+        });
+    };
+
+    // Переключение отображения в зависимости от режима
+    const updateView = () => {
+        if (isMobile()) {
+            // Мобильная версия
+            if (desktopContainer) desktopContainer.style.display = 'none';
+            initMobile();
+        } else {
+            // ПК-версия
+            if (desktopContainer) desktopContainer.style.display = 'block';
+            initDesktop();
+        }
+    };
+
+    // Обработчик кликов
+    accordionItems.forEach((item) => {
+        const header = item.querySelector('.features_accordion-header');
+        const targetId = item.getAttribute('data-target');
+
+        header.addEventListener('click', () => {
+            if (isMobile()) {
+                // Мобильная логика
+                const description = item.querySelector('.features_description');
+                const isExpanded =
+                    item.getAttribute('aria-expanded') === 'true';
+
+                accordionItems.forEach((accItem) => {
+                    const accDescription = accItem.querySelector(
+                        '.features_description',
+                    );
+                    const icon = accItem.querySelector(
+                        '.features_accordion-icon > svg',
+                    );
+                    if (accDescription) accDescription.style.display = 'none';
+                    if (icon) icon.style.transform = 'rotate(0deg)';
+                    accItem.setAttribute('aria-expanded', false);
+                });
+
+                if (!isExpanded && description) {
+                    description.style.display = 'block';
+                    const icon = item.querySelector(
+                        '.features_accordion-icon > svg',
+                    );
+                    if (icon) icon.style.transform = 'rotate(180deg)';
+                    item.setAttribute('aria-expanded', true);
+                }
+            } else {
+                // Логика для ПК
+                const targetDescription = document.querySelector(
+                    `.features_container-description #${targetId}`,
+                );
+                if (targetDescription) {
+                    desktopDescriptions.forEach((desc) => (desc.hidden = true));
+                    accordionItems.forEach((accItem) => {
+                        const accIcon = accItem.querySelector(
+                            '.features_accordion-icon > svg',
+                        );
+                        accItem.setAttribute('aria-expanded', false);
+                        if (accIcon) accIcon.style.transform = 'rotate(0deg)';
+                    });
+
+                    targetDescription.hidden = false;
+                    item.setAttribute('aria-expanded', true);
+                    const icon = item.querySelector(
+                        '.features_accordion-icon > svg',
+                    );
+                    if (icon) icon.style.transform = 'rotate(270deg)';
+                }
+            }
         });
     });
+
+    // Инициализация
+    window.addEventListener('resize', updateView);
+    updateView();
 });
+
+// document.addEventListener('DOMContentLoaded', () => {
+//     const accordionItems = document.querySelectorAll(
+//         '.features_accordion-item',
+//     );
+//     const descriptions = document.querySelectorAll('.features_description');
+
+//     if (accordionItems.length > 0) {
+//         const firstItem = accordionItems[0];
+//         const firstDescription = document.getElementById(
+//             firstItem.getAttribute('data-target'),
+//         );
+//         const firstIcon = firstItem.querySelector(
+//             '.features_accordion-icon > svg',
+//         );
+
+//         firstItem.setAttribute('aria-expanded', true);
+//         firstDescription.hidden = false;
+//         firstIcon.style.transform = 'rotate(270deg)';
+//         firstIcon.style.stroke = 'vars.$secondary-color';
+//     }
+
+//     accordionItems.forEach((item) => {
+//         const targetId = item.getAttribute('data-target');
+//         const targetDescription = document.getElementById(targetId);
+//         const icon = item.querySelector('.features_accordion-icon > svg');
+
+//         item.addEventListener('click', () => {
+//             descriptions.forEach((desc) => (desc.hidden = true));
+//             accordionItems.forEach((accItem) => {
+//                 const accIcon = accItem.querySelector(
+//                     '.features_accordion-icon > svg',
+//                 );
+//                 accItem.setAttribute('aria-expanded', false);
+//                 accIcon.style.transform = 'rotate(0deg)';
+//                 accIcon.style.stroke = 'vars.$third-color';
+//             });
+
+//             targetDescription.hidden = false;
+//             item.setAttribute('aria-expanded', true);
+//             icon.style.transform = 'rotate(270deg)';
+//             icon.style.stroke = 'vars.$secondary-color';
+//         });
+//     });
+// });
 
 // Социальные сети
 
