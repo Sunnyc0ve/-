@@ -13,7 +13,7 @@
     left: 50%;
     transform: translateX(-50%);
     margin: 0;
-    z-index: 10;
+    z-index: 21;
     width: 100%;
     transition: 0.2s linear;
 
@@ -312,3 +312,158 @@
 }
 
 /* Показываем бургер-меню на мобильных */
+
+@media (max-width: 480px) {
+    .container.header__container {
+        border: none !important;
+    }
+}
+
+// Колбек
+
+.callback_container {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    z-index: 20;
+
+    .callback_img {
+        height: 80px;
+        width: 80px;
+        border-radius: 90px;
+        border: 1px solid #d7d7d7;
+        cursor: pointer;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.callback-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.callback-popup__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.callback-popup__content {
+    position: relative;
+    z-index: 1001;
+    background-image: url('../images/light-grey.jpg');
+    padding: 40px 28px;
+    border-radius: 10px;
+    width: 347px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.callback-popup__title {
+    color: #232323;
+    text-align: center;
+    font-family: 'Tilda Sans VF';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30.188px; /* 75.469% */
+}
+
+.callback-popup__description {
+    color: #232323;
+    text-align: center;
+    font-family: 'Tilda Sans VF';
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.callback-popup__form .callback-popup__input {
+    background-color: transparent;
+    text-align: center;
+    width: 271px;
+    height: 50px;
+    padding: 20px;
+    margin-bottom: 15px;
+    border: 1px solid vars.$third-color;
+    border-radius: 5px;
+    color: rgba(151, 148, 150, 0.96);
+    font-family: 'Tilda Sans VF';
+    font-size: 14.088px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.callback-popup__button {
+    text-align: center;
+    width: 271px;
+    height: 50px;
+    background: #232323;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    text-align: center;
+    font-family: 'Tilda Sans VF';
+    font-size: 14.088px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.callback-popup__button:hover {
+    background: #444;
+}
+
+.callback-popup__disclaimer {
+    color: #979496;
+    text-align: center;
+    font-family: 'Tilda Sans VF';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.callback-popup__close {
+    position: absolute;
+    top: 15px; /* Положение сверху */
+    right: 15px; /* Положение справа */
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 30px; /* Ширина кнопки */
+    height: 30px; /* Высота кнопки */
+    padding: 0; /* Убираем внутренние отступы */
+}
+
+.callback-popup__close img {
+    width: 100%; /* Ширина изображения совпадает с кнопкой */
+    height: 100%; /* Высота изображения совпадает с кнопкой */
+    display: block; /* Убираем пробелы вокруг изображения */
+}
+
+@media (max-width: 980px) {
+    .callback_container .callback_img {
+        height: 60px;
+        width: 60px;
+    }
+}

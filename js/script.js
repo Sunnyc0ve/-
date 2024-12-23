@@ -38,6 +38,38 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+// Колбек
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Найти элементы на странице
+    const callbackPopup = document.querySelector('.callback-popup'); // Попап
+    const openPopupBtn = document.querySelector('.callback_img'); // Кнопка открытия
+    const closePopupBtn = document.querySelector('.callback-popup__close'); // Кнопка закрытия
+    const overlay = document.querySelector('.callback-popup__overlay'); // Оверлей
+
+    // Проверить, что элементы существуют
+    if (openPopupBtn) {
+        openPopupBtn.addEventListener('click', () => {
+            // Показать попап
+            callbackPopup.style.display = 'flex';
+        });
+    }
+
+    if (closePopupBtn) {
+        closePopupBtn.addEventListener('click', () => {
+            // Скрыть попап
+            callbackPopup.style.display = 'none';
+        });
+    }
+
+    if (overlay) {
+        overlay.addEventListener('click', () => {
+            // Скрыть попап при клике на оверлей
+            callbackPopup.style.display = 'none';
+        });
+    }
+});
+
 // Акция мобилка попап
 
 document.addEventListener('DOMContentLoaded', () => {

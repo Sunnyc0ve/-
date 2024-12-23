@@ -3,213 +3,7 @@
 @use 'mixins' as mxn;
 @use 'header';
 @use 'footer';
-
-@font-face {
-    font-family: 'Tilda Sans VF';
-    src:
-        url('#{vars.$font-path}/TildaSans-VF.woff2') format('woff2'),
-        url('#{vars.$font-path}/TildaSans-VF.woff') format('woff');
-    font-weight: 100 900;
-    font-style: normal;
-}
-
-*,
-*::before,
-*::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: vars.$base-font-family;
-    font-size: vars.$base-font-size;
-    line-height: vars.$base-line-height;
-    color: vars.$secondary-color;
-    background-color: vars.$primary-color;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin: 0;
-    font-weight: normal;
-}
-
-ul,
-ol {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-    &:hover,
-    &:focus {
-        text-decoration: none;
-    }
-}
-
-section {
-    position: relative;
-    padding: 0;
-    margin-bottom: unset;
-}
-
-.container {
-    max-width: 1440px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 75px;
-}
-
-@media screen and (max-width: 1330px) {
-    .container {
-        padding: unset;
-    }
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-input,
-select,
-textarea {
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
-    border: 1px solid vars.$third-color;
-    padding: 10px;
-    border-radius: 4px;
-}
-
-input:focus,
-select:focus,
-textarea:focus {
-    outline: none;
-    border-color: vars.$primary-color;
-}
-
-.fixed {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-}
-
-.wrapper {
-    display: block;
-}
-
-button {
-    background-color: vars.$primary-color;
-    font-family: vars.$base-font-family;
-    color: #fff;
-    font-size: vars.$base-font-size;
-    padding: 0;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    &:hover {
-        background-color: color.adjust(vars.$primary-color, $lightness: -10%);
-    }
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-    th,
-    td {
-        padding: 8px;
-        text-align: left;
-        border: 1px solid #ddd;
-    }
-    th {
-        background-color: #f4f4f4;
-    }
-}
-
-// path {
-//     stroke: unset;
-// }
-
-.modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    display: none;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
-}
-
-.modal.active {
-    display: flex;
-}
-
-// Кастомные утилитарные классы
-
-.span-bold {
-    font-weight: 600;
-}
-
-.black-bg {
-    @include mxn.background-image;
-    background-image: url('../images/black-bg.jpg');
-}
-
-.dark-grey-bg {
-    @include mxn.background-image;
-    background-image: url('../images/dark-grey.jpg');
-}
-
-.grey-bg {
-    @include mxn.background-image;
-    background-image: url('../images/grey.jpg');
-}
-
-.light-grey-bg {
-    @include mxn.background-image;
-    background-image: url('../images/light-grey.jpg');
-}
-
-.title {
-    font-weight: 500;
-    text-align: center;
-    font-size: clamp(27px, 4vw, 43px);
-}
-
-.title-sm {
-    text-align: center;
-    font-size: clamp(27px, 4vw, 40px);
-}
-
-.btn {
-    background-color: vars.$primary-color;
-    color: vars.$secondary-color;
-    font-size: 16px;
-    font-weight: 700;
-    width: 200px;
-    height: 47px;
-    cursor: pointer;
-    transition: 0.2s;
-    &:hover {
-        background-color: color.adjust(vars.$primary-color, $lightness: -20%);
-    }
-}
+@use 'general';
 
 // ГЛАВНЫЙ БЛОК
 
@@ -223,7 +17,7 @@ table {
     grid-template-columns: 19fr 23fr;
     grid-template-rows: auto auto auto;
     gap: 25px;
-    padding-top: clamp(73px, 15vh, 180px);
+    padding-top: clamp(73px, 15vw, 180px);
     padding-bottom: clamp(40px, 8vh, 80px);
 
     &-title {
@@ -337,11 +131,15 @@ table {
 
 @media screen and (max-width: 1330px) {
     .main_container {
-        margin: 0 20px;
+        margin: 0 19px;
     }
 }
 
 @media screen and (max-width: 980px) {
+    .main_section {
+        border-radius: 0 0 20px 20px;
+    }
+
     .main_container {
         grid-template-areas:
             'features'
@@ -352,7 +150,7 @@ table {
     }
 
     .main_container-features .main_features p {
-        padding: 10px 40px;
+        padding: 10px 45px;
         border-radius: 5px;
         border: 1px solid rgb(43 43 43);
     }
@@ -370,7 +168,7 @@ table {
     }
 
     .main_container-features {
-        padding: 20px 15px 40px 15px;
+        padding: 20px 12px 40px 12px;
         border-radius: 25px 25px 0 0;
     }
 
@@ -381,6 +179,7 @@ table {
     .main_container .main_video-container {
         margin-top: -35px;
         height: 204px;
+        border-radius: 5px;
     }
 
     .main_container-stats {
@@ -394,6 +193,18 @@ table {
         height: 130%;
         object-fit: cover;
         object-position: 60% center;
+    }
+
+    .main_container-stats .main_stat {
+        padding: 5px 0;
+    }
+
+    .main_container-stats .main_stat .main_title-h3 .main_title-num {
+        font-size: 50px;
+    }
+
+    .main_container-title {
+        line-height: 23px;
     }
 }
 
@@ -1171,6 +982,10 @@ table {
 }
 
 @media (max-width: 980px) {
+    .form_section .container {
+        border-radius: 0 0 20px 20px;
+    }
+
     .form_section {
         margin-top: -40px;
     }
@@ -1195,12 +1010,12 @@ table {
 
     .form_form-input {
         height: 50px;
-        border-radius: 35px;
+        border-radius: 5px;
     }
 
     .form_form-button {
         height: 50px;
-        border-radius: 35px;
+        border-radius: 5px;
     }
 }
 
@@ -1627,10 +1442,14 @@ table {
 
     .comparison_title-sub {
         display: block;
-        margin-top: 20px;
+        margin-top: 10px;
         color: vars.$third-color;
         font-size: 18px;
         font-weight: 400;
+    }
+
+    .comparison_section .comparison_title {
+        margin-bottom: 20px;
     }
 
     .comparison_section .comparison_container {
@@ -2020,7 +1839,7 @@ table {
     .tarif_item {
         border: 1px solid #5f5f5f;
         border-radius: 20px;
-        padding: clamp(20px, 2vw, 30px);
+        padding: 20px;
 
         .tarif_title {
             color: vars.$primary-color;
@@ -2081,7 +1900,7 @@ table {
         .tarif_desk {
             color: vars.$primary-color;
 
-            .tarif_list-arrow > svg {
+            .tarif_list-arrow > svg > path {
                 stroke: vars.$primary-color;
                 transition: 0.2s ease-in-out;
             }
@@ -2148,7 +1967,7 @@ table {
             .tarif_desk {
                 color: vars.$secondary-color;
 
-                .tarif_list-arrow > svg {
+                .tarif_list-arrow > svg > path {
                     stroke: vars.$secondary-color;
                 }
             }

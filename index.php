@@ -4,7 +4,12 @@ ini_set('display_errors', 1);
 ?>
 
 
-<?php include 'includes/header.php'; ?>
+<?php
+
+$page = 'main';
+$title = 'Периметр ремонта';
+$description = 'Главная страница периметр ремонта';
+include 'includes/header.php'; ?>
 
 <main>
 
@@ -16,7 +21,7 @@ ini_set('display_errors', 1);
                 <div class="main_container-features dark-grey-bg">
                     <h1 class="main_container-title">
                         <span class="span_pc">Безупречный по&nbsp;стилю<br>дизайн интерьера и&nbsp;реализация проекта под ключ.</span>
-                        <span class="span_mob">Безупречный по<br>стилю дизайн интерьера и&nbsp;реализация проекта под&nbsp;ключ.</span>
+                        <span class="span_mob">Безупречный по<br>стилю дизайн интерьера и&nbsp;реализация проекта под&nbsp;ключ</span>
                     </h1>
                     <div class="main_features">
                         <p>Выгода до&nbsp;15% за&nbsp;счет связки: дизайн+строители+подрядчики</p>
@@ -369,7 +374,7 @@ ini_set('display_errors', 1);
     <section class="comparison_section">
         <div class="container">
             <h2 class="title comparison_title">
-                <span class="title comparison_title-main">Визуализация проектов до/после</span>
+                <span class="title comparison_title-main">Визуализация проектов до/после<br></span>
                 <span class="comparison_title-sub">
                     как наши проекты воплощаются в&nbsp;жизнь
                 </span>

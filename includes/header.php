@@ -6,8 +6,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Периметр ремонта</title>
-    <link rel="stylesheet" href="<?php echo 'css/style.css'; ?>">
+    <meta name="page" copntent="<?php echo $page; ?>">
+    <title><?php echo isset($title) ? $title : 'Периметр ремонта'; ?></title>
+    <meta name="description" content="<?php echo isset($description) ? $description : 'Периметр ремонта — ваш надёжный партнёр в ремонте квартир и коммерческой недвижимости.'; ?>">
+    <link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+    <?php
+    $current_page = basename($_SERVER['PHP_SELF']);
+    $css_file = ($current_page === 'case.php') ? 'case.css' : 'main.css';
+    ?>
+    <link rel="stylesheet" href="css/<?php echo $css_file; ?>">
+
 
 
 </head>
@@ -126,3 +134,25 @@
         </div>
         </div>
     </header>
+
+    <div class="callback_container">
+        <img src="../images/callback.png" alt="Форма обратного звонка" class="callback_img">
+    </div>
+
+    <div class="callback-popup">
+        <div class="callback-popup__overlay"></div>
+        <div class="callback-popup__content">
+            <h2 class="callback-popup__title">Заказать звонок</h2>
+            <p class="callback-popup__description">Закажите обратный звонок и мы перезвоним вам для консультации</p>
+            <form class="callback-popup__form">
+                <input type="text" class="callback-popup__input" placeholder="Как Вас зовут?" required>
+                <input type="tel" class="callback-popup__input" placeholder="Номер телефона" required>
+                <button type="submit" class="callback-popup__button">Заказать звонок</button>
+            </form>
+            <button class="callback-popup__close" aria-label="Закрыть попап">
+                <img src="../images/callback-close.png" alt="Закрыть">
+            </button>
+            <p class="callback-popup__disclaimer">Нажимая кнопку “Получить подарок” вы автоматически соглашаетесь с политикой обработки персональных данных</p>
+
+        </div>
+    </div>

@@ -5,7 +5,10 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "build-css": "sass sass/main.scss css/style.css",
-        "watch-css": "sass --watch sass/main.scss:css/style.css"
+        "build-main": "sass sass/main.scss css/main.css",
+        "build-case": "sass sass/case.scss css/case.css",
+        "watch-css": "sass --watch sass/main.scss:css/style.css",
+        "watch": "sass --watch sass/main.scss:css/main.css sass/case.scss:css/case.css"
     },
     "keywords": [],
     "author": "",
@@ -13,8 +16,13 @@
     "description": "",
     "devDependencies": {
         "@prettier/plugin-php": "^0.22.2",
+        "gulp": "^5.0.0",
+        "gulp-rename": "^2.0.0",
+        "gulp-sass": "^6.0.0",
+        "jsdom": "^25.0.1",
+        "node-fetch": "^3.3.2",
         "prettier": "^3.4.2",
-        "sass": "^1.82.0"
+        "sass": "^1.83.0"
     },
     "emmet.includeLanguages": {
         "php": "html"
