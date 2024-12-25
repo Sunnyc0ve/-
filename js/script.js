@@ -502,3 +502,44 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+// ВИДЕООБЗОР
+
+document.addEventListener('DOMContentLoaded', () => {
+    const videoContainer = document.querySelector('.video_container');
+    const video = videoContainer.querySelector('video');
+    const overlay = videoContainer.querySelector('.video_overlay');
+    const playButton = videoContainer.querySelector('.play_button');
+
+    playButton.addEventListener('click', () => {
+        if (video.paused) {
+            video.play();
+            video.controls = true;
+            overlay.style.opacity = 0;
+            overlay.style.pointerEvents = 'none';
+            overlay.style.background = 'none'; // Убираем фон при запуске видео
+        }
+    });
+
+    video.addEventListener('ended', () => {
+        video.controls = false;
+        overlay.style.opacity = 1;
+        overlay.style.pointerEvents = 'auto';
+        overlay.style.background = 'rgba(0, 0, 0, 0.47)'; // Возвращаем фон после завершения видео
+    });
+});
+
+// Свайпер
+
+document.addEventListener('DOMContentLoaded', () => {
+    if (window.innerWidth <= 768) {
+        const swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1, // Один слайд на экране
+            spaceBetween: 20, // Расстояние между слайдами
+            pagination: {
+                el: '.swiper-pagination', // Пагинация
+                clickable: true, // Точки пагинации кликабельны
+            },
+        });
+    }
+});

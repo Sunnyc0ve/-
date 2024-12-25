@@ -15,6 +15,9 @@
     $css_file = ($current_page === 'case.php') ? 'case.css' : 'main.css';
     ?>
     <link rel="stylesheet" href="css/<?php echo $css_file; ?>">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 
 
 

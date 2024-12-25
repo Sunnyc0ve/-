@@ -696,6 +696,10 @@ table th {
   display: flex;
 }
 
+.red {
+  color: #ff0000 !important;
+}
+
 .span-bold {
   font-weight: 600;
 }
