@@ -73,9 +73,43 @@ document.addEventListener('DOMContentLoaded', () => {
 // Акция мобилка попап
 
 document.addEventListener('DOMContentLoaded', () => {
-    const popup = document.querySelector('.minisale_section');
-    const popupLink = document.querySelector('.open-popup-link');
-    const popupContainer = document.querySelector('.minisale_container');
+    const popup = document.querySelector('.zayavka_section');
+    const popupLink = document.querySelector('.open-zayavka-popup-link');
+    const popupContainer = document.querySelector('.zayavka_container');
+    const closePopupBtn = document.querySelector('.zayavka-popup__close');
+
+    // Открытие попапа
+    popupLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        popup.classList.add('is-visible');
+    });
+
+    // Закрытие попапа при клике на кнопку закрытия
+    closePopupBtn.addEventListener('click', () => {
+        popup.classList.remove('is-visible');
+    });
+
+    // Закрытие попапа при клике вне контейнера
+    popup.addEventListener('click', (e) => {
+        if (!popupContainer.contains(e.target)) {
+            popup.classList.remove('is-visible');
+        }
+    });
+
+    // Закрытие попапа по клавише Escape
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            popup.classList.remove('is-visible');
+        }
+    });
+});
+
+// Консультация попап
+
+document.addEventListener('DOMContentLoaded', () => {
+    const popup = document.querySelector('.zayavka_section');
+    const popupLink = document.querySelector('.open-zayavka-popup-link');
+    const popupContainer = document.querySelector('.zayavka_container');
 
     popupLink.addEventListener('click', (e) => {
         e.preventDefault();
@@ -241,51 +275,6 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('resize', updateView);
     updateView();
 });
-
-// document.addEventListener('DOMContentLoaded', () => {
-//     const accordionItems = document.querySelectorAll(
-//         '.features_accordion-item',
-//     );
-//     const descriptions = document.querySelectorAll('.features_description');
-
-//     if (accordionItems.length > 0) {
-//         const firstItem = accordionItems[0];
-//         const firstDescription = document.getElementById(
-//             firstItem.getAttribute('data-target'),
-//         );
-//         const firstIcon = firstItem.querySelector(
-//             '.features_accordion-icon > svg',
-//         );
-
-//         firstItem.setAttribute('aria-expanded', true);
-//         firstDescription.hidden = false;
-//         firstIcon.style.transform = 'rotate(270deg)';
-//         firstIcon.style.stroke = 'vars.$secondary-color';
-//     }
-
-//     accordionItems.forEach((item) => {
-//         const targetId = item.getAttribute('data-target');
-//         const targetDescription = document.getElementById(targetId);
-//         const icon = item.querySelector('.features_accordion-icon > svg');
-
-//         item.addEventListener('click', () => {
-//             descriptions.forEach((desc) => (desc.hidden = true));
-//             accordionItems.forEach((accItem) => {
-//                 const accIcon = accItem.querySelector(
-//                     '.features_accordion-icon > svg',
-//                 );
-//                 accItem.setAttribute('aria-expanded', false);
-//                 accIcon.style.transform = 'rotate(0deg)';
-//                 accIcon.style.stroke = 'vars.$third-color';
-//             });
-
-//             targetDescription.hidden = false;
-//             item.setAttribute('aria-expanded', true);
-//             icon.style.transform = 'rotate(270deg)';
-//             icon.style.stroke = 'vars.$secondary-color';
-//         });
-//     });
-// });
 
 // Социальные сети
 

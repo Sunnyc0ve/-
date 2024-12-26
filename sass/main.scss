@@ -450,6 +450,10 @@
 
 /* Скрыть десктопные описания на мобильной версии */
 @media screen and (max-width: 980px) {
+    .features_container {
+        padding-top: 40px;
+    }
+
     .features_container-description {
         display: none;
     }
@@ -782,12 +786,20 @@
 }
 
 @media (max-width: 980px) {
+    .case_section {
+        padding: 40px 0;
+    }
+
     .case_item-desk {
         font-size: 20.125px;
     }
 
     .case_item-video {
         height: 235px;
+    }
+
+    .case_container-grid {
+        margin-top: 40px;
     }
 }
 
@@ -1186,6 +1198,7 @@
 @media screen and (max-width: 980px) {
     .social_section {
         overflow: hidden;
+        margin-top: 40px;
     }
 
     .social_section .social_container {
@@ -1481,6 +1494,11 @@
     }
 }
 
+@media (max-width: 980px) {
+    .comparison_section {
+        margin-top: 40px;
+    }
+}
 // Видеоотзывы
 
 .vidr_section {
@@ -2090,6 +2108,10 @@
 
     .tarif_section .container .tarif_container {
         padding-top: 25px;
+    }
+
+    .tarif_container-item {
+        gap: 20px;
     }
 
     .tarif_form-content {

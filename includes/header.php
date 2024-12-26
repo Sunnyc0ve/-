@@ -12,8 +12,10 @@
     <link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
     <?php
     $current_page = basename($_SERVER['PHP_SELF']);
-    $css_file = ($current_page === 'case.php') ? 'case.css' : 'main.css';
+    $case_pages = ['ChernayaRechka38.php', 'ChernayaRechka70.php', 'Domino62.php', 'Galaxy38.php', 'panoramapark70.php'];
+    $css_file = in_array($current_page, $case_pages) ? 'case.css' : 'main.css';
     ?>
+
     <link rel="stylesheet" href="css/<?php echo $css_file; ?>">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -87,7 +89,7 @@
                             </div>
                         </div>
                     </div>
-                    <button class="btn header__btn" aria-label="Оставить заявку">Оставить заявку</button>
+                    <button class="btn header__btn open-zayavka-popup-link" aria-label="Оставить заявку" role="button" aria-haspopup="dialog" aria-controls="zayavka-popup-sale">Оставить заявку</button>
                 </div>
             </nav>
 
@@ -159,3 +161,28 @@
 
         </div>
     </div>
+
+
+    <!-- Консультация попап -->
+
+    <section class="zayavka_section">
+        <div class="container dark-grey-bg">
+            <div class="zayavka_container">
+                <div class="zayavka_container-title">
+                    <p class="zayavka_title">Получите консультацию по&nbsp;стоимости дизайн проекта и&nbsp;ремонта вашей квартиры</p>
+                </div>
+                <p class="zayavka_subtitle">Оставьте заявку, и&nbsp;мы&nbsp;обсудим Ваш бюджет и&nbsp;пожелания, сориентируем по&nbsp;срокам и&nbsp;акциям на&nbsp;дизайн-проект и&nbsp;ремонт Вашей квартиры.</p>
+                <div class="zayavka_container-form">
+                    <form action="#" class="zayavka_form">
+                        <input type="text" class="zayavka_form-input" name="name" placeholder="Как вас зовут?" autocomplete="name" required pattern="[A-Za-zА-Яа-яЁё\s]+">
+                        <input type="tel" class="zayavka_form-input" name="phone" placeholder="Номер телефона" autocomplete="tel" required pattern="[0-9]{10}">
+                        <button type="submit" class="zayavka_form-button">Получить консультацию</button>
+                    </form>
+                    <p class="zayavka_disclaimer">Нажимая кнопку &laquo;Получить консультацию&raquo; вы&nbsp;автоматически соглашаетесь с&nbsp;политикой обработки персональных данных</p>
+                </div>
+                <button class="zayavka-popup__close" aria-label="Закрыть попап">
+                    <img src="../images/zayavka-close.png" alt="Закрыть">
+                </button>
+            </div>
+        </div>
+    </section>

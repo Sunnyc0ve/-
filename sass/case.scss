@@ -186,6 +186,10 @@
         padding-bottom: 20px;
     }
 
+    .main_container-stats {
+        border-radius: 0 0 10px 10px;
+    }
+
     .main_container-stats .main_stat .main_stat-img {
         width: 18px;
         height: 18px;
@@ -382,8 +386,8 @@
     }
 }
 @media screen and (max-width: 1330px) {
-    .main_container {
-        margin: 0 19px;
+    .process_container {
+        margin: 0 20px;
     }
 }
 @media screen and (max-width: 980px) {
@@ -392,7 +396,6 @@
         .process_stages-item
         .process_item-content
         .process_content-heading {
-        width: 170px;
         margin-bottom: 5px;
     }
 
@@ -409,8 +412,6 @@
     }
 
     .process_container {
-        padding: 0 clamp(10px, 5vw, 24px);
-
         .process_container-stages {
             .process_stages-item {
                 align-items: flex-start;
@@ -437,6 +438,15 @@
     }
 }
 
+@media (max-width: 480px) {
+    .process_container
+        .process_container-stages
+        .process_stages-item
+        .process_item-content
+        .process_content-heading {
+        width: 170px;
+    }
+}
 // РЕЗУЛЬТАТЫ РАБОТ
 
 .result_section {

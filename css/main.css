@@ -549,6 +549,108 @@
     width: 60px;
   }
 }
+.zayavka_section {
+  margin-top: 0;
+  position: fixed; /* Фиксированное положение */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Полная ширина */
+  height: 100vh; /* Полная высота */
+  background-color: rgba(0, 0, 0, 0.7); /* Задний фон с затемнением */
+  backdrop-filter: blur(1.8999999762px);
+  z-index: 999; /* Поверх всего контента */
+  display: none; /* Центрирование контейнера */
+  align-items: center;
+  justify-content: center;
+}
+.zayavka_section.is-visible {
+  display: flex; /* Показать при добавлении класса */
+}
+.zayavka_section .container {
+  width: 350px;
+  border-radius: 20px;
+  padding: 20px;
+  height: fit-content;
+  position: relative;
+}
+.zayavka_section .container .zayavka_container {
+  width: 100%;
+}
+
+.zayavka_container {
+  margin: 0 auto;
+  text-align: left;
+}
+
+.zayavka_title {
+  width: 250px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.zayavka_subtitle {
+  color: #fff;
+  font-size: 18px;
+  margin: 20px 0;
+  font-weight: 300;
+}
+
+.zayavka_container-form .zayavka_form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 25px;
+}
+.zayavka_container-form .zayavka_form .zayavka_form-input {
+  text-align: center;
+  height: 57px;
+  border: 1px solid #979496;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: transparent;
+  color: #fff;
+}
+.zayavka_container-form .zayavka_form .zayavka_form-button {
+  height: 57px;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #232323;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.zayavka_container-form .zayavka_form .zayavka_form-button:hover {
+  background-color: #e0e0e0;
+}
+.zayavka_container-form .zayavka_disclaimer {
+  margin-top: 20px;
+  color: #979496;
+  font-size: 14px;
+}
+
+.zayavka-popup__close {
+  position: absolute;
+  top: 21px;
+  right: 21px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 33px; /* Ширина кнопки */
+  height: 33px; /* Высота кнопки */
+  padding: 0; /* Убираем внутренние отступы */
+}
+.zayavka-popup__close:hover {
+  background-color: transparent;
+}
+
+.zayavka-popup__close img {
+  width: 100%; /* Ширина изображения совпадает с кнопкой */
+  height: 100%; /* Высота изображения совпадает с кнопкой */
+  display: block; /* Убираем пробелы вокруг изображения */
+}
+
 @font-face {
   font-family: "Tilda Sans VF";
   src: url("../fonts/TildaSans-VF.woff2") format("woff2"), url("../fonts/TildaSans-VF.woff") format("woff");
@@ -1125,6 +1227,9 @@ table th {
 }
 /* Скрыть десктопные описания на мобильной версии */
 @media screen and (max-width: 980px) {
+  .features_container {
+    padding-top: 40px;
+  }
   .features_container-description {
     display: none;
   }
@@ -1392,11 +1497,17 @@ table th {
   }
 }
 @media (max-width: 980px) {
+  .case_section {
+    padding: 40px 0;
+  }
   .case_item-desk {
     font-size: 20.125px;
   }
   .case_item-video {
     height: 235px;
+  }
+  .case_container-grid {
+    margin-top: 40px;
   }
 }
 @media (min-width: 680px) and (max-width: 1024px) {
@@ -1716,6 +1827,7 @@ table th {
 @media screen and (max-width: 980px) {
   .social_section {
     overflow: hidden;
+    margin-top: 40px;
   }
   .social_section .social_container {
     margin: 0;
@@ -1948,6 +2060,11 @@ table th {
   }
   .comparison_section .comparison_container .comparison_slider .comparison_handle .comparison_control span {
     font-size: 6px;
+  }
+}
+@media (max-width: 980px) {
+  .comparison_section {
+    margin-top: 40px;
   }
 }
 .vidr_section {
@@ -2459,6 +2576,9 @@ table th {
   }
   .tarif_section .container .tarif_container {
     padding-top: 25px;
+  }
+  .tarif_container-item {
+    gap: 20px;
   }
   .tarif_form-content {
     margin: 40px 20px;

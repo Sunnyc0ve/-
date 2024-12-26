@@ -549,6 +549,108 @@
     width: 60px;
   }
 }
+.zayavka_section {
+  margin-top: 0;
+  position: fixed; /* Фиксированное положение */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Полная ширина */
+  height: 100vh; /* Полная высота */
+  background-color: rgba(0, 0, 0, 0.7); /* Задний фон с затемнением */
+  backdrop-filter: blur(1.8999999762px);
+  z-index: 999; /* Поверх всего контента */
+  display: none; /* Центрирование контейнера */
+  align-items: center;
+  justify-content: center;
+}
+.zayavka_section.is-visible {
+  display: flex; /* Показать при добавлении класса */
+}
+.zayavka_section .container {
+  width: 350px;
+  border-radius: 20px;
+  padding: 20px;
+  height: fit-content;
+  position: relative;
+}
+.zayavka_section .container .zayavka_container {
+  width: 100%;
+}
+
+.zayavka_container {
+  margin: 0 auto;
+  text-align: left;
+}
+
+.zayavka_title {
+  width: 250px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.zayavka_subtitle {
+  color: #fff;
+  font-size: 18px;
+  margin: 20px 0;
+  font-weight: 300;
+}
+
+.zayavka_container-form .zayavka_form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 25px;
+}
+.zayavka_container-form .zayavka_form .zayavka_form-input {
+  text-align: center;
+  height: 57px;
+  border: 1px solid #979496;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: transparent;
+  color: #fff;
+}
+.zayavka_container-form .zayavka_form .zayavka_form-button {
+  height: 57px;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #232323;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.zayavka_container-form .zayavka_form .zayavka_form-button:hover {
+  background-color: #e0e0e0;
+}
+.zayavka_container-form .zayavka_disclaimer {
+  margin-top: 20px;
+  color: #979496;
+  font-size: 14px;
+}
+
+.zayavka-popup__close {
+  position: absolute;
+  top: 21px;
+  right: 21px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 33px; /* Ширина кнопки */
+  height: 33px; /* Высота кнопки */
+  padding: 0; /* Убираем внутренние отступы */
+}
+.zayavka-popup__close:hover {
+  background-color: transparent;
+}
+
+.zayavka-popup__close img {
+  width: 100%; /* Ширина изображения совпадает с кнопкой */
+  height: 100%; /* Высота изображения совпадает с кнопкой */
+  display: block; /* Убираем пробелы вокруг изображения */
+}
+
 @font-face {
   font-family: "Tilda Sans VF";
   src: url("../fonts/TildaSans-VF.woff2") format("woff2"), url("../fonts/TildaSans-VF.woff") format("woff");
@@ -911,6 +1013,9 @@ table th {
   .main_container {
     padding-bottom: 20px;
   }
+  .main_container-stats {
+    border-radius: 0 0 10px 10px;
+  }
   .main_container-stats .main_stat .main_stat-img {
     width: 18px;
     height: 18px;
@@ -1078,13 +1183,12 @@ table th {
 }
 
 @media screen and (max-width: 1330px) {
-  .main_container {
-    margin: 0 19px;
+  .process_container {
+    margin: 0 20px;
   }
 }
 @media screen and (max-width: 980px) {
   .process_container .process_container-stages .process_stages-item .process_item-content .process_content-heading {
-    width: 170px;
     margin-bottom: 5px;
   }
   .process_container .process_desk {
@@ -1095,9 +1199,6 @@ table th {
   }
   .process_section .container {
     border-radius: 35px 35px 0 0;
-  }
-  .process_container {
-    padding: 0 clamp(10px, 5vw, 24px);
   }
   .process_container .process_container-stages .process_stages-item {
     align-items: flex-start;
@@ -1113,6 +1214,11 @@ table th {
   }
   .process_container .process_desk {
     text-align: left;
+  }
+}
+@media (max-width: 480px) {
+  .process_container .process_container-stages .process_stages-item .process_item-content .process_content-heading {
+    width: 170px;
   }
 }
 .result_section {
