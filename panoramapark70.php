@@ -49,7 +49,7 @@ include 'includes/header.php'; ?>
                     </div>
                 </div>
                 <div class="main_video-container">
-                    <video src="videos/mainvid.mp4" class="main_video" autoplay muted loop aria-label="Видеопрезентация интерьера.">Ваш браузер не поддерживает видео.</video>
+                    <video src="videos/Zk-Panorama-Park-70.mp4" class="main_video" autoplay muted loop aria-label="Видеопрезентация интерьера.">Ваш браузер не поддерживает видео.</video>
                 </div>
             </div>
         </div>
@@ -152,7 +152,7 @@ include 'includes/header.php'; ?>
             <h2 class="title video_title">Почувствуйте атмосферу реализованного проекта</h2>
             <div class="video_container">
                 <video playsinline poster="">
-                    <source src="videos/mainvid.mp4" type="video/mp4">
+                    <source src="videos/Rewpanoramapark70.mp4" type="video/mp4">
                     Ваш браузер не поддерживает видео.
                 </video>
                 <div class="video_overlay">
@@ -332,56 +332,66 @@ include 'includes/header.php'; ?>
                 <h2 class="title case_title">Наши работы</h2>
                 <div class="case_container-grid case_grid-first-row">
                     <div class="case_grid-item">
-                        <div class="case_item-video">
-                            <video class="case_video" aria-label="Видео ЖК 'Черная речка' 70 кв.м" muted loop playsinline poster="">
-                                <source src="videos/Zk-Black-River-70.mp4" type="video/mp4">
-                                Ваш браузер не поддерживает видео.
-                            </video>
-                            <p class="case_item-desk">ЖК «Черная речка» 70кв.м</p>
-                        </div>
-                        <a href="#" class="btn case_item-btn" aria-label="Подробнее о ЖК 'Черная речка' 70 кв.м">Подробнее</a>
+                        <a href="/ChernayaRechka70.php" class="case_link">
+                            <div class="case_item-video">
+                                <video class="case_video" aria-label="Видео ЖК 'Черная речка' 70 кв.м" muted loop playsinline poster="">
+                                    <source src="videos/Zk-Black-River-70.mp4" type="video/mp4">
+                                    Ваш браузер не поддерживает видео.
+                                </video>
+                                <p class="case_item-desk">ЖК «Черная речка» 70кв.м</p>
+                            </div>
+                        </a>
+                        <a href="/ChernayaRechka70.php" class="btn case_item-btn" aria-label="Подробнее о ЖК 'Черная речка' 70 кв.м">Подробнее</a>
                     </div>
                     <div class="case_grid-item">
-                        <div class="case_item-video">
-                            <video class="case_video" aria-label="ЖК «Черная речка» 38кв.м" muted loop playsinline poster="">
-                                <source src="videos/Zk-Black-River-38.mp4" type="video/mp4">
-                                Ваш браузер не поддерживает видео.
-                            </video>
-                            <p class="case_item-desk">ЖК «Черная речка» 38кв.м</p>
-                        </div>
-                        <a href="#" class="btn case_item-btn" aria-label="Подробнее о ЖК «Черная речка» 38кв.м">Подробнее</a>
+                        <a href="/ChernayaRechka38.php" class="case_link">
+                            <div class="case_item-video">
+                                <video class="case_video" aria-label="ЖК «Черная речка» 38кв.м" muted loop playsinline poster="">
+                                    <source src="videos/Zk-Black-River-38.mp4" type="video/mp4">
+                                    Ваш браузер не поддерживает видео.
+                                </video>
+                                <p class="case_item-desk">ЖК «Черная речка» 38кв.м</p>
+                            </div>
+                        </a>
+                        <a href="/ChernayaRechka38.php" class="btn case_item-btn" aria-label="Подробнее о ЖК «Черная речка» 38кв.м">Подробнее</a>
                     </div>
                     <div class="case_grid-item">
-                        <div class="case_item-video">
-                            <video class="case_video" aria-label="ЖК «Панарама парк» 70кв.м" muted loop playsinline poster="">
-                                <source src="videos/Zk-Panorama-Park-70.mp4" type="video/mp4">
-                                Ваш браузер не поддерживает видео.
-                            </video>
-                            <p class="case_item-desk">ЖК «Панарама парк» 70кв.м</p>
-                        </div>
-                        <a href="#" class="btn case_item-btn" aria-label="Подробнее о ЖК «Панарама парк» 70кв.м">Подробнее</a>
+                        <a href="/panoramapark70.php" class="case_link">
+                            <div class="case_item-video">
+                                <video class="case_video" aria-label="ЖК «Панарама парк» 70кв.м" muted loop playsinline poster="">
+                                    <source src="videos/Zk-Panorama-Park-70.mp4" type="video/mp4">
+                                    Ваш браузер не поддерживает видео.
+                                </video>
+                                <p class="case_item-desk">ЖК «Панарама парк» 70кв.м</p>
+                            </div>
+                        </a>
+                        <a href="/panoramapark70.php" class="btn case_item-btn" aria-label="Подробнее о ЖК «Панарама парк» 70кв.м">Подробнее</a>
                     </div>
                 </div>
                 <div class="case_container-grid case_grid-second-row">
                     <div class="case_grid-item">
-                        <div class="case_item-video">
-                            <video class="case_video" aria-label="ЖК «Домино» 62кв.м" muted loop playsinline poster="">
-                                <source src="videos/Zk-Domino-62.mp4" type="video/mp4">
-                                Ваш браузер не поддерживает видео.
-                            </video>
-                            <p class="case_item-desk">ЖК «Домино» 62кв.м</p>
-                        </div>
-                        <a href="#" class="btn case_item-btn" aria-label="Подробнее о ЖК «Домино» 62кв.м">Подробнее</a>
+                        <a href="/Domino62.php" class="case_link">
+                            <div class="case_item-video">
+                                <video class="case_video" aria-label="ЖК «Домино» 62кв.м" muted loop playsinline poster="">
+                                    <source src="videos/Zk-Domino-62.mp4" type="video/mp4">
+                                    Ваш браузер не поддерживает видео.
+                                </video>
+                                <p class="case_item-desk">ЖК «Домино» 62кв.м</p>
+                            </div>
+                        </a>
+                        <a href="/Domino62.php" class="btn case_item-btn" aria-label="Подробнее о ЖК «Домино» 62кв.м">Подробнее</a>
                     </div>
                     <div class="case_grid-item">
-                        <div class="case_item-video">
-                            <video class="case_video" aria-label="ЖК «Галактика» 38кв.м" muted loop playsinline poster="">
-                                <source src="videos/Zk-Galaxy-38.mp4" type="video/mp4">
-                                Ваш браузер не поддерживает видео.
-                            </video>
-                            <p class="case_item-desk">ЖК «Галактика» 38кв.м</p>
-                        </div>
-                        <a href="#" class="btn case_item-btn" aria-label="Подробнее о ЖК «Галактика» 38кв.м">Подробнее</a>
+                        <a href="/Galaxy38.php" class="case_link">
+                            <div class="case_item-video">
+                                <video class="case_video" aria-label="ЖК «Галактика» 38кв.м" muted loop playsinline poster="">
+                                    <source src="videos/Zk-Galaxy-38.mp4" type="video/mp4">
+                                    Ваш браузер не поддерживает видео.
+                                </video>
+                                <p class="case_item-desk">ЖК «Галактика» 38кв.м</p>
+                            </div>
+                        </a>
+                        <a href="/Galaxy38.php" class="btn case_item-btn" aria-label="Подробнее о ЖК «Галактика» 38кв.м">Подробнее</a>
                     </div>
                 </div>
             </div>
@@ -396,62 +406,72 @@ include 'includes/header.php'; ?>
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="case_grid-item">
-                        <div class="case_item-video">
-                            <video class="case_video" aria-label="Видео ЖК 'Черная речка' 70 кв.м" muted loop playsinline poster="">
-                                <source src="videos/Zk-Black-River-70.mp4" type="video/mp4">
-                                Ваш браузер не поддерживает видео.
-                            </video>
-                            <p class="case_item-desk">ЖК «Черная речка» 70кв.м</p>
-                        </div>
-                        <a href="#" class="btn case_item-btn" aria-label="Подробнее о ЖК 'Черная речка' 70 кв.м">Подробнее</a>
+                        <a href="/ChernayaRechka70.php" class="case_link">
+                            <div class="case_item-video">
+                                <video class="case_video" aria-label="Видео ЖК 'Черная речка' 70 кв.м" muted loop playsinline poster="">
+                                    <source src="videos/Zk-Black-River-70.mp4" type="video/mp4">
+                                    Ваш браузер не поддерживает видео.
+                                </video>
+                                <p class="case_item-desk">ЖК «Черная речка» 70кв.м</p>
+                            </div>
+                        </a>
+                        <a href="/ChernayaRechka70.php" class="btn case_item-btn" aria-label="Подробнее о ЖК 'Черная речка' 70 кв.м">Подробнее</a>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="case_grid-item">
-                        <div class="case_item-video">
-                            <video class="case_video" aria-label="ЖК 'Черная речка' 38 кв.м" muted loop playsinline poster="">
-                                <source src="videos/Zk-Black-River-38.mp4" type="video/mp4">
-                                Ваш браузер не поддерживает видео.
-                            </video>
-                            <p class="case_item-desk">ЖК «Черная речка» 38кв.м</p>
-                        </div>
-                        <a href="#" class="btn case_item-btn" aria-label="Подробнее о ЖК 'Черная речка' 38 кв.м">Подробнее</a>
+                        <a href="/ChernayaRechka38.php" class="case_link">
+                            <div class="case_item-video">
+                                <video class="case_video" aria-label="ЖК «Черная речка» 38кв.м" muted loop playsinline poster="">
+                                    <source src="videos/Zk-Black-River-38.mp4" type="video/mp4">
+                                    Ваш браузер не поддерживает видео.
+                                </video>
+                                <p class="case_item-desk">ЖК «Черная речка» 38кв.м</p>
+                            </div>
+                        </a>
+                        <a href="/ChernayaRechka38.php" class="btn case_item-btn" aria-label="Подробнее о ЖК «Черная речка» 38кв.м">Подробнее</a>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="case_grid-item">
-                        <div class="case_item-video">
-                            <video class="case_video" aria-label="ЖК 'Панорама парк' 70 кв.м" muted loop playsinline poster="">
-                                <source src="videos/Zk-Panorama-Park-70.mp4" type="video/mp4">
-                                Ваш браузер не поддерживает видео.
-                            </video>
-                            <p class="case_item-desk">ЖК «Панорама парк» 70кв.м</p>
-                        </div>
-                        <a href="#" class="btn case_item-btn" aria-label="Подробнее о ЖК 'Панорама парк' 70 кв.м">Подробнее</a>
+                        <a href="/panoramapark70.php" class="case_link">
+                            <div class="case_item-video">
+                                <video class="case_video" aria-label="ЖК «Панарама парк» 70кв.м" muted loop playsinline poster="">
+                                    <source src="videos/Zk-Panorama-Park-70.mp4" type="video/mp4">
+                                    Ваш браузер не поддерживает видео.
+                                </video>
+                                <p class="case_item-desk">ЖК «Панарама парк» 70кв.м</p>
+                            </div>
+                        </a>
+                        <a href="/panoramapark70.php" class="btn case_item-btn" aria-label="Подробнее о ЖК «Панарама парк» 70кв.м">Подробнее</a>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="case_grid-item">
-                        <div class="case_item-video">
-                            <video class="case_video" aria-label="ЖК «Домино» 62кв.м" muted loop playsinline poster="">
-                                <source src="videos/Zk-Domino-62.mp4" type="video/mp4">
-                                Ваш браузер не поддерживает видео.
-                            </video>
-                            <p class="case_item-desk">ЖК «Домино» 62кв.м</p>
-                        </div>
-                        <a href="#" class="btn case_item-btn" aria-label="Подробнее о ЖК «Домино» 62кв.м">Подробнее</a>
+                        <a href="/Domino62.php" class="case_link">
+                            <div class="case_item-video">
+                                <video class="case_video" aria-label="ЖК «Домино» 62кв.м" muted loop playsinline poster="">
+                                    <source src="videos/Zk-Domino-62.mp4" type="video/mp4">
+                                    Ваш браузер не поддерживает видео.
+                                </video>
+                                <p class="case_item-desk">ЖК «Домино» 62кв.м</p>
+                            </div>
+                        </a>
+                        <a href="/Domino62.php" class="btn case_item-btn" aria-label="Подробнее о ЖК «Домино» 62кв.м">Подробнее</a>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="case_grid-item">
-                        <div class="case_item-video">
-                            <video class="case_video" aria-label="ЖК «Галактика» 38кв.м" muted loop playsinline poster="">
-                                <source src="videos/Zk-Galaxy-38.mp4" type="video/mp4">
-                                Ваш браузер не поддерживает видео.
-                            </video>
-                            <p class="case_item-desk">ЖК «Галактика» 38кв.м</p>
-                        </div>
-                        <a href="#" class="btn case_item-btn" aria-label="Подробнее о ЖК «Галактика» 38кв.м">Подробнее</a>
+                        <a href="/Galaxy38.php" class="case_link">
+                            <div class="case_item-video">
+                                <video class="case_video" aria-label="ЖК «Галактика» 38кв.м" muted loop playsinline poster="">
+                                    <source src="videos/Zk-Galaxy-38.mp4" type="video/mp4">
+                                    Ваш браузер не поддерживает видео.
+                                </video>
+                                <p class="case_item-desk">ЖК «Галактика» 38кв.м</p>
+                            </div>
+                        </a>
+                        <a href="/Galaxy38.php" class="btn case_item-btn" aria-label="Подробнее о ЖК «Галактика» 38кв.м">Подробнее</a>
                     </div>
                 </div>
             </div>

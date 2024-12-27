@@ -71,32 +71,19 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Акция мобилка попап
-
 document.addEventListener('DOMContentLoaded', () => {
-    const popup = document.querySelector('.zayavka_section');
-    const popupLink = document.querySelector('.open-zayavka-popup-link');
-    const popupContainer = document.querySelector('.zayavka_container');
-    const closePopupBtn = document.querySelector('.zayavka-popup__close');
-
-    // Открытие попапа
+    const popup = document.querySelector('.minisale_section');
+    const popupLink = document.querySelector('.open-popup-link');
+    const popupContainer = document.querySelector('.minisale_container');
     popupLink.addEventListener('click', (e) => {
         e.preventDefault();
         popup.classList.add('is-visible');
     });
-
-    // Закрытие попапа при клике на кнопку закрытия
-    closePopupBtn.addEventListener('click', () => {
-        popup.classList.remove('is-visible');
-    });
-
-    // Закрытие попапа при клике вне контейнера
     popup.addEventListener('click', (e) => {
         if (!popupContainer.contains(e.target)) {
             popup.classList.remove('is-visible');
         }
     });
-
-    // Закрытие попапа по клавише Escape
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape') {
             popup.classList.remove('is-visible');

@@ -174,21 +174,21 @@ include 'includes/header.php'; ?>
 
     <!-- Акция попап мобилка -->
 
-    <section class="minisale_section">
+    <section class="mobsale_section">
         <div class="container dark-grey-bg">
-            <div class="minisale_container">
-                <div class="minisale_container-title">
-                    <p class="minisale_title">Акция</p>
+            <div class="mobsale_container">
+                <div class="mobsale_container-title">
+                    <p class="mobsale_title">Акция</p>
                 </div>
-                <p class="minisale_subtitle">Технический дизайн-<br>проект в&nbsp;подарок</p>
-                <p class="minisale_desk">Планировочное решение, электрика и&nbsp;сантехника для старта работ</p>
-                <div class="minisale_container-form">
-                    <form action="#" class="minisale_form">
-                        <input type="text" class="minisale_form-input" name="name" placeholder="Как вас зовут?" autocomplete="name" required pattern="[A-Za-zА-Яа-яЁё\s]+">
-                        <input type="tel" class="minisale_form-input" name="phone" placeholder="Номер телефона" autocomplete="tel" required pattern="[0-9]{10}">
-                        <button type="submit" class="minisale_form-button">Получить подарок</button>
+                <p class="mobsale_subtitle">Технический дизайн-<br>проект в&nbsp;подарок</p>
+                <p class="mobsale_desk">Планировочное решение, электрика и&nbsp;сантехника для старта работ</p>
+                <div class="mobsale_container-form">
+                    <form action="#" class="mobsale_form">
+                        <input type="text" class="mobsale_form-input" name="name" placeholder="Как вас зовут?" autocomplete="name" required pattern="[A-Za-zА-Яа-яЁё\s]+">
+                        <input type="tel" class="mobsale_form-input" name="phone" placeholder="Номер телефона" autocomplete="tel" required pattern="[0-9]{10}">
+                        <button type="submit" class="mobsale_form-button">Получить подарок</button>
                     </form>
-                    <p class="minisale_disclaimer">Нажимая кнопку &laquo;Получить подарок&raquo; вы&nbsp;автоматически соглашаетесь с&nbsp;политикой обработки персональных данных</p>
+                    <p class="mobsale_disclaimer">Нажимая кнопку &laquo;Получить подарок&raquo; вы&nbsp;автоматически соглашаетесь с&nbsp;политикой обработки персональных данных</p>
                 </div>
             </div>
         </div>
@@ -203,56 +203,66 @@ include 'includes/header.php'; ?>
                 <h2 class="title case_title">Наши работы</h2>
                 <div class="case_container-grid case_grid-first-row">
                     <div class="case_grid-item">
-                        <div class="case_item-video">
-                            <video class="case_video" aria-label="Видео ЖК 'Черная речка' 70 кв.м" muted loop playsinline poster="">
-                                <source src="videos/Zk-Black-River-70.mp4" type="video/mp4">
-                                Ваш браузер не поддерживает видео.
-                            </video>
-                            <p class="case_item-desk">ЖК «Черная речка» 70кв.м</p>
-                        </div>
-                        <a href="#" class="btn case_item-btn" aria-label="Подробнее о ЖК 'Черная речка' 70 кв.м">Подробнее</a>
+                        <a href="/ChernayaRechka70.php" class="case_link">
+                            <div class="case_item-video">
+                                <video class="case_video" aria-label="Видео ЖК 'Черная речка' 70 кв.м" muted loop playsinline poster="">
+                                    <source src="videos/Zk-Black-River-70.mp4" type="video/mp4">
+                                    Ваш браузер не поддерживает видео.
+                                </video>
+                                <p class="case_item-desk">ЖК «Черная речка» 70кв.м</p>
+                            </div>
+                        </a>
+                        <a href="/ChernayaRechka70.php" class="btn case_item-btn" aria-label="Подробнее о ЖК 'Черная речка' 70 кв.м">Подробнее</a>
                     </div>
                     <div class="case_grid-item">
-                        <div class="case_item-video">
-                            <video class="case_video" aria-label="ЖК «Черная речка» 38кв.м" muted loop playsinline poster="">
-                                <source src="videos/Zk-Black-River-38.mp4" type="video/mp4">
-                                Ваш браузер не поддерживает видео.
-                            </video>
-                            <p class="case_item-desk">ЖК «Черная речка» 38кв.м</p>
-                        </div>
-                        <a href="#" class="btn case_item-btn" aria-label="Подробнее о ЖК «Черная речка» 38кв.м">Подробнее</a>
+                        <a href="/ChernayaRechka38.php" class="case_link">
+                            <div class="case_item-video">
+                                <video class="case_video" aria-label="ЖК «Черная речка» 38кв.м" muted loop playsinline poster="">
+                                    <source src="videos/Zk-Black-River-38.mp4" type="video/mp4">
+                                    Ваш браузер не поддерживает видео.
+                                </video>
+                                <p class="case_item-desk">ЖК «Черная речка» 38кв.м</p>
+                            </div>
+                        </a>
+                        <a href="/ChernayaRechka38.php" class="btn case_item-btn" aria-label="Подробнее о ЖК «Черная речка» 38кв.м">Подробнее</a>
                     </div>
                     <div class="case_grid-item">
-                        <div class="case_item-video">
-                            <video class="case_video" aria-label="ЖК «Панарама парк» 70кв.м" muted loop playsinline poster="">
-                                <source src="videos/Zk-Panorama-Park-70.mp4" type="video/mp4">
-                                Ваш браузер не поддерживает видео.
-                            </video>
-                            <p class="case_item-desk">ЖК «Панарама парк» 70кв.м</p>
-                        </div>
-                        <a href="#" class="btn case_item-btn" aria-label="Подробнее о ЖК «Панарама парк» 70кв.м">Подробнее</a>
+                        <a href="/panoramapark70.php" class="case_link">
+                            <div class="case_item-video">
+                                <video class="case_video" aria-label="ЖК «Панарама парк» 70кв.м" muted loop playsinline poster="">
+                                    <source src="videos/Zk-Panorama-Park-70.mp4" type="video/mp4">
+                                    Ваш браузер не поддерживает видео.
+                                </video>
+                                <p class="case_item-desk">ЖК «Панарама парк» 70кв.м</p>
+                            </div>
+                        </a>
+                        <a href="/panoramapark70.php" class="btn case_item-btn" aria-label="Подробнее о ЖК «Панарама парк» 70кв.м">Подробнее</a>
                     </div>
                 </div>
                 <div class="case_container-grid case_grid-second-row">
                     <div class="case_grid-item">
-                        <div class="case_item-video">
-                            <video class="case_video" aria-label="ЖК «Домино» 62кв.м" muted loop playsinline poster="">
-                                <source src="videos/Zk-Domino-62.mp4" type="video/mp4">
-                                Ваш браузер не поддерживает видео.
-                            </video>
-                            <p class="case_item-desk">ЖК «Домино» 62кв.м</p>
-                        </div>
-                        <a href="#" class="btn case_item-btn" aria-label="Подробнее о ЖК «Домино» 62кв.м">Подробнее</a>
+                        <a href="/Domino62.php" class="case_link">
+                            <div class="case_item-video">
+                                <video class="case_video" aria-label="ЖК «Домино» 62кв.м" muted loop playsinline poster="">
+                                    <source src="videos/Zk-Domino-62.mp4" type="video/mp4">
+                                    Ваш браузер не поддерживает видео.
+                                </video>
+                                <p class="case_item-desk">ЖК «Домино» 62кв.м</p>
+                            </div>
+                        </a>
+                        <a href="/Domino62.php" class="btn case_item-btn" aria-label="Подробнее о ЖК «Домино» 62кв.м">Подробнее</a>
                     </div>
                     <div class="case_grid-item">
-                        <div class="case_item-video">
-                            <video class="case_video" aria-label="ЖК «Галактика» 38кв.м" muted loop playsinline poster="">
-                                <source src="videos/Zk-Galaxy-38.mp4" type="video/mp4">
-                                Ваш браузер не поддерживает видео.
-                            </video>
-                            <p class="case_item-desk">ЖК «Галактика» 38кв.м</p>
-                        </div>
-                        <a href="#" class="btn case_item-btn" aria-label="Подробнее о ЖК «Галактика» 38кв.м">Подробнее</a>
+                        <a href="/Galaxy38.php" class="case_link">
+                            <div class="case_item-video">
+                                <video class="case_video" aria-label="ЖК «Галактика» 38кв.м" muted loop playsinline poster="">
+                                    <source src="videos/Zk-Galaxy-38.mp4" type="video/mp4">
+                                    Ваш браузер не поддерживает видео.
+                                </video>
+                                <p class="case_item-desk">ЖК «Галактика» 38кв.м</p>
+                            </div>
+                        </a>
+                        <a href="/Galaxy38.php" class="btn case_item-btn" aria-label="Подробнее о ЖК «Галактика» 38кв.м">Подробнее</a>
                     </div>
                 </div>
             </div>

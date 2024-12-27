@@ -22,7 +22,9 @@ include 'includes/header.php'; ?>
                         Дизайнерский ремонт<br> однокомнатной квартиры
                     </h1>
                     <div class="main_features">
-                        <p>Нашей командой был разработан<br>дизайн-проект и&nbsp;выполнен ремонт для молодого<br>IT-специалиста в&nbsp;однокомнатной квартире<br>в&nbsp;современном стиле.</p>
+                        <p>Нашей командой был разработан дизайн-проект<br>
+                            и&nbsp;выполнен ремонт для молодой семьи<br>
+                            в&nbsp;современном стиле.</p>
                     </div>
                 </div>
                 <div class="main_container-stats dark-grey-bg">
@@ -43,13 +45,13 @@ include 'includes/header.php'; ?>
                     <div class="main_stat">
                         <div class="main_stat-container">
                             <p class="main_title-num">Локация</p>
-                            <p class="main_title-h3">ЖК «Черная речка»</p>
+                            <p class="main_title-h3">ЖК «Галактика»</p>
                         </div>
                         <img src="../images/location.png" alt="" class="main_stat-img">
                     </div>
                 </div>
                 <div class="main_video-container">
-                    <video src="videos/mainvid.mp4" class="main_video" autoplay muted loop aria-label="Видеопрезентация интерьера.">Ваш браузер не поддерживает видео.</video>
+                    <video src="videos/Zk-Galaxy-38.mp4" class="main_video" autoplay muted loop aria-label="Видеопрезентация интерьера.">Ваш браузер не поддерживает видео.</video>
                 </div>
             </div>
         </div>
@@ -60,11 +62,15 @@ include 'includes/header.php'; ?>
     <section class="casedesk_section">
         <div class="container">
             <div class="casedesk_container">
-                <h2 class="title casedesk_title">Минимализм, функциональность и&nbsp;эстетика</h2>
-                <p class="casedesk_desk">К&nbsp;нам обратился молодой IT-специалист, который ценит не&nbsp;только удобство, но&nbsp;и&nbsp;эстетику. Наша команда строителей воплотила его мечты в&nbsp;реальность, превратив небольшое пространство в&nbsp;идеальный микс технологий и&nbsp;стиля.</p>
+                <h2 class="title casedesk_title">Функциональная и комфортная квартира</h2>
+                <p class="casedesk_desk">Нашей компанией был выполнен ремонт однокомнатной квартиры в&nbsp;ЖК&nbsp;&laquo;Галактика&raquo;.
+                    Мы&nbsp;начали сотрудничество с&nbsp;создания дизайн-проекта квартиры 38м&sup2;.<br><br>
+                    Наш дизайнер смог функционально использовать небольшую площадь квартиры
+                    для комфортного проживания.<br><br>
+                    Над данным проектом наша команда работала 1,5&nbsp;месяца, продумывая всё до&nbsp;деталей.</p>
                 <div class="casedesk_container-img">
-                    <img src="../images/casedesk_desk-1.jpg" alt="" class="casedesk_img casedesk_img1">
-                    <img src="../images/casedesk_desk-2.jpg" alt="" class="casedesk_img casedesk_img2">
+                    <img src="../images/galaxy_casedesk_desk-1.jpg" alt="" class="casedesk_img casedesk_img1">
+                    <img src="../images/galaxy_casedesk_desk-2.jpg" alt="" class="casedesk_img casedesk_img2">
                 </div>
             </div>
         </div>
@@ -82,21 +88,23 @@ include 'includes/header.php'; ?>
                         <p class="process_item-num">1</p>
                         <div class="process_item-content">
                             <h3 class="process_content-heading">Разработка дизайн-проекта</h3>
-                            <p class="process_content-desk">Мы&nbsp;начали создание дизайн-проекта квартиры площадью 38&nbsp;м&sup2; с&nbsp;детального обсуждения образа жизни и&nbsp;предпочтений заказчика. Затем разработали концепцию, учитывающую его привычки: в&nbsp;кухне-гостиной создано уютное и&nbsp;практичное пространство, идеально подходящее для отдыха и&nbsp;приёма гостей, спальня отделена раздвижной дверью, где есть функциональное рабочее место.</p>
+                            <p class="process_content-desk">Мы&nbsp;начали создание дизайн-проекта квартиры площадью 38м&sup2; с&nbsp;детального обсуждения образа жизни
+                                и&nbsp;предпочтений заказчиков. Затем разработали концепцию, учитывающую их&nbsp;привычки: функциональная и&nbsp;уютная кухня-гостиная для встреч с&nbsp;друзьями и&nbsp;спальня с&nbsp;декоративной панелью. Также подобрали высококачественные материалы и&nbsp;мебель.</p>
                         </div>
                     </li>
                     <li class="process_stages-item">
                         <p class="process_item-num">2</p>
                         <div class="process_item-content">
                             <h3 class="process_content-heading">Подготовка и&nbsp;планирование</h3>
-                            <p class="process_content-desk">Мы&nbsp;начали проект с&nbsp;тщательной подготовки и&nbsp;планирования. Провели несколько встреч с&nbsp;нашим заказчиком, составили детальный план работ и&nbsp;бюджет, чтобы клиент мог быть уверен в&nbsp;прозрачности и&nbsp;эффективности нашего подхода.</p>
+                            <p class="process_content-desk">Мы&nbsp;начали проект с&nbsp;тщательной подготовки и&nbsp;планирования. Провели несколько встреч с&nbsp;заказчиками, составили детальный план работ и&nbsp;бюджет, чтобы наши клиенты могли быть уверены в&nbsp;прозрачности
+                                и&nbsp;эффективности нашего подхода.</p>
                         </div>
                     </li>
                     <li class="process_stages-item">
                         <p class="process_item-num">3</p>
                         <div class="process_item-content">
                             <h3 class="process_content-heading">Демонтажные работы</h3>
-                            <p class="process_content-desk">В&nbsp;рамках демонтажных работ мы&nbsp;сносили старые перегородки и&nbsp;формировали проём для установки раздвижной двери, учитывая технические требования и&nbsp;эстетический аспект.</p>
+                            <p class="process_content-desk">В&nbsp;рамках демонтажных работ мы&nbsp;сносили старые перегородки и&nbsp;формировали проёмы для установки новых дверей скрытого монтажа, учитывая как технические требования, так и&nbsp;эстетический аспект.</p>
                         </div>
                     </li>
                     <li class="process_stages-item">
@@ -110,14 +118,16 @@ include 'includes/header.php'; ?>
                         <p class="process_item-num">5</p>
                         <div class="process_item-content">
                             <h3 class="process_content-heading">Отделочные работы</h3>
-                            <p class="process_content-desk">После завершения черновых работ мы&nbsp;выполнили чистовые отделочные работы, а&nbsp;именно: монтировали натяжной потолок, окрасили стены в&nbsp;светлых тонах, уложили паркетную доску на&nbsp;пол в&nbsp;спальне, плитку&nbsp;&mdash; на&nbsp;кухне и&nbsp;в&nbsp;коридоре. В&nbsp;санузле залили подиум и&nbsp;уложили бело-серый широкоформатный керамогранит.</p>
+                            <p class="process_content-desk">После завершения предчистовой подготовки мы&nbsp;оклеили стены обоями в&nbsp;сером цвете, на&nbsp;пол уложили ламинат на&nbsp;подложку, а&nbsp;потолок сделали натяжной с&nbsp;трековыми и&nbsp;дизайнерскими светильниками.
+                                В&nbsp;совмещенном санузле мы&nbsp;уложили на&nbsp;стены и&nbsp;пол темную плитку среднего размера, залили душевой поддон, смонтировали стеклянные шторки, раковину с&nbsp;тумбой, зеркало, инсталляцию и&nbsp;сантехнику в&nbsp;чёрном цвете. Установили двери скрытого монтажа.</p>
                         </div>
                     </li>
                     <li class="process_stages-item">
                         <p class="process_item-num">6</p>
                         <div class="process_item-content">
                             <h3 class="process_content-heading">Финальная чистка и&nbsp;завершение</h3>
-                            <p class="process_content-desk">После завершения всех отделочных работ на&nbsp;объекте, нашими специалистами была установлена кухня и&nbsp;мебель под заказ. Также мы&nbsp;организовали профессиональный клининг!</p>
+                            <p class="process_content-desk">После завершения всех отделочных работ на&nbsp;объекте, нашими специалистами была установлена кухня
+                                и&nbsp;мебель под заказ. Также мы&nbsp;организовали профессиональный клининг!</p>
                         </div>
                     </li>
                 </ol>
@@ -132,16 +142,20 @@ include 'includes/header.php'; ?>
             <div class="result_container">
                 <h2 class="title result_title">Итоговый результат</h2>
                 <div class="result_container-img">
-                    <img src="../images/result_desk-1.jpg" alt="" class="result_img">
-                    <img src="../images/result_desk-2.jpg" alt="" class="result_img">
-                    <img src="../images/result_desk-3.jpg" alt="" class="result_img">
-                    <img src="../images/result_desk-4.jpg" alt="" class="result_img">
-                    <img src="../images/result_desk-5.jpg" alt="" class="result_img">
-                    <img src="../images/result_desk-6.jpg" alt="" class="result_img">
-                    <img src="../images/result_desk-7.jpg" alt="" class="result_img">
-                    <img src="../images/result_desk-8.jpg" alt="" class="result_img">
-                    <img src="../images/result_desk-9.jpg" alt="" class="result_img">
-                    <img src="../images/result_desk-10.jpg" alt="" class="result_img">
+                    <img src="../images/galaxy_result_desk-1.jpg" alt="" class="result_img">
+                    <img src="../images/galaxy_result_desk-2.jpg" alt="" class="result_img">
+                    <img src="../images/galaxy_result_desk-3.jpg" alt="" class="result_img">
+                    <img src="../images/galaxy_result_desk-4.jpg" alt="" class="result_img">
+                    <img src="../images/galaxy_result_desk-5.jpg" alt="" class="result_img">
+                    <img src="../images/galaxy_result_desk-6.jpg" alt="" class="result_img">
+                    <img src="../images/galaxy_result_desk-7.jpg" alt="" class="result_img">
+                    <img src="../images/galaxy_result_desk-8.jpg" alt="" class="result_img">
+                    <img src="../images/galaxy_result_desk-9.jpg" alt="" class="result_img">
+                    <img src="../images/galaxy_result_desk-10.jpg" alt="" class="result_img">
+                    <img src="../images/galaxy_result_desk-11.jpg" alt="" class="result_img">
+                    <img src="../images/galaxy_result_desk-12.jpg" alt="" class="result_img">
+                    <img src="../images/galaxy_result_desk-13.jpg" alt="" class="result_img">
+                    <img src="../images/galaxy_result_desk-14.jpg" alt="" class="result_img">
                 </div>
             </div>
         </div>
@@ -154,7 +168,7 @@ include 'includes/header.php'; ?>
             <h2 class="title video_title">Почувствуйте атмосферу реализованного проекта</h2>
             <div class="video_container">
                 <video playsinline poster="">
-                    <source src="videos/mainvid.mp4" type="video/mp4">
+                    <source src="videos/Rewgalaxy38.mp4" type="video/mp4">
                     Ваш браузер не поддерживает видео.
                 </video>
                 <div class="video_overlay">
@@ -183,23 +197,6 @@ include 'includes/header.php'; ?>
         </div>
     </section>
 
-    <!-- ДИЗАЙН ПРОЕКТ -->
-
-    <section class="depro_section">
-        <div class="container">
-            <div class="depro_container">
-                <h2 class="title depro_title">Дизайн-проект</h2>
-                <p class="depro_desk">Задача дизайн-проекта заключалась в&nbsp;правильном распределении небольшого пространства квартиры на&nbsp;практичные зоны, необходимые для комфортного проживания и&nbsp;работы.<br><br>
-                    Кухню-гостиную разделили на&nbsp;зону для приготовления пищи и&nbsp;зону для отдыха. За&nbsp;счет раздвижной двери отделили спальню от&nbsp;кухни-гостиной.<br><br>
-                    В&nbsp;спальне было сделано зонирование на&nbsp;рабочую зону, зону для хранения и&nbsp;зону для отдыха. В&nbsp;данном дизайнерском решении нами была реализована стилистика под индивидуальные потребности нашего заказчика.
-                </p>
-                <div class="depro_container-img">
-                    <img src="../images/depro.jpg" alt="" class="depro_img">
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- СПАЛЬНЯ -->
 
     <section class="bed_section">
@@ -207,11 +204,11 @@ include 'includes/header.php'; ?>
             <div class="bed_container">
                 <h2 class="title bed_title">Спальня</h2>
                 <div class="bed_img-container">
-                    <img src="../images/bed1.jpg" alt="" class="bed_img bed_img1">
-                    <img src="../images/bed2.jpg" alt="" class="bed_img bed_img2">
-                    <img src="../images/bed3.jpg" alt="" class="bed_img bed_img3">
-                    <img src="../images/bed4.jpg" alt="" class="bed_img bed_img4">
-                    <img src="../images/bed5.jpg" alt="" class="bed_img bed_img5">
+                    <img src="../images/galaxy_bed1.jpg" alt="" class="bed_img bed_img1">
+                    <img src="../images/galaxy_bed2.jpg" alt="" class="bed_img bed_img2">
+                    <img src="../images/galaxy_bed3.jpg" alt="" class="bed_img bed_img3">
+                    <img src="../images/galaxy_bed4.jpg" alt="" class="bed_img bed_img4">
+                    <img src="../images/galaxy_bed5.jpg" alt="" class="bed_img bed_img5">
                 </div>
             </div>
         </div>
@@ -224,9 +221,9 @@ include 'includes/header.php'; ?>
             <div class="kit_container">
                 <h2 class="title kit_title">Кухня</h2>
                 <div class="kit_container-img">
-                    <img src="../images/kit1.jpg" alt="" class="kit_img">
-                    <img src="../images/kit2.jpg" alt="" class="kit_img">
-                    <img src="../images/kit3.jpg" alt="" class="kit_img">
+                    <img src="../images/galaxy_kit1.jpg" alt="" class="kit_img">
+                    <img src="../images/galaxy_kit2.jpg" alt="" class="kit_img">
+                    <img src="../images/galaxy_kit3.jpg" alt="" class="kit_img">
                 </div>
             </div>
         </div>
@@ -239,9 +236,9 @@ include 'includes/header.php'; ?>
             <div class="san_container">
                 <h2 class="title san_title">Санузел</h2>
                 <div class="san_img-container">
-                    <img src="../images/san1.jpg" alt="" class="san_img san_img1">
-                    <img src="../images/san2.jpg" alt="" class="san_img san_img2">
-                    <img src="../images/san3.jpg" alt="" class="san_img san_img3">
+                    <img src="../images/galaxy_san1.jpg" alt="" class="san_img san_img1">
+                    <img src="../images/galaxy_san2.jpg" alt="" class="san_img san_img2">
+                    <img src="../images/galaxy_san3.jpg" alt="" class="san_img san_img3">
                 </div>
             </div>
         </div>
@@ -251,22 +248,22 @@ include 'includes/header.php'; ?>
 
     <section class="smet_section">
         <div class="container light-grey-bg">
-            <h2 class="title smet_title">Сэкономили 109 743₽<br>на чистовых и черновых материалах</h2>
+            <h2 class="title smet_title">Сэкономили 91 549₽<br>на чистовых и черновых материалах</h2>
             <div class="smet_container">
                 <div class="smet_comparison">
                     <h2 class="smet_comparison-title">Чистовые материалы</h2>
                     <p class="smet_finalprice">Итоговая стоимость:</p>
-                    <p class="smet_price smet_price_mgb">1 091 056₽</p>
+                    <p class="smet_price smet_price_mgb">838 492₽</p>
                     <p class="smet_finalprice red">Итоговая со скидкой:</p>
-                    <p class="smet_price">1 018 190₽</p>
+                    <p class="smet_price">786 951₽</p>
                     <button class="btn smet_btn">Ознакомиться со сметой</button>
                 </div>
                 <div class="smet_comparison">
                     <h2 class="smet_comparison-title">Черновые материалы</h2>
                     <p class="smet_finalprice">Итоговая стоимость:</p>
-                    <p class="smet_price smet_price_mgb">526 813₽</p>
+                    <p class="smet_price smet_price_mgb">366 244₽</p>
                     <p class="smet_finalprice red">Итоговая со скидкой:</p>
-                    <p class="smet_price">489 936₽</p>
+                    <p class="smet_price">326 236₽</p>
                     <button class="btn smet_btn">Ознакомиться со сметой</button>
                 </div>
             </div>
@@ -300,56 +297,66 @@ include 'includes/header.php'; ?>
                 <h2 class="title case_title">Наши работы</h2>
                 <div class="case_container-grid case_grid-first-row">
                     <div class="case_grid-item">
-                        <div class="case_item-video">
-                            <video class="case_video" aria-label="Видео ЖК 'Черная речка' 70 кв.м" muted loop playsinline poster="">
-                                <source src="videos/Zk-Black-River-70.mp4" type="video/mp4">
-                                Ваш браузер не поддерживает видео.
-                            </video>
-                            <p class="case_item-desk">ЖК «Черная речка» 70кв.м</p>
-                        </div>
-                        <a href="#" class="btn case_item-btn" aria-label="Подробнее о ЖК 'Черная речка' 70 кв.м">Подробнее</a>
+                        <a href="/ChernayaRechka70.php" class="case_link">
+                            <div class="case_item-video">
+                                <video class="case_video" aria-label="Видео ЖК 'Черная речка' 70 кв.м" muted loop playsinline poster="">
+                                    <source src="videos/Zk-Black-River-70.mp4" type="video/mp4">
+                                    Ваш браузер не поддерживает видео.
+                                </video>
+                                <p class="case_item-desk">ЖК «Черная речка» 70кв.м</p>
+                            </div>
+                        </a>
+                        <a href="/ChernayaRechka70.php" class="btn case_item-btn" aria-label="Подробнее о ЖК 'Черная речка' 70 кв.м">Подробнее</a>
                     </div>
                     <div class="case_grid-item">
-                        <div class="case_item-video">
-                            <video class="case_video" aria-label="ЖК «Черная речка» 38кв.м" muted loop playsinline poster="">
-                                <source src="videos/Zk-Black-River-38.mp4" type="video/mp4">
-                                Ваш браузер не поддерживает видео.
-                            </video>
-                            <p class="case_item-desk">ЖК «Черная речка» 38кв.м</p>
-                        </div>
-                        <a href="#" class="btn case_item-btn" aria-label="Подробнее о ЖК «Черная речка» 38кв.м">Подробнее</a>
+                        <a href="/ChernayaRechka38.php" class="case_link">
+                            <div class="case_item-video">
+                                <video class="case_video" aria-label="ЖК «Черная речка» 38кв.м" muted loop playsinline poster="">
+                                    <source src="videos/Zk-Black-River-38.mp4" type="video/mp4">
+                                    Ваш браузер не поддерживает видео.
+                                </video>
+                                <p class="case_item-desk">ЖК «Черная речка» 38кв.м</p>
+                            </div>
+                        </a>
+                        <a href="/ChernayaRechka38.php" class="btn case_item-btn" aria-label="Подробнее о ЖК «Черная речка» 38кв.м">Подробнее</a>
                     </div>
                     <div class="case_grid-item">
-                        <div class="case_item-video">
-                            <video class="case_video" aria-label="ЖК «Панарама парк» 70кв.м" muted loop playsinline poster="">
-                                <source src="videos/Zk-Panorama-Park-70.mp4" type="video/mp4">
-                                Ваш браузер не поддерживает видео.
-                            </video>
-                            <p class="case_item-desk">ЖК «Панарама парк» 70кв.м</p>
-                        </div>
-                        <a href="#" class="btn case_item-btn" aria-label="Подробнее о ЖК «Панарама парк» 70кв.м">Подробнее</a>
+                        <a href="/panoramapark70.php" class="case_link">
+                            <div class="case_item-video">
+                                <video class="case_video" aria-label="ЖК «Панарама парк» 70кв.м" muted loop playsinline poster="">
+                                    <source src="videos/Zk-Panorama-Park-70.mp4" type="video/mp4">
+                                    Ваш браузер не поддерживает видео.
+                                </video>
+                                <p class="case_item-desk">ЖК «Панарама парк» 70кв.м</p>
+                            </div>
+                        </a>
+                        <a href="/panoramapark70.php" class="btn case_item-btn" aria-label="Подробнее о ЖК «Панарама парк» 70кв.м">Подробнее</a>
                     </div>
                 </div>
                 <div class="case_container-grid case_grid-second-row">
                     <div class="case_grid-item">
-                        <div class="case_item-video">
-                            <video class="case_video" aria-label="ЖК «Домино» 62кв.м" muted loop playsinline poster="">
-                                <source src="videos/Zk-Domino-62.mp4" type="video/mp4">
-                                Ваш браузер не поддерживает видео.
-                            </video>
-                            <p class="case_item-desk">ЖК «Домино» 62кв.м</p>
-                        </div>
-                        <a href="#" class="btn case_item-btn" aria-label="Подробнее о ЖК «Домино» 62кв.м">Подробнее</a>
+                        <a href="/Domino62.php" class="case_link">
+                            <div class="case_item-video">
+                                <video class="case_video" aria-label="ЖК «Домино» 62кв.м" muted loop playsinline poster="">
+                                    <source src="videos/Zk-Domino-62.mp4" type="video/mp4">
+                                    Ваш браузер не поддерживает видео.
+                                </video>
+                                <p class="case_item-desk">ЖК «Домино» 62кв.м</p>
+                            </div>
+                        </a>
+                        <a href="/Domino62.php" class="btn case_item-btn" aria-label="Подробнее о ЖК «Домино» 62кв.м">Подробнее</a>
                     </div>
                     <div class="case_grid-item">
-                        <div class="case_item-video">
-                            <video class="case_video" aria-label="ЖК «Галактика» 38кв.м" muted loop playsinline poster="">
-                                <source src="videos/Zk-Galaxy-38.mp4" type="video/mp4">
-                                Ваш браузер не поддерживает видео.
-                            </video>
-                            <p class="case_item-desk">ЖК «Галактика» 38кв.м</p>
-                        </div>
-                        <a href="#" class="btn case_item-btn" aria-label="Подробнее о ЖК «Галактика» 38кв.м">Подробнее</a>
+                        <a href="/Galaxy38.php" class="case_link">
+                            <div class="case_item-video">
+                                <video class="case_video" aria-label="ЖК «Галактика» 38кв.м" muted loop playsinline poster="">
+                                    <source src="videos/Zk-Galaxy-38.mp4" type="video/mp4">
+                                    Ваш браузер не поддерживает видео.
+                                </video>
+                                <p class="case_item-desk">ЖК «Галактика» 38кв.м</p>
+                            </div>
+                        </a>
+                        <a href="/Galaxy38.php" class="btn case_item-btn" aria-label="Подробнее о ЖК «Галактика» 38кв.м">Подробнее</a>
                     </div>
                 </div>
             </div>
@@ -364,62 +371,72 @@ include 'includes/header.php'; ?>
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="case_grid-item">
-                        <div class="case_item-video">
-                            <video class="case_video" aria-label="Видео ЖК 'Черная речка' 70 кв.м" muted loop playsinline poster="">
-                                <source src="videos/Zk-Black-River-70.mp4" type="video/mp4">
-                                Ваш браузер не поддерживает видео.
-                            </video>
-                            <p class="case_item-desk">ЖК «Черная речка» 70кв.м</p>
-                        </div>
-                        <a href="#" class="btn case_item-btn" aria-label="Подробнее о ЖК 'Черная речка' 70 кв.м">Подробнее</a>
+                        <a href="/ChernayaRechka70.php" class="case_link">
+                            <div class="case_item-video">
+                                <video class="case_video" aria-label="Видео ЖК 'Черная речка' 70 кв.м" muted loop playsinline poster="">
+                                    <source src="videos/Zk-Black-River-70.mp4" type="video/mp4">
+                                    Ваш браузер не поддерживает видео.
+                                </video>
+                                <p class="case_item-desk">ЖК «Черная речка» 70кв.м</p>
+                            </div>
+                        </a>
+                        <a href="/ChernayaRechka70.php" class="btn case_item-btn" aria-label="Подробнее о ЖК 'Черная речка' 70 кв.м">Подробнее</a>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="case_grid-item">
-                        <div class="case_item-video">
-                            <video class="case_video" aria-label="ЖК 'Черная речка' 38 кв.м" muted loop playsinline poster="">
-                                <source src="videos/Zk-Black-River-38.mp4" type="video/mp4">
-                                Ваш браузер не поддерживает видео.
-                            </video>
-                            <p class="case_item-desk">ЖК «Черная речка» 38кв.м</p>
-                        </div>
-                        <a href="#" class="btn case_item-btn" aria-label="Подробнее о ЖК 'Черная речка' 38 кв.м">Подробнее</a>
+                        <a href="/ChernayaRechka38.php" class="case_link">
+                            <div class="case_item-video">
+                                <video class="case_video" aria-label="ЖК «Черная речка» 38кв.м" muted loop playsinline poster="">
+                                    <source src="videos/Zk-Black-River-38.mp4" type="video/mp4">
+                                    Ваш браузер не поддерживает видео.
+                                </video>
+                                <p class="case_item-desk">ЖК «Черная речка» 38кв.м</p>
+                            </div>
+                        </a>
+                        <a href="/ChernayaRechka38.php" class="btn case_item-btn" aria-label="Подробнее о ЖК «Черная речка» 38кв.м">Подробнее</a>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="case_grid-item">
-                        <div class="case_item-video">
-                            <video class="case_video" aria-label="ЖК 'Панорама парк' 70 кв.м" muted loop playsinline poster="">
-                                <source src="videos/Zk-Panorama-Park-70.mp4" type="video/mp4">
-                                Ваш браузер не поддерживает видео.
-                            </video>
-                            <p class="case_item-desk">ЖК «Панорама парк» 70кв.м</p>
-                        </div>
-                        <a href="#" class="btn case_item-btn" aria-label="Подробнее о ЖК 'Панорама парк' 70 кв.м">Подробнее</a>
+                        <a href="/panoramapark70.php" class="case_link">
+                            <div class="case_item-video">
+                                <video class="case_video" aria-label="ЖК «Панарама парк» 70кв.м" muted loop playsinline poster="">
+                                    <source src="videos/Zk-Panorama-Park-70.mp4" type="video/mp4">
+                                    Ваш браузер не поддерживает видео.
+                                </video>
+                                <p class="case_item-desk">ЖК «Панарама парк» 70кв.м</p>
+                            </div>
+                        </a>
+                        <a href="/panoramapark70.php" class="btn case_item-btn" aria-label="Подробнее о ЖК «Панарама парк» 70кв.м">Подробнее</a>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="case_grid-item">
-                        <div class="case_item-video">
-                            <video class="case_video" aria-label="ЖК «Домино» 62кв.м" muted loop playsinline poster="">
-                                <source src="videos/Zk-Domino-62.mp4" type="video/mp4">
-                                Ваш браузер не поддерживает видео.
-                            </video>
-                            <p class="case_item-desk">ЖК «Домино» 62кв.м</p>
-                        </div>
-                        <a href="#" class="btn case_item-btn" aria-label="Подробнее о ЖК «Домино» 62кв.м">Подробнее</a>
+                        <a href="/Domino62.php" class="case_link">
+                            <div class="case_item-video">
+                                <video class="case_video" aria-label="ЖК «Домино» 62кв.м" muted loop playsinline poster="">
+                                    <source src="videos/Zk-Domino-62.mp4" type="video/mp4">
+                                    Ваш браузер не поддерживает видео.
+                                </video>
+                                <p class="case_item-desk">ЖК «Домино» 62кв.м</p>
+                            </div>
+                        </a>
+                        <a href="/Domino62.php" class="btn case_item-btn" aria-label="Подробнее о ЖК «Домино» 62кв.м">Подробнее</a>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="case_grid-item">
-                        <div class="case_item-video">
-                            <video class="case_video" aria-label="ЖК «Галактика» 38кв.м" muted loop playsinline poster="">
-                                <source src="videos/Zk-Galaxy-38.mp4" type="video/mp4">
-                                Ваш браузер не поддерживает видео.
-                            </video>
-                            <p class="case_item-desk">ЖК «Галактика» 38кв.м</p>
-                        </div>
-                        <a href="#" class="btn case_item-btn" aria-label="Подробнее о ЖК «Галактика» 38кв.м">Подробнее</a>
+                        <a href="/Galaxy38.php" class="case_link">
+                            <div class="case_item-video">
+                                <video class="case_video" aria-label="ЖК «Галактика» 38кв.м" muted loop playsinline poster="">
+                                    <source src="videos/Zk-Galaxy-38.mp4" type="video/mp4">
+                                    Ваш браузер не поддерживает видео.
+                                </video>
+                                <p class="case_item-desk">ЖК «Галактика» 38кв.м</p>
+                            </div>
+                        </a>
+                        <a href="/Galaxy38.php" class="btn case_item-btn" aria-label="Подробнее о ЖК «Галактика» 38кв.м">Подробнее</a>
                     </div>
                 </div>
             </div>

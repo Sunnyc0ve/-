@@ -44,7 +44,7 @@
             </div>
             <nav class="header__nav" aria-label="Основная навигация">
                 <ul class="header__menu">
-                    <li class="header__menu-item"><a href="/index.php" class="header__menu-link" <?php if ($_SERVER['REQUEST_URI'] == '/index.php') echo 'aria-current="page"'; ?>>Главная</a></li>
+                    <li class="header__menu-item"><a href="/" class="header__menu-link" <?php if ($_SERVER['REQUEST_URI'] == '/index.php') echo 'aria-current="page"'; ?>>Главная</a></li>
                     <li class="header__menu-item"><a href="/projects" class="header__menu-link" <?php if ($_SERVER['REQUEST_URI'] == '/projects') echo 'aria-current="page"'; ?>>Проекты</a></li>
                     <li class="header__menu-item"><a href="/team" class="header__menu-link" <?php if ($_SERVER['REQUEST_URI'] == '/team') echo 'aria-current="page"'; ?>>Команда</a></li>
                     <li class="header__menu-item"><a href="#sale" class="header__menu-link open-popup-link" role="button" aria-haspopup="dialog" aria-controls="popup-sale">Акция</a></li>
@@ -140,9 +140,13 @@
         </div>
     </header>
 
+    <!-- Колбек -->
+
     <div class="callback_container">
         <img src="../images/callback.png" alt="Форма обратного звонка" class="callback_img">
     </div>
+
+    <!-- Попап колбека -->
 
     <div class="callback-popup">
         <div class="callback-popup__overlay"></div>
@@ -162,6 +166,27 @@
         </div>
     </div>
 
+    <!-- Акция попап мобилка -->
+
+    <section class="minisale_section">
+        <div class="container dark-grey-bg">
+            <div class="minisale_container">
+                <div class="minisale_container-title">
+                    <p class="minisale_title">Акция</p>
+                </div>
+                <p class="minisale_subtitle">Технический дизайн-<br>проект в&nbsp;подарок</p>
+                <p class="minisale_desk">Планировочное решение, электрика и&nbsp;сантехника для старта работ</p>
+                <div class="minisale_container-form">
+                    <form action="#" class="minisale_form">
+                        <input type="text" class="minisale_form-input" name="name" placeholder="Как вас зовут?" autocomplete="name" required pattern="[A-Za-zА-Яа-яЁё\s]+">
+                        <input type="tel" class="minisale_form-input" name="phone" placeholder="Номер телефона" autocomplete="tel" required pattern="[0-9]{10}">
+                        <button type="submit" class="minisale_form-button">Получить подарок</button>
+                    </form>
+                    <p class="minisale_disclaimer">Нажимая кнопку &laquo;Получить подарок&raquo; вы&nbsp;автоматически соглашаетесь с&nbsp;политикой обработки персональных данных</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Консультация попап -->
 
